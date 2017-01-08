@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Container from './components/Container';
 import './index.sass';
 
 import store from './store/createStore'
@@ -15,7 +15,9 @@ ReactDOM.render(
   <Provider store={store}>
     { /* Tell the Router to use our enhanced history */ }
     <Router history={history}>
-      <Route path="/" component={App}/>
+      <Route path="/" component={Container}>
+      	
+      </Route>
     </Router>
   </Provider>,
   document.getElementById('root')
