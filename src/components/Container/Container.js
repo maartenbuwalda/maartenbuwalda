@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import styles from './Container.sass'
 import TopBar from '../TopBar'
-import image from '../../assets/images/test.jpg'
+import image from '../../assets/images/test3.jpg'
 import Card from '../Card'
 
+console.log(image)
 import content from '../../content'
 
 class Container extends Component {
