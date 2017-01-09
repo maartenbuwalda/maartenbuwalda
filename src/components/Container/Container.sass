@@ -14,24 +14,27 @@
   align-content: flex-start
   z-index: 2
   margin-top: 80vh
+  padding-bottom: 10rem
 
 .image-holder
-  z-index: 1
-  top: 0
-  left: 0
   width: 100%
   position: fixed
+  top: 6rem
   height: 100vh
+  overflow: hidden
+  transform: scale(1.01)
   background-image: url('/static/media/test.fe9ada0c.jpg')
-  filter: blur(25px)
-  background-size: cover
-  background-position: center center
-  background-repeat: no-repeat
-  -webkit-backface-visibility: hidden
+  // -webkit-backface-visibility: hidden
   -webkit-perspective: 1000
   -webkit-transform: translate3d(0,0,0)
-  -webkit-transform: translateZ(0)
-  backface-visibility: hidden
+  -webkit-transform: translateZ()
+  // backface-visibility: hidden
   perspective: 1000
   transform: translate3d(0,0,0)
-  transform: translateZ(0)
+  transform: translateZ()
+  transform: scale(1.05)
+  background-size: cover
+  background-position: center center
+
+  img
+    display: none

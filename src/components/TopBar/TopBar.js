@@ -3,9 +3,12 @@ import styles from './TopBar.sass'
 
 class TopBar extends Component {
   render() {
+  	console.log(this.props.color.toString())
     return (
       <nav className={styles["top"]}>
-      	<h1>Maarten Buwalda</h1>
+      	<h1 style={{
+      		color: "rgb(" + this.props.color.toString() + ")"
+      	}}>Maarten Buwalda</h1>
       </nav>
     );
   }
