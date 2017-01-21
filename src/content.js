@@ -1,59 +1,34 @@
 const content = [
 	{
-		title: 'test',
-		image: 'http://placekitten.com/600/600',
-		body: 'testetst'
+		title: 'Lorem ipsum dolor',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet klasjd lkjasdlk jasldjk saljd lasjkd'
 	},
 	{
-		title: 'test',
-		image: 'http://placekitten.com/500/310',
-		body: 'testetst'
+		title: 'Lorem ipsum',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet'
 	},
 	{
-		title: 'test',
-		image: 'http://placekitten.com/400/300',
-		body: 'testetst'
+		title: 'Dolor',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet'
 	},
 	{
-		title: 'test',
-		image: 'http://placekitten.com/400/290',
-		body: 'testetst'
+		title: 'Lorem ipsum dolor',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet'
 	},
 	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
+		title: 'Lorem ipsum',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet'
 	},
 	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
+		title: 'Dolor',
+		image: 'http://placekitten.com/320/240',
+		body: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet'
 	},
-	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
-	},
-	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
-	},
-	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
-	},
-	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
-	},
-	{
-		title: 'test',
-		image: 'http://placekitten.com/500/300',
-		body: 'testetst'
-	}
 ]
 
 export default content

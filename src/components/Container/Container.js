@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
 import styles from './Container.sass'
 import TopBar from '../TopBar'
-import image from '../../assets/images/test3.jpg'
+import image from '../../assets/images/test4.jpg'
 import Card from '../Card'
 
-console.log(image)
 import content from '../../content'
 
 class Container extends Component {
   constructor(props){
     super(props)
     this.state = {
-      color: "#000000"
+      color: "#000000",
+      blur: false
     }
+
+    this._handleScroll = this._handleScroll.bind(this)
   }
   componentDidMount(){
     let image = document.getElementById("image")
@@ -26,20 +28,13 @@ class Container extends Component {
   }
 
   _handleScroll(e){
-    let blur,
-        scrollTop = e.srcElement.body.scrollTop
     
-    blur = scrollTop / 400
-    blur >= 4 ? blur = 4 : false
-
-    let image = document.getElementById("image-holder")
-    image.style.filter = "blur(" + blur + "px)"
   }
 
   render() {
     return (
       <div className={styles["container"]}>
-        <div id="image-holder" className={styles["image-holder"]}>
+        <div style={{backgroundImage: 'url(' + image + ')'}} id="image-holder" className={styles["image-holder"]}>
           <img src={image} id="image"/>
         </div>
         <TopBar color={this.state.color}/>
