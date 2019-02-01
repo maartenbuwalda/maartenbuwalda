@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "standard"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "jsx-quotes": ["error", "prefer-double"],
+    "comma-dangle": ["error", {
+      "arrays": "only-multiline",
+      "objects": "only-multiline",
+      "imports": "only-multiline",
+      "exports": "only-multiline",
+      "functions": "ignore"
+    }]
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "plugin:react/recommended"
+  ]
+}
