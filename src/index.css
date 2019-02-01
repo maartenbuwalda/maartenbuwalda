@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Prime Regular';
+  src: url('./static/fonts/PrimeRegular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Prime Light';
+  src: url('./static/fonts/PrimeLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
