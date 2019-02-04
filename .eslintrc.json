@@ -7,6 +7,7 @@
   "rules": {
     "no-console": "warn",
     "jsx-quotes": ["error", "prefer-double"],
+    "react/no-unescaped-entities": 0,
     "comma-dangle": ["error", {
       "arrays": "only-multiline",
       "objects": "only-multiline",
