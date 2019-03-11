@@ -1,0 +1,41 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { HashRouter } from 'react-router-dom'
+import Home from '../Home'
+import Hello from '../Hello'
+import Heading from '../../containers/Heading'
+import Background from '../../containers/Background'
+import Grid from '../Grid'
+
+const PageWrapper = styled.article`
+`
+
+class App extends Component {
+  render () {
+    return (
+      <HashRouter>
+        <React.Fragment>
+          <Heading />
+          <PageWrapper>
+            <Grid>
+              <Home position="l1" />
+              <Home position="s1" />
+              <Home position="m1" />
+              <Hello position="s2" />
+              <Hello position="m2" />
+            </Grid>
+          </PageWrapper>
+          <Background/>
+        </React.Fragment>
+      </HashRouter>
+    )
+  }
+}
+
+App.propTypes = {
+  getDominantColor: PropTypes.func,
+  color: PropTypes.object,
+}
+
+export default App

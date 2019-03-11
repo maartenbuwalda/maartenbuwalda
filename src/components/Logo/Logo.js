@@ -1,20 +1,49 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import colors from '../../constants/colors'
 
-class Logo extends Component {
-  componentDidMount () {
+const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: ${props => props.size || '8rem'};
+  height: ${props => props.size || '8rem'};
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: ${props => props.white ? colors.white : props.color.hex.colorMutedRegular};
+    transition: fill .3s;
+
+    path {
+      transition: all .3s;
+      opacity: ${props => props.animated ? 0 : 1};
+
+      &[data-appear=true] {
+        opacity: 1;
+      }
+    }
+  }
+`
+
+const Logo = ({ animated, size, ...rest }) => {
+  useEffect(() => {
+    if (!animated) return
     const paths = document.querySelectorAll('path')
     let count = 0
-    this.logoAnimation = setInterval(() => {
+    window.logoAnimation = setInterval(() => {
       if (count >= paths.length) {
-        return clearInterval(this.logoAnimation)
+        return clearInterval(window.logoAnimation)
       }
       paths[count].setAttribute('data-appear', true)
       count++
-    }, 20)
-  }
+    }, 50)
+  })
 
-  render () {
-    return (
+  return (
+    <LogoWrapper animated={animated} size={size} {...rest}>
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.000000 509.000000" preserveAspectRatio="xMidYMid meet">
         <g transform="translate(0.000000,509.000000) scale(0.100000,-0.100000)" stroke="none">
           <path d="M2065 4954 c-269 -73 -507 -138 -527 -144 l-38 -11 0 -554 0 -555
@@ -56,8 +85,13 @@ class Logo extends Component {
           <path d="M1910 835 l0 -155 635 0 635 0 0 155 0 155 -635 0 -635 0 0 -155z"/>
         </g>
       </svg>
-    )
-  }
+    </LogoWrapper>
+  )
+}
+
+Logo.propTypes = {
+  animated: PropTypes.bool,
+  size: PropTypes.string,
 }
 
 export default Logo

@@ -1,12 +1,10 @@
-import App from '../components/App'
+import Background from '../components/Background'
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import { getDominantColor } from '../actions/color'
 
 const mapStateToProps = state => {
   return {
-    coinrankings: state.coinrankings,
-    grid: state.grid,
     color: state.color,
   }
 }
@@ -19,4 +17,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Background))
