@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusinessCard component renders correctly 1`] = `
+<Connect(Card)>
+  <styled.div>
+    <Styled(withRouter(Connect(Logo))) />
+    <styled.div>
+      <h1>
+        Maarten Buwalda
+      </h1>
+      <p>
+        front-end developer
+      </p>
+    </styled.div>
+    <styled.div>
+      <a
+        href="https://www.linkedin.com/in/maartenbuwalda/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        linkedin
+      </a>
+      -
+      <a
+        href="https://github.com/maartenbuwalda"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        github
+      </a>
+      -
+      <a
+        href="mailto:maarten@maartenbuwalda.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        email
+      </a>
+    </styled.div>
+  </styled.div>
+</Connect(Card)>
+`;

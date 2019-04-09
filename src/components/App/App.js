@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { HashRouter } from 'react-router-dom'
-import Home from '../Home'
-import Hello from '../Hello'
+import BusinessCard from '../BusinessCard'
+// import Hello from '../Hello'
 import Heading from '../../containers/Heading'
 import Background from '../../containers/Background'
 import Grid from '../Grid'
 
 const PageWrapper = styled.article`
+  display: flex;
+  justify-content: center;
 `
 
 class App extends Component {
@@ -19,11 +21,8 @@ class App extends Component {
           <Heading />
           <PageWrapper>
             <Grid>
-              <Home position="l1" />
-              <Home position="s1" />
-              <Home position="m1" />
-              <Hello position="s2" />
-              <Hello position="m2" />
+              <BusinessCard position="s1" />
+              {/* <Hello position="m2" /> */}
             </Grid>
           </PageWrapper>
           <Background/>

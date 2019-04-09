@@ -1,11 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Crete Round', serif;
 }
 
 :root {
   font-size: 1em;
+}
+
+a, a:hover, a:active, a:visited {
+  color: black;
 }
 
 ul {

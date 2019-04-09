@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Fade from '@material-ui/core/Fade'
-import ireland from '../../static/images/ireland.jpg'
+import ireland from '../../static/images/ireland2.jpg'
 import norway from '../../static/images/norway.jpg'
 
 const BackgroundImage = styled.div`

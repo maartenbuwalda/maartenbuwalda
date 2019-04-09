@@ -8,18 +8,18 @@ const LogoWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  width: ${props => props.size || '8rem'};
-  height: ${props => props.size || '8rem'};
+  width: ${({ size }) => size || '8rem'};
+  height: ${({ size }) => size || '8rem'};
 
   svg {
     width: 100%;
     height: 100%;
-    fill: ${props => props.white ? colors.white : props.color.hex.colorMutedRegular};
+    fill: ${({ white, color }) => white ? colors.white : color.hex.colorMutedRegular};
     transition: fill .3s;
 
     path {
       transition: all .3s;
-      opacity: ${props => props.animated ? 0 : 1};
+      opacity: ${({ animated }) => animated ? 0 : 1};
 
       &[data-appear=true] {
         opacity: 1;

@@ -5,11 +5,12 @@ import colors from '../../constants/colors'
 
 const Article = styled.article`
   perspective: 200px;
-  grid-area: ${props => props.position};
+  grid-area: ${({ position }) => position};
   width: 100%;
   max-width: 60rem;
   color: ${colors.fadedBlack};
   background-color: ${colors.white};
+  border-radius: .1rem;
   box-shadow: 0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
 `
 
@@ -17,7 +18,15 @@ const Main = styled.main`
   transition: opacity .3s;
   padding: 1rem;
   margin: 1rem;
-  width: 60%;
+
+  h1, h2, h3, a {
+    transition: color .3s;
+    color: ${({ color }) => color.hex.colorMutedRegular};
+  }
+
+  a:hover {
+    color: ${({ color }) => color.hex.colorRegular}; 
+  };
 `
 
 class Card extends React.Component {

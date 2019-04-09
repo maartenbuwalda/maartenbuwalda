@@ -22,7 +22,7 @@
     "json",
     "node"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/.setupTests.js",
+  "setupFilesAfterEnv": ["<rootDir>/.setupTests.js"],
   "testEnvironment": "jest-environment-jsdom",
   "testPathIgnorePatterns": [
     "/node_modules/"
