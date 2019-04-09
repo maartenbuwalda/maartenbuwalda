@@ -2,12 +2,9 @@
   "clearMocks": true,
   "collectCoverage": true,
   "collectCoverageFrom": [
-    "src/**/index.js"
+    "src/**/**/*.{js,jsx}"
   ],
   "coverageDirectory": "coverage",
-  "coverageReporters": [
-    "lcov"
-  ],
   "coverageThreshold": {
     "global": {
       "branches": 80,
