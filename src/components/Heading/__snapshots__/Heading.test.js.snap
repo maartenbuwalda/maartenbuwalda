@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component renders correctly 1`] = `
+<styled.div>
+  <styled.div>
+    <Link
+      replace={false}
+      to="/"
+    >
+      home
+    </Link>
+    <Link
+      replace={false}
+      to="/hello"
+    >
+      hello
+    </Link>
+  </styled.div>
+</styled.div>
+`;

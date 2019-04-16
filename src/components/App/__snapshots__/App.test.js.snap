@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders correctly 1`] = `
+<HashRouter>
+  <withRouter(Connect(Component)) />
+  <styled.article>
+    <Grid>
+      <BusinessCard
+        position="s1"
+      />
+    </Grid>
+  </styled.article>
+  <withRouter(Connect(Component)) />
+</HashRouter>
+`;

@@ -3,13 +3,13 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { getDominantColor } from '../actions/color'
 
-const mapStateToProps = state => {
+export const mapStateToProps = state => {
   return {
     color: state.color,
   }
 }
 
-const mapDispatchToProps = dispatch => {
+export const mapDispatchToProps = dispatch => {
   return {
     getDominantColor: image => {
       dispatch(getDominantColor(image))

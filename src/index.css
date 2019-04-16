@@ -8,6 +8,11 @@ body {
   font-size: 1em;
 }
 
+/* h1, h2, h3 {
+  font-family: 'Prime Regular';
+  text-transform: uppercase;
+} */
+
 a, a:hover, a:active, a:visited {
   color: black;
 }

@@ -1,7 +1,7 @@
 import Card from '../components/Card'
 import { connect } from 'react-redux'
 
-const mapStateToProps = state => {
+export const mapStateToProps = state => {
   return {
     color: state.color,
   }

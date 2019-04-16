@@ -3,7 +3,7 @@ import {
   GET_DOMINANT_COLOR,
 } from '../actions/color'
 
-const defaultState = {
+export const initialState = {
   isFetching: false,
   hex: {
     colorMutedRegular: '',
@@ -23,7 +23,7 @@ const defaultState = {
   }
 }
 
-function colorReducer (state = defaultState, action) {
+function colorReducer (state = initialState, action) {
   switch (action.type) {
     case GET_DOMINANT_COLOR:
       return {

@@ -16,8 +16,12 @@ const Article = styled.article`
 
 const Main = styled.main`
   transition: opacity .3s;
-  padding: 1rem;
-  margin: 1rem;
+
+  .colored {
+    transition: background-color .3s, color .3s;
+    color: ${({ color }) => color.hex.colorMutedLight};
+    background-color: ${({ color }) => color.hex.colorMutedRegular};
+  }
 
   h1, h2, h3, a {
     transition: color .3s;
@@ -25,7 +29,7 @@ const Main = styled.main`
   }
 
   a:hover {
-    color: ${({ color }) => color.hex.colorRegular}; 
+    color: ${({ color }) => color.hex.colorMutedLight}; 
   };
 `
 

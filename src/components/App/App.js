@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { HashRouter } from 'react-router-dom'
 import BusinessCard from '../BusinessCard'
-// import Hello from '../Hello'
+// import Timeline from '../Timeline'
 import Heading from '../../containers/Heading'
 import Background from '../../containers/Background'
 import Grid from '../Grid'
@@ -22,7 +22,7 @@ class App extends Component {
           <PageWrapper>
             <Grid>
               <BusinessCard position="s1" />
-              {/* <Hello position="m2" /> */}
+              {/* <Timeline position="m1" /> */}
             </Grid>
           </PageWrapper>
           <Background/>
