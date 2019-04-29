@@ -2,16 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
+import shadows from '../../constants/shadows'
 
 const Article = styled.article`
-  perspective: 200px;
   grid-area: ${({ position }) => position};
   width: 100%;
-  max-width: 60rem;
   color: ${colors.fadedBlack};
-  background-color: ${colors.white};
-  border-radius: .1rem;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.2), 0 15px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  /* border-radius: .2rem; */
+  background-color: ${({ transparent }) => transparent ? 'transparent' : colors.white};
+  box-shadow: ${({ transparent }) => transparent ? 'none' : shadows.mild};
 `
 
 const Main = styled.main`
@@ -23,21 +23,26 @@ const Main = styled.main`
     background-color: ${({ color }) => color.hex.colorMutedRegular};
   }
 
-  h1, h2, h3, a {
+  h1, h2, h3 {
     transition: color .3s;
     color: ${({ color }) => color.hex.colorMutedRegular};
   }
 
-  a:hover {
-    color: ${({ color }) => color.hex.colorMutedLight}; 
+  a {
+    transition: color .3s;
+    color: ${colors.darkGray};
+  }
+
+  a:hover, a.active {
+    color: ${({ color }) => color.hex.colorMutedRegular}; 
   };
 `
 
 class Card extends React.Component {
   render () {
-    const { children, position, color } = this.props
+    const { children, position, color, ...rest } = this.props
     return (
-      <Article position={position} color={color}>
+      <Article position={position} color={color} {...rest}>
         <Main color={color}>
           {children}
         </Main>

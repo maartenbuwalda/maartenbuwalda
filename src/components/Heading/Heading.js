@@ -31,7 +31,7 @@ const Heading = ({ color }) => (
   <Wrapper color={color}>
     <LinkWrapper color={color}>
       <Link to="/">home</Link>
-      <Link to="/hello">hello</Link>
+      <Link to="/hello">about</Link>
     </LinkWrapper>
   </Wrapper>
 )

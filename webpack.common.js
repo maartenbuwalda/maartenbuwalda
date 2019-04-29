@@ -13,15 +13,11 @@ module.exports = {
       filename: './index.html'
     }),
   ],
+  resolve: {
+    extensions: [".js"]
+  },
   module: {
     rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
-      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],

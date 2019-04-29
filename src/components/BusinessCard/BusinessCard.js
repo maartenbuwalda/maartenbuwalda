@@ -4,6 +4,7 @@ import Card from '../../containers/Card'
 import Logo from '../../containers/Logo'
 import styled from 'styled-components'
 import colors from '../../constants/colors'
+import { Link } from 'react-router-dom'
 
 const CardLayout = styled.div`
   position: relative;
@@ -11,6 +12,10 @@ const CardLayout = styled.div`
   flex-direction: column;
   padding: 1rem;
   margin: 1rem;
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const TitleWrapper = styled.div`
@@ -53,11 +58,13 @@ const BusinessCard = ({ position }) => {
   return (
     <Card position={position}>
       <CardLayout>
-        <StyledLogo />
-        <TitleWrapper>
-          <h1>Maarten Buwalda</h1>
-          <p>front-end developer</p>
-        </TitleWrapper>
+        <Link to="/">
+          <StyledLogo animated/>
+          <TitleWrapper>
+            <h1>Maarten Buwalda</h1>
+            <p>front-end developer</p>
+          </TitleWrapper>
+        </Link>
         <Contact>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maartenbuwalda/">linkedin</a>-
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/maartenbuwalda">github</a>-

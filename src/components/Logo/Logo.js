@@ -15,10 +15,10 @@ const LogoWrapper = styled.div`
     width: 100%;
     height: 100%;
     fill: ${({ white, color }) => white ? colors.white : color.hex.colorMutedRegular};
-    transition: fill .3s;
+    transition: fill 3s;
 
     path {
-      transition: all .3s;
+      transition: opacity .3s;
       opacity: ${({ animated }) => animated ? 0 : 1};
 
       &[data-appear=true] {
@@ -28,7 +28,7 @@ const LogoWrapper = styled.div`
   }
 `
 
-const Logo = ({ animated, size, ...rest }) => {
+const Logo = ({ animated, ...rest }) => {
   useEffect(() => {
     if (!animated) return
     const paths = document.querySelectorAll('path')
@@ -43,7 +43,7 @@ const Logo = ({ animated, size, ...rest }) => {
   })
 
   return (
-    <LogoWrapper animated={animated} size={size} {...rest}>
+    <LogoWrapper animated={animated} {...rest}>
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.000000 509.000000" preserveAspectRatio="xMidYMid meet">
         <g transform="translate(0.000000,509.000000) scale(0.100000,-0.100000)" stroke="none">
           <path d="M2065 4954 c-269 -73 -507 -138 -527 -144 l-38 -11 0 -554 0 -555

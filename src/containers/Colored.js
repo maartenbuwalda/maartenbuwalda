@@ -1,4 +1,3 @@
-import Logo from '../components/Logo'
 import { connect } from 'react-redux'
 
 export const mapStateToProps = state => {
@@ -7,4 +6,6 @@ export const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(Logo)
+export default Colored = component => {
+  return connect(mapStateToProps)(component)
+}

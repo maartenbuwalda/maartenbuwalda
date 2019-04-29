@@ -1,4 +1,4 @@
-import Background from '../components/Background'
+import HeaderImage from '../components/HeaderImage'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { getDominantColor } from '../actions/color'
@@ -17,4 +17,4 @@ export const mapDispatchToProps = dispatch => {
   }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Background))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HeaderImage))
