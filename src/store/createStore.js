@@ -3,12 +3,10 @@ import createHistory from 'history/createBrowserHistory'
 import { reducers } from '../reducers'
 import color from '../middleware/color'
 import thunk from 'redux-thunk'
-import { routerMiddleware } from 'react-router-redux'
 
 export const history = createHistory()
 const middleware = [
   thunk,
-  routerMiddleware(history),
   color,
 ]
 const enhancers = []
