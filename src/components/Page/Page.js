@@ -1,18 +1,32 @@
 import React from 'react'
-import Card from '../../containers/Card'
+import styled from 'styled-components'
+import HeaderImage from '../../containers/HeaderImage'
 import PropTypes from 'prop-types'
 
-const Page = ({ position, children }) => {
+const Description = styled.div`
+  padding: 1rem;
+`
+
+const Page = ({ page }) => {
   return (
-    <Card position={position}>
-      {children}
-    </Card>
+    <>
+      <HeaderImage
+        image={page.image}
+        title={page.title}
+      />
+      <Description>
+        {page.content}
+      </Description>
+    </>
   )
 }
 
 Page.propTypes = {
-  position: PropTypes.string,
-  children: PropTypes.node,
+  page: PropTypes.shape({
+    image: PropTypes.string,
+    title: PropTypes.string,
+    content: PropTypes.node,
+  })
 }
 
 export default Page

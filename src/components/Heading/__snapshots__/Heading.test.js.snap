@@ -13,7 +13,7 @@ exports[`Heading component renders correctly 1`] = `
       replace={false}
       to="/hello"
     >
-      hello
+      about
     </Link>
   </styled.div>
 </styled.div>

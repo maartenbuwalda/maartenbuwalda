@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 import colors from '../../constants/colors'
 import shadows from '../../constants/shadows'
 import { sizes } from '../../constants/mediaQueries'
-import Icon from '@material-ui/core/Icon'
+// import Icon from '@material-ui/core/Icon'
 
 const Menu = styled.div`
   box-shadow: ${shadows.mild};
@@ -114,7 +114,7 @@ const Navigation = ({ position }) => {
   return (
     <Card position={position}>
       <MobileMenuToggle htmlFor="menu-toggle">
-        <Icon>menu</Icon>
+        <span>menu</span>
       </MobileMenuToggle>
       <Menu>
         <HiddenCheckbox
@@ -124,7 +124,7 @@ const Navigation = ({ position }) => {
         />
         <LinkWrapper>
           <MobileMenuToggle htmlFor="menu-toggle">
-            <Icon>close</Icon>
+            <span>close</span>
           </MobileMenuToggle>
           {content.map((x, i) => {
             return (
@@ -133,10 +133,12 @@ const Navigation = ({ position }) => {
                 key={i}
                 to={x.pathname}
                 activeClassName="active"
-                onClick={() => checkbox.current.checked = false}
+                onClick={() => {
+                  checkbox.current.checked = false
+                }}
               >
                 <IconWrapper>
-                  <Icon>{x.icon}</Icon>
+                  <span>{x.icon}</span>
                 </IconWrapper>
                 <span>{x.label}</span>
               </NavLink>

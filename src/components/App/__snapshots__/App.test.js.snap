@@ -2,14 +2,18 @@
 
 exports[`App component renders correctly 1`] = `
 <HashRouter>
-  <withRouter(Connect(Component)) />
-  <styled.article>
+  <Background>
     <Grid>
       <BusinessCard
         position="s1"
       />
+      <Navigation
+        position="m1"
+      />
+      <withRouter(Connect(Component))
+        position="l1"
+      />
     </Grid>
-  </styled.article>
-  <withRouter(Connect(Component)) />
+  </Background>
 </HashRouter>
 `;

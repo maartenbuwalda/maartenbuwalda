@@ -2,9 +2,9 @@ import React from 'react'
 import App from './index'
 import { componentRenders } from '../../testUtils/rendering'
 
-jest.mock('../Background', () => 'Background')
-jest.mock('../Heading', () => 'Heading')
 jest.mock('../BusinessCard', () => 'BusinessCard')
+jest.mock('../Navigation', () => 'Navigation')
+jest.mock('../Pages', () => 'Pages')
 
 describe('App component', () => {
   const component = <App />

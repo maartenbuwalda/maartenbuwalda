@@ -5,7 +5,6 @@ import colors from '../../constants/colors'
 
 const ColoredBackground = styled.div`
   transition: background-color 5s;
-  /* background-color: ${({ color }) => color.hex.colorMutedLight}; */
   background-color: ${colors.gray};
   min-height: 100vh;
 `

@@ -3,15 +3,22 @@
 exports[`BusinessCard component renders correctly 1`] = `
 <Connect(Card)>
   <styled.div>
-    <Styled(withRouter(Connect(Logo))) />
-    <styled.div>
-      <h1>
-        Maarten Buwalda
-      </h1>
-      <p>
-        front-end developer
-      </p>
-    </styled.div>
+    <Link
+      replace={false}
+      to="/"
+    >
+      <Styled(Connect(Logo))
+        animated={true}
+      />
+      <styled.div>
+        <h1>
+          Maarten Buwalda
+        </h1>
+        <p>
+          front-end developer
+        </p>
+      </styled.div>
+    </Link>
     <styled.div>
       <a
         href="https://www.linkedin.com/in/maartenbuwalda/"

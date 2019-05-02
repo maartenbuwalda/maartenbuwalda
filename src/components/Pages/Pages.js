@@ -1,32 +1,29 @@
 import React from 'react'
-import Page from '../Page'
-import { content } from '../../constants/pages'
-import HeaderImage from '../../containers/HeaderImage'
+import { Route } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import Page from '../Page'
+import Card from '../../containers/Card'
+import { content } from '../../constants/pages'
 
-const Description = styled.section`
-  padding: 0 1rem;
-`
-
-const Pages = props => {
-  const { position, location } = props
-  const page = content.find(page => page.pathname === location.pathname)
+const Pages = ({ position }) => {
   return (
-    <Page position={position}>
-      <HeaderImage
-        image={page.image}
-        title={page.title}
-      />
-      <Description>
-      </Description>
-    </Page>
+    <Card position={position}>
+      {content.map((page, i) => {
+        return (
+          <Route
+            key={i}
+            exact={page.pathname === '/'}
+            path={page.pathname}
+            render={() => <Page page={page} />}
+          />
+        )
+      })}
+    </Card>
   )
 }
 
 Pages.propTypes = {
   position: PropTypes.string,
-  location: PropTypes.object,
 }
 
 export default Pages
