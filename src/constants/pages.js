@@ -1,10 +1,11 @@
-import ireland from '../static/images/ireland.jpg'
+// import ireland from '../static/images/ireland.jpg'
 // import ireland2 from '../static/images/ireland2.jpg'
 import norway from '../static/images/norway.jpg'
 import me from '../static/images/me1.jpg'
 import transavia from '../static/images/transavia.png'
+import books from '../static/images/books.jpg'
 
-export const timeline = [
+export const content = [
   {
     pathname: '/',
     label: 'About me',
@@ -19,7 +20,7 @@ export const timeline = [
     pathname: '/education',
     label: 'Education',
     title: 'Education',
-    image: ireland,
+    image: books,
     icon: 'book',
     description: [
       'hi'

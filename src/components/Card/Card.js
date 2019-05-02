@@ -9,7 +9,6 @@ const Article = styled.article`
   width: 100%;
   color: ${colors.fadedBlack};
   overflow: hidden;
-  /* border-radius: .2rem; */
   background-color: ${({ transparent }) => transparent ? 'transparent' : colors.white};
   box-shadow: ${({ transparent }) => transparent ? 'none' : shadows.mild};
 `
@@ -24,16 +23,17 @@ const Main = styled.main`
   }
 
   h1, h2, h3 {
-    transition: color .3s;
+    transition: color 1s;
     color: ${({ color }) => color.hex.colorMutedRegular};
   }
 
   a {
-    transition: color .3s;
+    transition: color 1s;
     color: ${colors.darkGray};
   }
 
   a:hover, a.active {
+    transition: color .3s;
     color: ${({ color }) => color.hex.colorMutedRegular}; 
   };
 `

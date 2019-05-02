@@ -1,6 +1,6 @@
 import React from 'react'
 import Page from '../Page'
-import { timeline } from '../../constants/pages'
+import { content } from '../../constants/pages'
 import HeaderImage from '../../containers/HeaderImage'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
@@ -11,7 +11,7 @@ const Description = styled.section`
 
 const Pages = props => {
   const { position, location } = props
-  const page = timeline.find(page => page.pathname === location.pathname)
+  const page = content.find(page => page.pathname === location.pathname)
   return (
     <Page position={position}>
       <HeaderImage

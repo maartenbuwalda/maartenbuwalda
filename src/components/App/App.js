@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { HashRouter } from 'react-router-dom'
 import BusinessCard from '../BusinessCard'
 import Grid from '../Grid'
-import Timeline from '../Timeline'
+import Navigation from '../Navigation'
 import Pages from '../../containers/Pages'
 import Background from '../../components/Background'
 
@@ -21,7 +21,7 @@ class App extends Component {
           <PageWrapper>
             <Grid>
               <BusinessCard position="s1"/>
-              <Timeline position="m1" />
+              <Navigation position="m1" />
               <Pages position="l1" />
             </Grid>
           </PageWrapper>

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
+import { sizes } from '../../constants/mediaQueries'
 
 class HeaderImage extends React.Component {
   componentDidMount () {
@@ -50,12 +51,16 @@ const Title = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  min-height: 30rem;
+  min-height: 15rem;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  @media (min-width: ${sizes.m}) {
+    min-height: 30rem;
+  }
 `
 
 const Image = styled.div`

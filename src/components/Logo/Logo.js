@@ -14,14 +14,17 @@ const LogoWrapper = styled.div`
   svg {
     width: 100%;
     height: 100%;
+    fill: ${colors.gray};
     fill: ${({ white, color }) => white ? colors.white : color.hex.colorMutedRegular};
-    transition: fill 3s;
+    transition: fill .3s;
 
     path {
-      transition: opacity .3s;
+      transition: all .3s;
       opacity: ${({ animated }) => animated ? 0 : 1};
+      transform: scaleY(0.9);
 
       &[data-appear=true] {
+        transform: scaleY(1);
         opacity: 1;
       }
     }
