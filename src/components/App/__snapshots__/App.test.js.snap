@@ -2,18 +2,44 @@
 
 exports[`App component renders correctly 1`] = `
 <HashRouter>
-  <Background>
-    <Grid>
-      <BusinessCard
-        position="s1"
-      />
-      <Navigation
-        position="m1"
-      />
-      <withRouter(Connect(Component))
-        position="l1"
-      />
-    </Grid>
-  </Background>
+  <ContextProvider
+    value={
+      Object {
+        "theme": Object {
+          "hex": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+          "rgb": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+        },
+        "updateTheme": [Function],
+      }
+    }
+  >
+    <Background>
+      <Grid>
+        <BusinessCard
+          position="s1"
+        />
+        <Navigation
+          position="m1"
+        />
+        <Pages
+          position="l1"
+        />
+      </Grid>
+    </Background>
+  </ContextProvider>
 </HashRouter>
 `;

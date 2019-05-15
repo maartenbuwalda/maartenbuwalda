@@ -1,6 +1,7 @@
 {
   "parser": "babel-eslint",
   "plugins": [
+    "jest",
     "react",
     "standard"
   ],
@@ -15,6 +16,9 @@
       "exports": "only-multiline",
       "functions": "ignore"
     }]
+  },
+  "env": {
+    "jest/globals": true
   },
   "extends": [
     "eslint:recommended",

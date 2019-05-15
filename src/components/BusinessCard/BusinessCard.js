@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Card from '../../containers/Card'
-import Logo from '../../containers/Logo'
+import Card from '../../components/Card'
+import Logo from '../../components/Logo'
 import styled from 'styled-components'
 import colors from '../../constants/colors'
 import { Link } from 'react-router-dom'
@@ -10,6 +10,7 @@ const CardLayout = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  max-height: 16rem;
   padding: 1rem;
   margin: 1rem;
 
@@ -22,6 +23,7 @@ const TitleWrapper = styled.div`
   h1, p {
     margin: 0;
     text-align: center;
+    color: ${colors.fadedWhite};
   }
   h1 {
     font-size: 2rem;
@@ -56,10 +58,10 @@ const StyledLogo = styled(Logo)`
 
 const BusinessCard = ({ position }) => {
   return (
-    <Card position={position}>
+    <Card background="colored" position={position}>
       <CardLayout>
         <Link to="/">
-          <StyledLogo animated/>
+          <StyledLogo white animated/>
           <TitleWrapper>
             <h1>Maarten Buwalda</h1>
             <p>front-end developer</p>

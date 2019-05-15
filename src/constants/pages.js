@@ -1,43 +1,43 @@
-// import ireland from '../static/images/ireland.jpg'
-// import ireland2 from '../static/images/ireland2.jpg'
 import AboutMe from '../components/Pages/AboutMe'
-import norway from '../static/images/norway.jpg'
-import me from '../static/images/me1.jpg'
-import transavia from '../static/images/transavia.png'
-import books from '../static/images/books.jpg'
+import Work from '../components/Pages/Work'
+import images from './images'
+import { subPages } from './subPages'
 
-// Used to render the pages and the menu
-export const content = [
+export const pages = [
   {
     pathname: '/',
     label: 'About me',
     title: 'Maarten Buwalda',
-    image: me,
+    image: images.ireland,
     icon: 'face',
     content: AboutMe,
+    subNavigation: [],
   },
   {
     pathname: '/education',
     label: 'Education',
     title: 'Education',
-    image: books,
+    image: images.books,
     icon: 'book',
     content: AboutMe,
+    subNavigation: [],
   },
   {
     pathname: '/work',
     label: 'Work',
-    title: 'Transavia',
-    image: transavia,
+    title: 'Work',
     icon: 'code',
-    content: AboutMe,
+    image: images.books,
+    content: Work,
+    subNavigation: subPages,
   },
   {
     pathname: '/contact',
     label: 'Contact',
     title: 'Contact',
-    image: norway,
+    image: images.norway,
     icon: 'chat',
     content: AboutMe,
+    subNavigation: [],
   },
 ]

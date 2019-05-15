@@ -3,37 +3,50 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
 import { sizes } from '../../constants/mediaQueries'
+import { ColorContext } from '../../context/color'
+import Logo from '../../components/Logo'
 
 class HeaderImage extends React.Component {
   componentDidMount () {
-    this.setTheme()
-  }
-
-  componentDidUpdate (prevProps) {
-    const currentImage = this.props.image
-    const previousImage = prevProps.image
-    if (currentImage !== previousImage) {
-      this.setTheme()
-    }
-  }
-
-  setTheme () {
-    const { getDominantColor, image } = this.props
-    getDominantColor(image)
+    const { updateTheme, image } = this.props
+    updateTheme(image)
   }
 
   render () {
-    const { image, title, color } = this.props
+    const { image, title } = this.props
     return (
       <ImageWrapper>
         <Image image={image} />
-        <Title color={color}>
-          <h1>{title}</h1>
-        </Title>
+        <ColorContext.Consumer>
+          {({ theme }) => (
+            <>
+              <LogoWrapper theme={theme}>
+                <Logo white size="3rem"/>
+              </LogoWrapper>
+              <Title theme={theme}>
+                <h1>{title}</h1>
+              </Title>
+            </>
+          )}
+        </ColorContext.Consumer>
       </ImageWrapper>
     )
   }
 }
+
+const LogoWrapper = styled.div`
+  display: none;
+  align-items: center;
+  position: absolute;
+  transition: background-color 1s;
+  top: 1rem;
+  left: 1rem;
+  background-color: ${({ theme }) => theme.hex.colorMutedRegular};
+
+  h1 {
+    color: ${colors.white}
+  }
+`
 
 const Title = styled.div`
   transition: all .3s;
@@ -46,7 +59,7 @@ const Title = styled.div`
     font-size: 2rem;
     font-weight: normal;
     margin: 0;
-    color: ${({ color }) => color.hex.colorMutedRegular};
+    color: ${({ theme }) => theme.hex.colorMutedRegular};
   }
 `
 
@@ -59,7 +72,7 @@ const ImageWrapper = styled.div`
   align-items: flex-end;
 
   @media (min-width: ${sizes.m}) {
-    min-height: 30rem;
+    min-height: 35rem;
   }
 `
 
@@ -79,6 +92,7 @@ HeaderImage.propTypes = {
   color: PropTypes.object,
   children: PropTypes.node,
   getDominantColor: PropTypes.func,
+  updateTheme: PropTypes.func,
 }
 
 export default HeaderImage

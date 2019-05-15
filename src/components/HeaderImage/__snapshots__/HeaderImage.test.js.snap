@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Background component renders correctly 1`] = `
-<Route>
-  <Component />
-</Route>
+exports[`HeaderImage component renders correctly 1`] = `
+<styled.div>
+  <styled.div />
+  <ContextConsumer>
+    <Component />
+  </ContextConsumer>
+</styled.div>
 `;

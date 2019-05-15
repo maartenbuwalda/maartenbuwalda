@@ -3,50 +3,79 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
 import shadows from '../../constants/shadows'
+import { ColorContext } from '../../context/color'
 
 const Article = styled.article`
   grid-area: ${({ position }) => position};
   width: 100%;
   color: ${colors.fadedBlack};
   overflow: hidden;
-  background-color: ${({ transparent }) => transparent ? 'transparent' : colors.white};
+  transition: all 1s;
+  color: ${({ background }) => {
+    switch (background) {
+      case 'colored': return colors.fadedWhite
+      default: return colors.fadedBlack
+    }
+  }};
+  background-color: ${({ background, theme }) => {
+    switch (background) {
+      case 'transparent': return 'transparent'
+      case 'colored': return theme.hex.colorMutedRegular
+      default: return colors.white
+    }
+  }};
   box-shadow: ${({ transparent }) => transparent ? 'none' : shadows.mild};
 `
 
 const Main = styled.main`
-  transition: opacity .3s;
+  transition: all .3s;
 
   .colored {
     transition: background-color .3s, color .3s;
-    color: ${({ color }) => color.hex.colorMutedLight};
-    background-color: ${({ color }) => color.hex.colorMutedRegular};
+    color: ${({ theme }) => theme.hex.colorMutedLight};
+    background-color: ${({ theme }) => theme.hex.colorMutedRegular};
   }
 
   h1, h2, h3 {
     transition: color 1s;
-    color: ${({ color }) => color.hex.colorMutedRegular};
+    color: ${({ theme }) => theme.hex.colorMutedRegular};
   }
 
   a {
     transition: color 1s;
     color: ${colors.darkGray};
+    color: ${({ background }) => {
+    switch (background) {
+      case 'colored': return colors.fadedWhite
+      default: return colors.darkGray
+    }
+  }}
   }
 
   a:hover, a.active {
     transition: color .3s;
-    color: ${({ color }) => color.hex.colorMutedRegular}; 
+    color: ${({ background, theme }) => {
+    switch (background) {
+      case 'colored': return theme.hex.colorMutedLight
+      default: return theme.hex.colorMutedRegular
+    }
+  }};
   };
 `
 
 class Card extends React.Component {
   render () {
-    const { children, position, color, ...rest } = this.props
+    const { children, position, ...rest } = this.props
     return (
-      <Article position={position} color={color} {...rest}>
-        <Main color={color}>
-          {children}
-        </Main>
-      </Article>
+      <ColorContext.Consumer>
+        {({ theme }) => (
+          <Article position={position} theme={theme} {...rest}>
+            <Main theme={theme} {...rest}>
+              {children}
+            </Main>
+          </Article>
+        )}
+      </ColorContext.Consumer>
     )
   }
 }
@@ -57,7 +86,6 @@ Card.defaultProps = {
 
 Card.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.object,
   image: PropTypes.string,
   title: PropTypes.string,
   position: PropTypes.string,

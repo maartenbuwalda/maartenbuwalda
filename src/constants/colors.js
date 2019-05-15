@@ -1,4 +1,4 @@
-const colors = {
+export default {
   darkBlue: '#1C1C64',
   midBlue: '#5062B8',
   lightBlue: '#5A9FFF',
@@ -11,5 +11,3 @@ const colors = {
   fadedWhite: 'rgba(255, 255, 255, 0.8)',
   fadedBlack: 'rgba(0, 0, 0, 0.8)',
 }
-
-export default colors

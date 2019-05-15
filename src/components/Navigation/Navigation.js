@@ -1,16 +1,89 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Card from '../../containers/Card'
+import Card from '../../components/Card'
+import SubNavigation from './SubNavigation'
 import styled from 'styled-components'
-import { content } from '../../constants/pages'
+import { pages } from '../../constants/pages'
 import { NavLink } from 'react-router-dom'
 import colors from '../../constants/colors'
 import shadows from '../../constants/shadows'
 import { sizes } from '../../constants/mediaQueries'
-// import Icon from '@material-ui/core/Icon'
+import Icon from '@material-ui/core/Icon'
+
+const Navigation = ({ position }) => {
+  const checkbox = React.createRef()
+  const currentPath = window.location.hash.replace('#', '')
+  const closeMenu = () => {
+    checkbox.current.checked = false
+  }
+  return (
+    <Card position={position}>
+      <MobileMenuToggle htmlFor="menu-toggle">
+        <Icon>menu</Icon>
+      </MobileMenuToggle>
+      <Menu>
+        <HiddenCheckbox
+          type="checkbox"
+          id="menu-toggle"
+          ref={checkbox}
+        />
+        <LinkWrapper>
+          <MobileMenuToggle htmlFor="menu-toggle">
+            <Icon>close</Icon>
+          </MobileMenuToggle>
+          {pages.map((page, i) => {
+            const { pathname, subNavigation, icon, label } = page
+            return (
+              <div key={i}>
+                <NavLink
+                  exact={pathname === '/'}
+                  to={pathname}
+                  className="main-link"
+                  activeClassName="active"
+                  onClick={() => {
+                    if (!subNavigation.length) closeMenu()
+                  }}
+                >
+                  <IconWrapper>
+                    <Icon>{icon}</Icon>
+                  </IconWrapper>
+                  <span>{label}</span>
+                </NavLink>
+                {subNavigation.length > 0 && (
+                  <SubNavigation
+                    isToggled={currentPath.includes(pathname)}
+                    closeMenu={closeMenu}
+                    links={subNavigation}
+                  />
+                )}
+              </div>
+            )
+          })}
+        </LinkWrapper>
+      </Menu>
+    </Card>
+  )
+}
+
+Navigation.propTypes = {
+  position: PropTypes.string,
+}
+
+const IconWrapper = styled.div`
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ${colors.gray};
+  transform: translateX(-4rem) scaleX(0);
+`
 
 const Menu = styled.div`
-  box-shadow: ${shadows.mild};
+  /* box-shadow: ${shadows.mild}; */
+  border-right: 1px solid ${colors.gray};
   background: ${colors.white};
 
   @media (min-width: ${sizes.m}) {
@@ -24,7 +97,7 @@ const Menu = styled.div`
   display: flex;
   flex-direction: column;
   
-  a {
+  .main-link {
     display: flex;
     align-items: center;
     transition: all .3s;
@@ -46,23 +119,11 @@ const Menu = styled.div`
         transform: translateX(0rem);
       }
 
-      > div {
+      > ${IconWrapper} {
         transform: translateX(-1rem);
       }
     }
   }
-`
-
-const IconWrapper = styled.div`
-  transition: all .3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1rem;
-  width: 1rem;
-  padding: 1rem;
-  background-color: ${colors.gray};
-  transform: translateX(-4rem) scaleX(0);
 `
 
 const MobileMenuToggle = styled.label`
@@ -78,7 +139,7 @@ const LinkWrapper = styled.nav`
   background: ${colors.white};
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -88,7 +149,7 @@ const LinkWrapper = styled.nav`
   z-index: -1;
 
   @media (min-width: ${sizes.m}) {
-    width: initial;
+    width: 100%;
     height: initial;
     position: initial;
     opacity: initial;
@@ -105,53 +166,8 @@ const HiddenCheckbox = styled.input`
 
   &:checked + ${LinkWrapper} {
     opacity: 1;
-    z-index: 3;
+    z-index: 99;
   }
 `
-
-const Navigation = ({ position }) => {
-  const checkbox = React.createRef()
-  return (
-    <Card position={position}>
-      <MobileMenuToggle htmlFor="menu-toggle">
-        <span>menu</span>
-      </MobileMenuToggle>
-      <Menu>
-        <HiddenCheckbox
-          type="checkbox"
-          id="menu-toggle"
-          ref={checkbox}
-        />
-        <LinkWrapper>
-          <MobileMenuToggle htmlFor="menu-toggle">
-            <span>close</span>
-          </MobileMenuToggle>
-          {content.map((x, i) => {
-            return (
-              <NavLink
-                exact
-                key={i}
-                to={x.pathname}
-                activeClassName="active"
-                onClick={() => {
-                  checkbox.current.checked = false
-                }}
-              >
-                <IconWrapper>
-                  <span>{x.icon}</span>
-                </IconWrapper>
-                <span>{x.label}</span>
-              </NavLink>
-            )
-          })}
-        </LinkWrapper>
-      </Menu>
-    </Card>
-  )
-}
-
-Navigation.propTypes = {
-  position: PropTypes.string,
-}
 
 export default Navigation

@@ -1,22 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeaderImage from '../../containers/HeaderImage'
+import HeaderImage from '../../components/HeaderImage'
 import PropTypes from 'prop-types'
+import { ColorContext } from '../../context/color'
 
-const Description = styled.div`
-  padding: 1rem;
+const PageContent = styled.div`
+  padding: 2rem 3rem;
+  /* transform: translateY(-2rem); */
+  background-color: white;
+  /* max-width: calc(100% - 8rem); */
+  margin: auto;
 `
 
 const Page = ({ page }) => {
   return (
     <>
-      <HeaderImage
-        image={page.image}
-        title={page.title}
-      />
-      <Description>
-        {page.content}
-      </Description>
+      {page.image && (
+        <ColorContext.Consumer>
+          {({ updateTheme }) => (
+            <HeaderImage
+              updateTheme={updateTheme}
+              image={page.image}
+              title={page.title}
+            />
+          )}
+        </ColorContext.Consumer>
+      )}
+      {page.content && (
+        <PageContent>
+          {page.content}
+        </PageContent>
+      )}
     </>
   )
 }

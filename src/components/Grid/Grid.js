@@ -4,9 +4,10 @@ import PropTypes from 'prop-types'
 import { sizes } from '../../constants/mediaQueries'
 
 const StyledGrid = styled.section`
-  width: 100%;
   display: grid;
-  grid-gap: 1rem;
+  /* grid-gap: 1rem; */
+  /* max-width: ${sizes.xl}; */
+  margin: auto;
   grid-template-columns: 1fr;
   grid-template-areas:
     'm1'
@@ -14,7 +15,6 @@ const StyledGrid = styled.section`
     'l1';
 
   @media (min-width: ${sizes.m}) {
-    padding: 1rem;
     grid-template-columns: 25rem 1fr;
     grid-template-areas:
       's1 l1 l1'
@@ -25,6 +25,10 @@ const StyledGrid = styled.section`
     > * {
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: ${sizes.xl}) {
+    /* padding-top: 3rem; */
   }
 `
 

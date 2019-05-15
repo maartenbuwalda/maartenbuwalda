@@ -1,23 +1,22 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Page from '../Page'
-import Card from '../../containers/Card'
-import { content } from '../../constants/pages'
+import Card from '../Card'
+// import BusinessCard from '../BusinessCard'
+import { pages } from '../../constants/pages'
+import { subPages } from '../../constants/subPages'
 
 const Pages = ({ position }) => {
+  const routes = [...pages, ...subPages]
   return (
-    <Card position={position}>
-      {content.map((page, i) => {
-        return (
-          <Route
-            key={i}
-            exact={page.pathname === '/'}
-            path={page.pathname}
-            render={() => <Page page={page} />}
-          />
-        )
-      })}
+    <Card background="transparent" position={position}>
+      {/* <BusinessCard /> */}
+      <Switch>
+        {routes.map((route, i) => {
+          return <Route key={i} exact path={route.pathname} render={() => <Page page={route} />}/>
+        })}
+      </Switch>
     </Card>
   )
 }

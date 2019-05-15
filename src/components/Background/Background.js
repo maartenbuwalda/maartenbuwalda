@@ -9,9 +9,7 @@ const ColoredBackground = styled.div`
   min-height: 100vh;
 `
 
-const Background = ({ children, color }) => {
-  return <ColoredBackground color={color}>{children}</ColoredBackground>
-}
+const Background = ({ children }) => <ColoredBackground>{children}</ColoredBackground>
 
 Background.propTypes = {
   children: PropTypes.node,
