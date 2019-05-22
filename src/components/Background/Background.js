@@ -1,15 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import colors from '../../constants/colors'
+import { ColorContext } from '../../context/color'
 
 const ColoredBackground = styled.div`
-  transition: background-color 5s;
-  background-color: ${colors.gray};
+  transition: background-color 1s;
+  background-color: rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.1);
   min-height: 100vh;
 `
 
-const Background = ({ children }) => <ColoredBackground>{children}</ColoredBackground>
+const Background = ({ children }) => (
+  <ColorContext.Consumer>
+    {({ theme }) => <ColoredBackground theme={theme}>{children}</ColoredBackground>}
+  </ColorContext.Consumer>
+)
 
 Background.propTypes = {
   children: PropTypes.node,

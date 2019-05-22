@@ -1,4 +1,5 @@
 import Transavia from '../components/Pages/work/Transavia'
+import Wakoopa from '../components/Pages/work/Wakoopa'
 import images from './images'
 
 export const subPages = [
@@ -6,7 +7,7 @@ export const subPages = [
     pathname: '/work/fontem-ventures',
     label: '2019 - now: Fontem Ventures',
     title: 'Fontem Ventures',
-    image: images.books,
+    image: images.example,
     content: Transavia.content,
   },
   {
@@ -28,7 +29,7 @@ export const subPages = [
     label: '2015 - 2017: Wakoopa',
     title: 'Wakoopa',
     image: images.wkp,
-    content: Transavia.content,
+    content: Wakoopa.content,
   },
   {
     pathname: '/work/stichting-herstelling',

@@ -52,14 +52,19 @@ const Title = styled.div`
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
-  background-color: ${colors.white};
+  background-color: ${({ theme }) => theme.hex.colorMutedRegular};
+  margin-bottom: 1rem;
 
   h1 {
     transition: color .3s;
     font-size: 2rem;
     font-weight: normal;
     margin: 0;
-    color: ${({ theme }) => theme.hex.colorMutedRegular};
+    color: ${colors.white};
+
+    @media (min-width: ${sizes.m}) {
+      font-size: 3rem;
+    }
   }
 `
 
@@ -72,7 +77,8 @@ const ImageWrapper = styled.div`
   align-items: flex-end;
 
   @media (min-width: ${sizes.m}) {
-    min-height: 35rem;
+    min-height: 30rem;
+    /* justify-content: flex-end; */
   }
 `
 

@@ -1,8 +1,11 @@
 import React from 'react'
 import Page from './index'
-import { componentRenders } from '../../testUtils/rendering'
+import { componentMounts } from '../../testUtils/rendering'
 
 describe('Page component', () => {
-  const component = <Page page={{}} />
-  componentRenders(component)
+  const component = <Page page={{
+    image: 'test',
+    content: 'test',
+  }} />
+  componentMounts(component)
 })

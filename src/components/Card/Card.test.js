@@ -17,7 +17,15 @@ describe('Card component', () => {
   })
 
   describe('when rendering with a transparent background', () => {
-    const component = <Card transparent color={color} position="test" />
+    const component = <Card background="transparent" transparent position="test" />
+    const mounted = mount(component)
+    it('renders correctly', () => {
+      expect(mounted)
+    })
+  })
+
+  describe('when rendering with a colored background', () => {
+    const component = <Card background="colored" color={color} position="test" />
     const mounted = mount(component)
     it('renders correctly', () => {
       expect(mounted)

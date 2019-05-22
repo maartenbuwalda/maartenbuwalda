@@ -38,7 +38,7 @@ const Main = styled.main`
 
   h1, h2, h3 {
     transition: color 1s;
-    color: ${({ theme }) => theme.hex.colorMutedRegular};
+    /* color: ${({ theme }) => theme.hex.colorMutedRegular}; */
   }
 
   a {

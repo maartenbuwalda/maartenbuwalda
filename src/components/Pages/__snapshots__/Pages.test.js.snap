@@ -2,7 +2,6 @@
 
 exports[`Pages component renders correctly 1`] = `
 <Card
-  background="transparent"
   content=""
 >
   <Switch>

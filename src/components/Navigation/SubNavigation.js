@@ -12,13 +12,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   transition: background-color 1s, opacity .6s, max-height .6s, padding .6s;
   max-height: 0;
-  background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.3);
+  background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
 
   a {
     text-decoration: none;
     margin: 0;
     padding: .5rem 1rem .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `
 

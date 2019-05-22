@@ -1,18 +1,18 @@
 export const color = {
   hex: {
-    colorMutedRegular: '',
-    colorMutedLight: '',
-    colorMutedDark: '',
-    colorRegular: '',
-    colorLight: '',
-    colorDark: '',
+    colorMutedRegular: 'colorMutedRegular',
+    colorMutedLight: 'colorMutedLight',
+    colorMutedDark: 'colorMutedDark',
+    colorRegular: 'colorRegular',
+    colorLight: 'colorLight',
+    colorDark: 'colorDark',
   },
   rgb: {
-    colorMutedRegular: '',
-    colorMutedLight: '',
-    colorMutedDark: '',
-    colorRegular: '',
-    colorLight: '',
-    colorDark: '',
+    colorMutedRegular: 'colorMutedRegular',
+    colorMutedLight: 'colorMutedLight',
+    colorMutedDark: 'colorMutedDark',
+    colorRegular: 'colorRegular',
+    colorLight: 'colorLight',
+    colorDark: 'colorDark',
   }
 }

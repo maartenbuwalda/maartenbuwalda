@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import { pages } from '../../constants/pages'
 import { NavLink } from 'react-router-dom'
 import colors from '../../constants/colors'
-import shadows from '../../constants/shadows'
 import { sizes } from '../../constants/mediaQueries'
 import Icon from '@material-ui/core/Icon'
 
@@ -82,7 +81,6 @@ const IconWrapper = styled.div`
 `
 
 const Menu = styled.div`
-  /* box-shadow: ${shadows.mild}; */
   border-right: 1px solid ${colors.gray};
   background: ${colors.white};
 

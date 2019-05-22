@@ -1,325 +1,1974 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navigation component renders correctly 1`] = `
-<Card
-  content=""
->
-  <styled.label
-    htmlFor="menu-toggle"
+exports[`Navigation component mounts correctly 1`] = `
+.c0 {
+  width: 100%;
+  color: rgba(0,0,0,0.8);
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: rgba(0,0,0,0.8);
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.0),0 1px 2px rgba(0,0,0,0.0);
+}
+
+.c1 {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1 .colored {
+  -webkit-transition: background-color .3s,color .3s;
+  transition: background-color .3s,color .3s;
+}
+
+.c1 h1,
+.c1 h2,
+.c1 h3 {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.c1 a {
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  color: #A8A8A8;
+  color: #A8A8A8;
+}
+
+.c1 a:hover,
+.c1 a.active {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.c12 {
+  padding: 0 1.5rem;
+  overflow: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: background-color 1s,opacity .6s,max-height .6s,padding .6s;
+  transition: background-color 1s,opacity .6s,max-height .6s,padding .6s;
+  max-height: 0;
+  background-color: rgba(,0.2);
+}
+
+.c12 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin: 0;
+  padding: .5rem 1rem .5rem;
+  font-size: 1.2rem;
+}
+
+.c10 {
+  display: none;
+}
+
+.c10:checked + .c11 {
+  opacity: 1;
+  max-height: 20rem;
+  padding: 1rem 1.5rem;
+}
+
+.c9 {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: #E5E5E8;
+  -webkit-transform: translateX(-4rem) scaleX(0);
+  -ms-transform: translateX(-4rem) scaleX(0);
+  transform: translateX(-4rem) scaleX(0);
+}
+
+.c4 {
+  border-right: 1px solid #E5E5E8;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 .main-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin: 0;
+  padding: .5rem 1rem .5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c4 .main-link > span {
+  -webkit-transition: -webkit-transform .3s;
+  -webkit-transition: transform .3s;
+  transition: transform .3s;
+  -webkit-transform: translateX(-3rem);
+  -ms-transform: translateX(-3rem);
+  transform: translateX(-3rem);
+}
+
+.c4 .main-link.active > span {
+  -webkit-transform: translateX(0rem);
+  -ms-transform: translateX(0rem);
+  transform: translateX(0rem);
+}
+
+.c4 .main-link.active > .c8 {
+  -webkit-transform: translateX(-1rem);
+  -ms-transform: translateX(-1rem);
+  transform: translateX(-1rem);
+}
+
+.c3 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.c7 {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.c7 .c2 {
+  text-align: right;
+}
+
+.c5 {
+  display: none;
+}
+
+.c5:checked + .c6 {
+  opacity: 1;
+  z-index: 99;
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding: 0;
+    position: initial;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    box-shadow: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    width: 100%;
+    height: initial;
+    position: initial;
+    opacity: initial;
+    z-index: initial;
+  }
+}
+
+<HashRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
   >
-    <WithStyles(Icon)>
-      menu
-    </WithStyles(Icon)>
-  </styled.label>
-  <styled.div>
-    <styled.input
-      id="menu-toggle"
-      type="checkbox"
-    />
-    <styled.nav>
-      <styled.label
-        htmlFor="menu-toggle"
+    <Navigation>
+      <Card
+        content=""
       >
-        <WithStyles(Icon)>
-          close
-        </WithStyles(Icon)>
-      </styled.label>
-      <div
-        key="0"
-      >
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="main-link"
-          exact={true}
-          onClick={[Function]}
-          to="/"
-        >
-          <styled.div>
-            <WithStyles(Icon)>
-              face
-            </WithStyles(Icon)>
-          </styled.div>
-          <span>
-            About me
-          </span>
-        </NavLink>
-      </div>
-      <div
-        key="1"
-      >
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="main-link"
-          exact={false}
-          onClick={[Function]}
-          to="/education"
-        >
-          <styled.div>
-            <WithStyles(Icon)>
-              book
-            </WithStyles(Icon)>
-          </styled.div>
-          <span>
-            Education
-          </span>
-        </NavLink>
-      </div>
-      <div
-        key="2"
-      >
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="main-link"
-          exact={false}
-          onClick={[Function]}
-          to="/work"
-        >
-          <styled.div>
-            <WithStyles(Icon)>
-              code
-            </WithStyles(Icon)>
-          </styled.div>
-          <span>
-            Work
-          </span>
-        </NavLink>
-        <SubNavigation
-          closeMenu={[Function]}
-          isToggled={false}
-          links={
-            Array [
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2019 - now: Fontem Ventures",
-                "pathname": "/work/fontem-ventures",
-                "title": "Fontem Ventures",
+        <styled.article
+          content=""
+          theme={
+            Object {
+              "hex": Object {
+                "colorDark": "",
+                "colorLight": "",
+                "colorMutedDark": "",
+                "colorMutedLight": "",
+                "colorMutedRegular": "",
+                "colorRegular": "",
               },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2019 - now: Battlefield Bus Tours",
-                "pathname": "/work/battlefield-bus-tours",
-                "title": "Battlefield Bus Tours",
+              "rgb": Object {
+                "colorDark": "",
+                "colorLight": "",
+                "colorMutedDark": "",
+                "colorMutedLight": "",
+                "colorMutedRegular": "",
+                "colorRegular": "",
               },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2018 - 2019: Transavia",
-                "pathname": "/work/transavia",
-                "title": "Transavia",
-              },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2015 - 2017: Wakoopa",
-                "pathname": "/work/wakoopa",
-                "title": "Wakoopa",
-              },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2017: Stichting Herstelling",
-                "pathname": "/work/stichting-herstelling",
-                "title": "Stichting Herstelling",
-              },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2017: Go Fort",
-                "pathname": "/work/go-fort",
-                "title": "Go Fort",
-              },
-              Object {
-                "content": <React.Fragment>
-                  <h2>
-                    Transavia
-                  </h2>
-                  <p>
-                    Februari 2018 - maart 2019: Transavia
-                  </p>
-                  <p>
-                    Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
-                  </p>
-                  <h3>
-                    Group Booking Solution (GOS)
-                  </h3>
-                  <p>
-                    De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
-                  </p>
-                  <h3>
-                    Het Partner Platform en de React Component Library
-                  </h3>
-                  <p>
-                    De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
-                  </p>
-                </React.Fragment>,
-                "image": undefined,
-                "label": "2014 - 2015: Dinst",
-                "pathname": "/work/dinst",
-                "title": "Dinst",
-              },
-            ]
+            }
           }
-        />
-      </div>
-      <div
-        key="3"
-      >
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="main-link"
-          exact={false}
-          onClick={[Function]}
-          to="/contact"
         >
-          <styled.div>
-            <WithStyles(Icon)>
-              chat
-            </WithStyles(Icon)>
-          </styled.div>
-          <span>
-            Contact
-          </span>
-        </NavLink>
-      </div>
-    </styled.nav>
-  </styled.div>
-</Card>
+          <StyledComponent
+            content=""
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
+  grid-area: ",
+                    [Function],
+                    ";
+  width: 100%;
+  color: ",
+                    "rgba(0, 0, 0, 0.8)",
+                    ";
+  overflow: hidden;
+  transition: all 1s;
+  color: ",
+                    [Function],
+                    ";
+  background-color: ",
+                    [Function],
+                    ";
+  box-shadow: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.article",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "article",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            theme={
+              Object {
+                "hex": Object {
+                  "colorDark": "",
+                  "colorLight": "",
+                  "colorMutedDark": "",
+                  "colorMutedLight": "",
+                  "colorMutedRegular": "",
+                  "colorRegular": "",
+                },
+                "rgb": Object {
+                  "colorDark": "",
+                  "colorLight": "",
+                  "colorMutedDark": "",
+                  "colorMutedLight": "",
+                  "colorMutedRegular": "",
+                  "colorRegular": "",
+                },
+              }
+            }
+          >
+            <article
+              className="c0"
+              content=""
+            >
+              <styled.main
+                content=""
+                theme={
+                  Object {
+                    "hex": Object {
+                      "colorDark": "",
+                      "colorLight": "",
+                      "colorMutedDark": "",
+                      "colorMutedLight": "",
+                      "colorMutedRegular": "",
+                      "colorRegular": "",
+                    },
+                    "rgb": Object {
+                      "colorDark": "",
+                      "colorLight": "",
+                      "colorMutedDark": "",
+                      "colorMutedLight": "",
+                      "colorMutedRegular": "",
+                      "colorRegular": "",
+                    },
+                  }
+                }
+              >
+                <StyledComponent
+                  content=""
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  transition: all .3s;
+
+  .colored {
+    transition: background-color .3s, color .3s;
+    color: ",
+                          [Function],
+                          ";
+    background-color: ",
+                          [Function],
+                          ";
+  }
+
+  h1, h2, h3 {
+    transition: color 1s;
+    /* color: ",
+                          [Function],
+                          "; */
+  }
+
+  a {
+    transition: color 1s;
+    color: ",
+                          "#A8A8A8",
+                          ";
+    color: ",
+                          [Function],
+                          "
+  }
+
+  a:hover, a.active {
+    transition: color .3s;
+    color: ",
+                          [Function],
+                          ";
+  };
+",
+                        ],
+                      },
+                      "displayName": "styled.main",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "main",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  theme={
+                    Object {
+                      "hex": Object {
+                        "colorDark": "",
+                        "colorLight": "",
+                        "colorMutedDark": "",
+                        "colorMutedLight": "",
+                        "colorMutedRegular": "",
+                        "colorRegular": "",
+                      },
+                      "rgb": Object {
+                        "colorDark": "",
+                        "colorLight": "",
+                        "colorMutedDark": "",
+                        "colorMutedLight": "",
+                        "colorMutedRegular": "",
+                        "colorRegular": "",
+                      },
+                    }
+                  }
+                >
+                  <main
+                    className="c1"
+                    content=""
+                  >
+                    <styled.label
+                      htmlFor="menu-toggle"
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "c2",
+                              "isStatic": true,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                "
+  padding: 1rem;
+  font-size: 2rem;
+  
+  @media (min-width: ",
+                                "768px",
+                                ") {
+    display: none;
+  }
+",
+                              ],
+                            },
+                            "displayName": "styled.label",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "c2",
+                            "target": "label",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        htmlFor="menu-toggle"
+                      >
+                        <label
+                          className="c2 c3"
+                          htmlFor="menu-toggle"
+                        >
+                          <WithStyles(Icon)>
+                            <Icon
+                              classes={
+                                Object {
+                                  "colorAction": "MuiIcon-colorAction-4",
+                                  "colorDisabled": "MuiIcon-colorDisabled-6",
+                                  "colorError": "MuiIcon-colorError-5",
+                                  "colorPrimary": "MuiIcon-colorPrimary-2",
+                                  "colorSecondary": "MuiIcon-colorSecondary-3",
+                                  "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                  "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                  "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                  "root": "MuiIcon-root-1",
+                                }
+                              }
+                              color="inherit"
+                              component="span"
+                              fontSize="default"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="material-icons MuiIcon-root-1"
+                              >
+                                menu
+                              </span>
+                            </Icon>
+                          </WithStyles(Icon)>
+                        </label>
+                      </StyledComponent>
+                    </styled.label>
+                    <styled.div>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-gZMcBi",
+                              "isStatic": true,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "
+  border-right: 1px solid ",
+                                "#E5E5E8",
+                                ";
+  background: ",
+                                "#ffffff",
+                                ";
+
+  @media (min-width: ",
+                                "768px",
+                                ") {
+    padding: 0;
+    position: initial;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  
+  .main-link {
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    text-decoration: none;
+    margin: 0;
+    padding: .5rem 1rem .5rem;
+    font-size: 1.5rem;
+    width: 100%;
+
+    > span {
+      transition: transform .3s;
+      transform: translateX(-3rem);
+    }
+
+    transition: all .3s;
+
+    &.active {
+      > span {
+        transform: translateX(0rem);
+      }
+
+      > ",
+                                ".c8",
+                                " {
+        transform: translateX(-1rem);
+      }
+    }
+  }
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-gZMcBi",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c4"
+                        >
+                          <styled.input
+                            id="menu-toggle"
+                            type="checkbox"
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-jTzLTM",
+                                    "isStatic": true,
+                                    "lastClassName": "c5",
+                                    "rules": Array [
+                                      "
+  display: none;
+
+  &:checked + ",
+                                      ".c6",
+                                      " {
+    opacity: 1;
+    z-index: 99;
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.input",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-jTzLTM",
+                                  "target": "input",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": .c0 {
+  display: none;
+}
+
+.c0:checked + .c1 {
+  opacity: 1;
+  z-index: 99;
+}
+
+<input
+                                    class="c0"
+                                    id="menu-toggle"
+                                    type="checkbox"
+                                  />,
+                                }
+                              }
+                              id="menu-toggle"
+                              type="checkbox"
+                            >
+                              <input
+                                className="c5"
+                                id="menu-toggle"
+                                type="checkbox"
+                              />
+                            </StyledComponent>
+                          </styled.input>
+                          <styled.nav>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "c6",
+                                    "isStatic": true,
+                                    "lastClassName": "c7",
+                                    "rules": Array [
+                                      "
+  background: ",
+                                      "#ffffff",
+                                      ";
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: all .3s;
+  opacity: 0;
+  z-index: -1;
+
+  @media (min-width: ",
+                                      "768px",
+                                      ") {
+    width: 100%;
+    height: initial;
+    position: initial;
+    opacity: initial;
+    z-index: initial;
+  }
+
+  ",
+                                      ".c2",
+                                      " {
+    text-align: right;
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.nav",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "c6",
+                                  "target": "nav",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <nav
+                                className="c6 c7"
+                              >
+                                <styled.label
+                                  htmlFor="menu-toggle"
+                                >
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "c2",
+                                          "isStatic": true,
+                                          "lastClassName": "c3",
+                                          "rules": Array [
+                                            "
+  padding: 1rem;
+  font-size: 2rem;
+  
+  @media (min-width: ",
+                                            "768px",
+                                            ") {
+    display: none;
+  }
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.label",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "c2",
+                                        "target": "label",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    htmlFor="menu-toggle"
+                                  >
+                                    <label
+                                      className="c2 c3"
+                                      htmlFor="menu-toggle"
+                                    >
+                                      <WithStyles(Icon)>
+                                        <Icon
+                                          classes={
+                                            Object {
+                                              "colorAction": "MuiIcon-colorAction-4",
+                                              "colorDisabled": "MuiIcon-colorDisabled-6",
+                                              "colorError": "MuiIcon-colorError-5",
+                                              "colorPrimary": "MuiIcon-colorPrimary-2",
+                                              "colorSecondary": "MuiIcon-colorSecondary-3",
+                                              "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                              "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                              "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                              "root": "MuiIcon-root-1",
+                                            }
+                                          }
+                                          color="inherit"
+                                          component="span"
+                                          fontSize="default"
+                                        >
+                                          <span
+                                            aria-hidden="true"
+                                            className="material-icons MuiIcon-root-1"
+                                          >
+                                            close
+                                          </span>
+                                        </Icon>
+                                      </WithStyles(Icon)>
+                                    </label>
+                                  </StyledComponent>
+                                </styled.label>
+                                <div
+                                  key="0"
+                                >
+                                  <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    className="main-link"
+                                    exact={true}
+                                    onClick={[Function]}
+                                    to="/"
+                                  >
+                                    <Route
+                                      exact={true}
+                                      path="\\\\/"
+                                    >
+                                      <Link
+                                        aria-current="page"
+                                        className="main-link active"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        style={Object {}}
+                                        to="/"
+                                      >
+                                        <a
+                                          aria-current="page"
+                                          className="main-link active"
+                                          href="#/"
+                                          onClick={[Function]}
+                                          style={Object {}}
+                                        >
+                                          <styled.div>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "c8",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c9",
+                                                    "rules": Array [
+                                                      "
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ",
+                                                      "#E5E5E8",
+                                                      ";
+  transform: translateX(-4rem) scaleX(0);
+",
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "c8",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c8 c9"
+                                              >
+                                                <WithStyles(Icon)>
+                                                  <Icon
+                                                    classes={
+                                                      Object {
+                                                        "colorAction": "MuiIcon-colorAction-4",
+                                                        "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                        "colorError": "MuiIcon-colorError-5",
+                                                        "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                        "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                        "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                        "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                        "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                        "root": "MuiIcon-root-1",
+                                                      }
+                                                    }
+                                                    color="inherit"
+                                                    component="span"
+                                                    fontSize="default"
+                                                  >
+                                                    <span
+                                                      aria-hidden="true"
+                                                      className="material-icons MuiIcon-root-1"
+                                                    >
+                                                      face
+                                                    </span>
+                                                  </Icon>
+                                                </WithStyles(Icon)>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                          <span>
+                                            About me
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Route>
+                                  </NavLink>
+                                </div>
+                                <div
+                                  key="1"
+                                >
+                                  <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    className="main-link"
+                                    exact={false}
+                                    onClick={[Function]}
+                                    to="/education"
+                                  >
+                                    <Route
+                                      exact={false}
+                                      path="\\\\/education"
+                                    >
+                                      <Link
+                                        aria-current={null}
+                                        className="main-link"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        to="/education"
+                                      >
+                                        <a
+                                          aria-current={null}
+                                          className="main-link"
+                                          href="#/education"
+                                          onClick={[Function]}
+                                        >
+                                          <styled.div>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "c8",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c9",
+                                                    "rules": Array [
+                                                      "
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ",
+                                                      "#E5E5E8",
+                                                      ";
+  transform: translateX(-4rem) scaleX(0);
+",
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "c8",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c8 c9"
+                                              >
+                                                <WithStyles(Icon)>
+                                                  <Icon
+                                                    classes={
+                                                      Object {
+                                                        "colorAction": "MuiIcon-colorAction-4",
+                                                        "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                        "colorError": "MuiIcon-colorError-5",
+                                                        "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                        "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                        "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                        "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                        "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                        "root": "MuiIcon-root-1",
+                                                      }
+                                                    }
+                                                    color="inherit"
+                                                    component="span"
+                                                    fontSize="default"
+                                                  >
+                                                    <span
+                                                      aria-hidden="true"
+                                                      className="material-icons MuiIcon-root-1"
+                                                    >
+                                                      book
+                                                    </span>
+                                                  </Icon>
+                                                </WithStyles(Icon)>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                          <span>
+                                            Education
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Route>
+                                  </NavLink>
+                                </div>
+                                <div
+                                  key="2"
+                                >
+                                  <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    className="main-link"
+                                    exact={false}
+                                    onClick={[Function]}
+                                    to="/work"
+                                  >
+                                    <Route
+                                      exact={false}
+                                      path="\\\\/work"
+                                    >
+                                      <Link
+                                        aria-current={null}
+                                        className="main-link"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        to="/work"
+                                      >
+                                        <a
+                                          aria-current={null}
+                                          className="main-link"
+                                          href="#/work"
+                                          onClick={[Function]}
+                                        >
+                                          <styled.div>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "c8",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c9",
+                                                    "rules": Array [
+                                                      "
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ",
+                                                      "#E5E5E8",
+                                                      ";
+  transform: translateX(-4rem) scaleX(0);
+",
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "c8",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c8 c9"
+                                              >
+                                                <WithStyles(Icon)>
+                                                  <Icon
+                                                    classes={
+                                                      Object {
+                                                        "colorAction": "MuiIcon-colorAction-4",
+                                                        "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                        "colorError": "MuiIcon-colorError-5",
+                                                        "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                        "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                        "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                        "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                        "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                        "root": "MuiIcon-root-1",
+                                                      }
+                                                    }
+                                                    color="inherit"
+                                                    component="span"
+                                                    fontSize="default"
+                                                  >
+                                                    <span
+                                                      aria-hidden="true"
+                                                      className="material-icons MuiIcon-root-1"
+                                                    >
+                                                      code
+                                                    </span>
+                                                  </Icon>
+                                                </WithStyles(Icon)>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                          <span>
+                                            Work
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Route>
+                                  </NavLink>
+                                  <SubNavigation
+                                    closeMenu={[Function]}
+                                    isToggled={false}
+                                    links={
+                                      Array [
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2019 - now: Fontem Ventures",
+                                          "pathname": "/work/fontem-ventures",
+                                          "title": "Fontem Ventures",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2019 - now: Battlefield Bus Tours",
+                                          "pathname": "/work/battlefield-bus-tours",
+                                          "title": "Battlefield Bus Tours",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2018 - 2019: Transavia",
+                                          "pathname": "/work/transavia",
+                                          "title": "Transavia",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Wakoopa
+                                              </h2>
+                                              <p>
+                                                Wakoopa is een klein, internationaal software bedrijf dat zich heeft gevestigd binnen de marktonderzoeksbranche. De Wakoopa software wordt door marktonderzoeksbedrijven gebruikt om online gedrag te meten. Ik begon bij Wakoopa met mijn afstudeerstage in 2015, waarna ik nog twee jaar ben gebleven als volwaardig front-end developer.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                />
+                                                <Skill
+                                                  vendor="react native"
+                                                />
+                                                <Skill
+                                                  vendor="redux"
+                                                />
+                                                <Skill
+                                                  vendor="jest"
+                                                />
+                                                <Skill
+                                                  vendor="middleman"
+                                                />
+                                                <Skill
+                                                  vendor="ember"
+                                                />
+                                                <Skill
+                                                  vendor="storybook"
+                                                />
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                What
+                                              </h3>
+                                              <p>
+                                                Mijn verantwoordelijkheden lagen vooral bij het ontwikkelen van de front-end van verschillende web-applicaties en een iOS app. Hier heb ik geleerd om met Ember.js, React en React Native te werken. Later kwam hierbij dat ik verantwoordelijkheid kreeg voor het verbeteren van de UX en interface design van verschillende management applicaties. Ik werkte hier in een klein team, bestaande uit front-end, UX, back-end en QA. Dit team was gevestigd op twee locaties: Amsterdam en Barcelona. Hierdoor was goede communicatie belangrijk, dus we hielden vaak videoconferenties. We kregen in het front-end team veel vrijheid op gebied van techniek, waardoor ik veel verschillende dingen heb kunnen leren.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2015 - 2017: Wakoopa",
+                                          "pathname": "/work/wakoopa",
+                                          "title": "Wakoopa",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2017: Stichting Herstelling",
+                                          "pathname": "/work/stichting-herstelling",
+                                          "title": "Stichting Herstelling",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2017: Go Fort",
+                                          "pathname": "/work/go-fort",
+                                          "title": "Go Fort",
+                                        },
+                                        Object {
+                                          "content": <React.Fragment>
+                                            <section>
+                                              <h2>
+                                                Transavia
+                                              </h2>
+                                              <p>
+                                                Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Stack
+                                              </h3>
+                                              <CenteredBlocks>
+                                                <Skill
+                                                  vendor="react"
+                                                >
+                                                  Het bouwen van meerdere React applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="redux"
+                                                >
+                                                  Het implementeren van Redux in bestaande en nieuwe applicaties.
+                                                </Skill>
+                                                <Skill
+                                                  vendor="jest"
+                                                >
+                                                  De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+                                                </Skill>
+                                              </CenteredBlocks>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Group Booking Solution (GOS)
+                                              </h3>
+                                              <p>
+                                                De ontwikkeling van GOS was begonnen in november 2017 door beginnende React developers. Ze bouwden een proof of concept om te laten zien dat React de toekomst was voor de front-end van Transavia, en dat is ze gelukt. In het begin werd de keuze gemaakt om het project puur React te houden zodat de developers React konden leren, waardoor er bijvoorbeeld ook geen state management tool geïmplementeerd was. De fundering was daardoor technical debt en daar werd drie maanden op verder gebouwd. Toen ik in februari aan de slag kon, ben ik features blijven toevoegen en alles wat ik daarbij tegenkwam ben ik gaan refactoren om zo de code quality te verbeteren. Uiteindelijk kreeg ik de tijd om het roer om te gooien en Redux aan de applicatie toe te voegen. Ook ben ik gaandeweg unit tests gaan schrijven met Jest en Enzyme, waardoor de code coverage van 0% naar 70% is gestegen.
+                                              </p>
+                                            </section>
+                                            <section>
+                                              <h3>
+                                                Het Partner Platform en de React Component Library
+                                              </h3>
+                                              <p>
+                                                De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.
+                                              </p>
+                                            </section>
+                                          </React.Fragment>,
+                                          "image": undefined,
+                                          "label": "2014 - 2015: Dinst",
+                                          "pathname": "/work/dinst",
+                                          "title": "Dinst",
+                                        },
+                                      ]
+                                    }
+                                  >
+                                    <styled.input
+                                      checked={false}
+                                      id="sub-menu-toggle"
+                                      readOnly={true}
+                                      type="checkbox"
+                                    >
+                                      <StyledComponent
+                                        checked={false}
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "sc-bxivhb",
+                                              "isStatic": true,
+                                              "lastClassName": "c10",
+                                              "rules": Array [
+                                                "
+  display: none;
+
+  &:checked + ",
+                                                ".c11",
+                                                " {
+    opacity: 1;
+    max-height: 20rem;
+    padding: 1rem 1.5rem;
+  }
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.input",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "sc-bxivhb",
+                                            "target": "input",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        id="sub-menu-toggle"
+                                        readOnly={true}
+                                        type="checkbox"
+                                      >
+                                        <input
+                                          checked={false}
+                                          className="c10"
+                                          id="sub-menu-toggle"
+                                          readOnly={true}
+                                          type="checkbox"
+                                        />
+                                      </StyledComponent>
+                                    </styled.input>
+                                    <styled.div
+                                      theme={
+                                        Object {
+                                          "hex": Object {
+                                            "colorDark": "",
+                                            "colorLight": "",
+                                            "colorMutedDark": "",
+                                            "colorMutedLight": "",
+                                            "colorMutedRegular": "",
+                                            "colorRegular": "",
+                                          },
+                                          "rgb": Object {
+                                            "colorDark": "",
+                                            "colorLight": "",
+                                            "colorMutedDark": "",
+                                            "colorMutedLight": "",
+                                            "colorMutedRegular": "",
+                                            "colorRegular": "",
+                                          },
+                                        }
+                                      }
+                                    >
+                                      <StyledComponent
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "c11",
+                                              "isStatic": false,
+                                              "lastClassName": "c12",
+                                              "rules": Array [
+                                                "
+  padding: 0 1.5rem;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s, opacity .6s, max-height .6s, padding .6s;
+  max-height: 0;
+  background-color: rgba(",
+                                                [Function],
+                                                ", 0.2);
+
+  a {
+    text-decoration: none;
+    margin: 0;
+    padding: .5rem 1rem .5rem;
+    font-size: 1.2rem;
+  }
+",
+                                              ],
+                                            },
+                                            "displayName": "styled.div",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "c11",
+                                            "target": "div",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                        theme={
+                                          Object {
+                                            "hex": Object {
+                                              "colorDark": "",
+                                              "colorLight": "",
+                                              "colorMutedDark": "",
+                                              "colorMutedLight": "",
+                                              "colorMutedRegular": "",
+                                              "colorRegular": "",
+                                            },
+                                            "rgb": Object {
+                                              "colorDark": "",
+                                              "colorLight": "",
+                                              "colorMutedDark": "",
+                                              "colorMutedLight": "",
+                                              "colorMutedRegular": "",
+                                              "colorRegular": "",
+                                            },
+                                          }
+                                        }
+                                      >
+                                        <div
+                                          className="c11 c12"
+                                        >
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="0"
+                                            onClick={[Function]}
+                                            to="/work/fontem-ventures"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/fontem-ventures"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/fontem-ventures"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/fontem-ventures"
+                                                  onClick={[Function]}
+                                                >
+                                                  2019 - now: Fontem Ventures
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="1"
+                                            onClick={[Function]}
+                                            to="/work/battlefield-bus-tours"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/battlefield-bus-tours"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/battlefield-bus-tours"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/battlefield-bus-tours"
+                                                  onClick={[Function]}
+                                                >
+                                                  2019 - now: Battlefield Bus Tours
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="2"
+                                            onClick={[Function]}
+                                            to="/work/transavia"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/transavia"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/transavia"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/transavia"
+                                                  onClick={[Function]}
+                                                >
+                                                  2018 - 2019: Transavia
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="3"
+                                            onClick={[Function]}
+                                            to="/work/wakoopa"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/wakoopa"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/wakoopa"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/wakoopa"
+                                                  onClick={[Function]}
+                                                >
+                                                  2015 - 2017: Wakoopa
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="4"
+                                            onClick={[Function]}
+                                            to="/work/stichting-herstelling"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/stichting-herstelling"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/stichting-herstelling"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/stichting-herstelling"
+                                                  onClick={[Function]}
+                                                >
+                                                  2017: Stichting Herstelling
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="5"
+                                            onClick={[Function]}
+                                            to="/work/go-fort"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/go-fort"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/go-fort"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/go-fort"
+                                                  onClick={[Function]}
+                                                >
+                                                  2017: Go Fort
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                          <NavLink
+                                            activeClassName="active"
+                                            aria-current="page"
+                                            exact={true}
+                                            key="6"
+                                            onClick={[Function]}
+                                            to="/work/dinst"
+                                          >
+                                            <Route
+                                              exact={true}
+                                              path="\\\\/work\\\\/dinst"
+                                            >
+                                              <Link
+                                                aria-current={null}
+                                                onClick={[Function]}
+                                                replace={false}
+                                                to="/work/dinst"
+                                              >
+                                                <a
+                                                  aria-current={null}
+                                                  href="#/work/dinst"
+                                                  onClick={[Function]}
+                                                >
+                                                  2014 - 2015: Dinst
+                                                </a>
+                                              </Link>
+                                            </Route>
+                                          </NavLink>
+                                        </div>
+                                      </StyledComponent>
+                                    </styled.div>
+                                  </SubNavigation>
+                                </div>
+                                <div
+                                  key="3"
+                                >
+                                  <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    className="main-link"
+                                    exact={false}
+                                    onClick={[Function]}
+                                    to="/contact"
+                                  >
+                                    <Route
+                                      exact={false}
+                                      path="\\\\/contact"
+                                    >
+                                      <Link
+                                        aria-current={null}
+                                        className="main-link"
+                                        onClick={[Function]}
+                                        replace={false}
+                                        to="/contact"
+                                      >
+                                        <a
+                                          aria-current={null}
+                                          className="main-link"
+                                          href="#/contact"
+                                          onClick={[Function]}
+                                        >
+                                          <styled.div>
+                                            <StyledComponent
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "c8",
+                                                    "isStatic": true,
+                                                    "lastClassName": "c9",
+                                                    "rules": Array [
+                                                      "
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ",
+                                                      "#E5E5E8",
+                                                      ";
+  transform: translateX(-4rem) scaleX(0);
+",
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "c8",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c8 c9"
+                                              >
+                                                <WithStyles(Icon)>
+                                                  <Icon
+                                                    classes={
+                                                      Object {
+                                                        "colorAction": "MuiIcon-colorAction-4",
+                                                        "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                        "colorError": "MuiIcon-colorError-5",
+                                                        "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                        "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                        "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                        "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                        "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                        "root": "MuiIcon-root-1",
+                                                      }
+                                                    }
+                                                    color="inherit"
+                                                    component="span"
+                                                    fontSize="default"
+                                                  >
+                                                    <span
+                                                      aria-hidden="true"
+                                                      className="material-icons MuiIcon-root-1"
+                                                    >
+                                                      chat
+                                                    </span>
+                                                  </Icon>
+                                                </WithStyles(Icon)>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                          <span>
+                                            Contact
+                                          </span>
+                                        </a>
+                                      </Link>
+                                    </Route>
+                                  </NavLink>
+                                </div>
+                              </nav>
+                            </StyledComponent>
+                          </styled.nav>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </main>
+                </StyledComponent>
+              </styled.main>
+            </article>
+          </StyledComponent>
+        </styled.article>
+      </Card>
+    </Navigation>
+  </Router>
+</HashRouter>
 `;

@@ -3,35 +3,59 @@ import styled from 'styled-components'
 import HeaderImage from '../../components/HeaderImage'
 import PropTypes from 'prop-types'
 import { ColorContext } from '../../context/color'
+import colors from '../../constants/colors'
+import { sizes } from '../../constants/mediaQueries'
 
 const PageContent = styled.div`
-  padding: 2rem 3rem;
-  /* transform: translateY(-2rem); */
-  background-color: white;
-  /* max-width: calc(100% - 8rem); */
-  margin: auto;
+  text-align: center;
+
+  section {
+    padding: 2rem;
+    transition: background-color 1s;
+  }
+
+  @media(min-width: ${sizes.m}) {
+    section {
+      padding: 4rem;
+    }
+  }
+
+  > section:nth-child(even) {
+    background-color: rgba(${({ theme }) => theme.rgb.colorDark}, 0.1);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    color: ${colors.fadedBlack}
+  }
 `
 
 const Page = ({ page }) => {
   return (
-    <>
-      {page.image && (
-        <ColorContext.Consumer>
-          {({ updateTheme }) => (
+    <ColorContext.Consumer>
+      {({ updateTheme, theme }) => (
+        <>
+          {page.image && (
             <HeaderImage
               updateTheme={updateTheme}
               image={page.image}
               title={page.title}
             />
           )}
-        </ColorContext.Consumer>
+          {page.content && (
+            <PageContent theme={theme}>
+              {page.content}
+            </PageContent>
+          )}
+        </>
       )}
-      {page.content && (
-        <PageContent>
-          {page.content}
-        </PageContent>
-      )}
-    </>
+    </ColorContext.Consumer>
   )
 }
 

@@ -1,5 +1,6 @@
 import AboutMe from '../components/Pages/AboutMe'
 import Work from '../components/Pages/Work'
+import Contact from '../components/Pages/Contact'
 import images from './images'
 import { subPages } from './subPages'
 
@@ -7,7 +8,7 @@ export const pages = [
   {
     pathname: '/',
     label: 'About me',
-    title: 'Maarten Buwalda',
+    title: 'Who am I?',
     image: images.ireland,
     icon: 'face',
     content: AboutMe,
@@ -37,7 +38,7 @@ export const pages = [
     title: 'Contact',
     image: images.norway,
     icon: 'chat',
-    content: AboutMe,
+    content: Contact,
     subNavigation: [],
   },
 ]
