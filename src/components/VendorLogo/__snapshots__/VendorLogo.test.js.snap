@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VendorLogo component when doing a basic render renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when fully mounting mounts correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  width: 3rem;
+}
+
+.c0:empty {
+  display: none;
+}
+
+<VendorLogo>
+  <styled.figure>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  height: 3rem;
+  width: 3rem;
+
+  &:empty {
+    display: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.figure",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "figure",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <figure
+        className="c0"
+      />
+    </StyledComponent>
+  </styled.figure>
+</VendorLogo>
+`;
+
+exports[`VendorLogo component when passing ember as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing jest as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing middleman as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing react as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing react native as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing redux as vendor renders correctly 1`] = `<styled.figure />`;
+
+exports[`VendorLogo component when passing storybook as vendor renders correctly 1`] = `<styled.figure />`;
