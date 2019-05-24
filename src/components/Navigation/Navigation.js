@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Card from '../../components/Card'
 import SubNavigation from './SubNavigation'
 import styled from 'styled-components'
-import { pages } from '../../constants/pages'
+import { routes } from '../../constants/routes'
 import { NavLink } from 'react-router-dom'
 import colors from '../../constants/colors'
 import { sizes } from '../../constants/mediaQueries'
@@ -30,8 +30,8 @@ const Navigation = ({ position }) => {
           <MobileMenuToggle htmlFor="menu-toggle">
             <Icon>close</Icon>
           </MobileMenuToggle>
-          {pages.map((page, i) => {
-            const { pathname, subNavigation, icon, label } = page
+          {routes.map((route, i) => {
+            const { pathname, subNavigation, icon, label } = route
             return (
               <div key={i}>
                 <NavLink

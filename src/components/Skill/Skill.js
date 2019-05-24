@@ -5,13 +5,16 @@ import VendorLogo from '../VendorLogo'
 import colors from '../../constants/colors'
 
 const StyledSkill = styled.div`
-  background: white;
+  /* display: flex;
+  flex-direction: column; */
+  background: ${colors.white};
 `
 
 const SkillDescription = styled.p`
   margin: 0;
   padding: 2rem;
   text-align: left;
+  border-top: 1px solid ${colors.gray};
 `
 
 const LogoWrapper = styled.div`
@@ -20,7 +23,6 @@ const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid ${colors.gray};
 
   span {
     text-transform: capitalize;
@@ -28,22 +30,24 @@ const LogoWrapper = styled.div`
   }
 `
 
-const Skill = ({ vendor, children }) => {
+const Skill = ({ name, children }) => {
   return (
     <StyledSkill>
       <LogoWrapper>
-        <VendorLogo vendor={vendor} />
-        <span>{vendor}</span>
+        <VendorLogo vendor={name} />
+        <span>{name}</span>
       </LogoWrapper>
-      <SkillDescription>
-        {children}
-      </SkillDescription>
+      {children && (
+        <SkillDescription>
+          {children}
+        </SkillDescription>
+      )}
     </StyledSkill>
   )
 }
 
 Skill.propTypes = {
-  vendor: PropTypes.string,
+  name: PropTypes.string,
   children: PropTypes.node,
 }
 

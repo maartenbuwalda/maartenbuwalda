@@ -109,7 +109,7 @@ exports[`Page component mounts correctly 1`] = `
 }
 
 .c5 section {
-  padding: 2rem;
+  padding: 4rem 2rem;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
@@ -610,7 +610,7 @@ exports[`Page component mounts correctly 1`] = `
       </StyledComponent>
     </styled.div>
   </HeaderImage>
-  <styled.div
+  <styled.article
     theme={
       Object {
         "hex": Object {
@@ -646,7 +646,7 @@ exports[`Page component mounts correctly 1`] = `
   text-align: center;
 
   section {
-    padding: 2rem;
+    padding: 4rem 2rem;
     transition: background-color 1s;
   }
 
@@ -679,11 +679,11 @@ exports[`Page component mounts correctly 1`] = `
 ",
             ],
           },
-          "displayName": "styled.div",
+          "displayName": "styled.article",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-EHOje",
-          "target": "div",
+          "target": "article",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -711,12 +711,12 @@ exports[`Page component mounts correctly 1`] = `
         }
       }
     >
-      <div
+      <article
         className="c5"
       >
         test
-      </div>
+      </article>
     </StyledComponent>
-  </styled.div>
+  </styled.article>
 </Page>
 `;

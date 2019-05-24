@@ -6,7 +6,7 @@ import { sizes } from '../../constants/mediaQueries'
 const StyledGrid = styled.section`
   display: grid;
   /* grid-gap: 1rem; */
-  /* max-width: ${sizes.xl}; */
+  max-width: ${sizes.xl};
   margin: auto;
   grid-template-columns: 1fr;
   grid-template-areas:

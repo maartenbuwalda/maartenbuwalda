@@ -6,11 +6,11 @@ import { ColorContext } from '../../context/color'
 import colors from '../../constants/colors'
 import { sizes } from '../../constants/mediaQueries'
 
-const PageContent = styled.div`
+const PageContent = styled.article`
   text-align: center;
 
   section {
-    padding: 2rem;
+    padding: 4rem 2rem;
     transition: background-color 1s;
   }
 

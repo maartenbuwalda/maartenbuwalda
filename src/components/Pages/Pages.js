@@ -3,15 +3,15 @@ import { Route, Switch } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Page from '../Page'
 import Card from '../Card'
-import { pages } from '../../constants/pages'
+import { routes } from '../../constants/routes'
 import { subPages } from '../../constants/subPages'
 
 const Pages = ({ position }) => {
-  const routes = [...pages, ...subPages]
+  const navigation = [...routes, ...subPages]
   return (
     <Card position={position}>
       <Switch>
-        {routes.map((route, i) => {
+        {navigation.map((route, i) => {
           return <Route key={i} exact path={route.pathname} render={() => <Page page={route} />}/>
         })}
       </Switch>

@@ -23,8 +23,8 @@ jest.mock('../../constants/subPages', () => ({
   ]
 }))
 
-jest.mock('../../constants/pages', () => ({
-  pages: [
+jest.mock('../../constants/routes', () => ({
+  routes: [
     {
       pathname: '/',
       label: 'About me',

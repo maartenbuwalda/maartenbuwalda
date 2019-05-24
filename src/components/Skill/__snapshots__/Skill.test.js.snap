@@ -6,6 +6,5 @@ exports[`Skill component renders correctly 1`] = `
     <VendorLogo />
     <span />
   </styled.div>
-  <styled.p />
 </styled.div>
 `;

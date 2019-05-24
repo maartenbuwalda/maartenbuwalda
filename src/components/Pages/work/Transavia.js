@@ -1,26 +1,24 @@
 import React from 'react'
 import images from '../../../constants/images'
 import CenteredBlocks from '../../CenteredBlocks'
-// import VendorLogo from '../../VendorLogo'
 import Skill from '../../Skill'
 
 const content = (
   <>
     <section>
       <h2>Transavia</h2>
-      <p>Bij Transavia begon ik aan mijn eerste project als gedetacheerde. Ik kwam te werken aan een nieuwe tool die bedoeld is om het proces van groepsboekingen te automatiseren: de Group Booking Solution (GOS). Daarnaast heb ik een grote rol gespeeld in het starten van twee kleinere projecten: het Partner Platform en een React Component Library. Tot slot heb ik bijgedragen aan het oplossen van bugs op transavia.com.</p>
+      <p>Transavia was my first project as an external developer. I started working on a new application called the "Group Offer Solution", which is meant to automate the group booking feature of the website. Next to that, I had a big role in starting three smaller applications: the Partner Platform, a React Component Library and Cancel Booking. Of course part of the job was also to fix bugs in the existing website (transavia.com).</p>
     </section>
     <section>
-      <h3>Stack</h3>
       <CenteredBlocks>
-        <Skill vendor="react">
-          Het bouwen van meerdere React applicaties.
+        <Skill name="react">
+          Built multiple React applications.
         </Skill>
-        <Skill vendor="redux">
-          Het implementeren van Redux in bestaande en nieuwe applicaties.
+        <Skill name="redux">
+          Implemented Redux in existing and new applications.
         </Skill>
-        <Skill vendor="jest">
-          De code coverage verhoogd van 0% naar 70% met Jest en Enzyme.
+        <Skill name="jest">
+          Increased the code coverage of an existing application from 0 to 70%.
         </Skill>
       </CenteredBlocks>
     </section>
@@ -30,7 +28,7 @@ const content = (
     </section>
     <section>
       <h3>Het Partner Platform en de React Component Library</h3>
-      <p>De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte aan een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.</p>
+      <p>De partners van Transavia zijn bijvoorbeeld reisbureaus die een groot aantal boekingen maken voor hun eigen reisaanbod. Voor deze partners zijn verschillende applicaties gebouwd, waaronder GOS. Omdat dit allemaal losse applicaties zijn, ontstond het idee om ze samen te voegen onder het kopje Partner Platform. Dit zou een dashboard worden, van waaruit alle partner applicaties te gebruiken zijn. Het probleem is dat niet alle applicaties met dezelfde technieken zijn gebouwd, en dus niet zo eenvoudig samen te voegen zijn. Een tijdelijke oplossing was om een identieke “navigatie banner” boven elke app te injecteren en op deze manier de apps naar elkaar te laten linken en daarmee het gevoel te geven dat het bestond uit een geheel. Om dit in vier verschillende apps op een effectieve manier te doen, ontstond de behoefte a6an een front-end component library. Deze library heb ik vervolgens samen met een andere front-end developer opgezet met webpack, storybook, lerna, react en Azure artifacts. Dit gaf ons uiteindelijk de mogelijkheid om heel simpel het component te importeren, de benodigde data eraan mee te geven en te renderen in elke applicatie.</p>
     </section>
   </>
 )
