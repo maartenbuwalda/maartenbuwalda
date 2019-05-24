@@ -7,7 +7,7 @@ export const subPages = [
     pathname: '/work/fontem-ventures',
     label: '2019 - now: Fontem Ventures',
     title: 'Fontem Ventures',
-    image: images.example,
+    image: images.books,
     content: Transavia.content,
   },
   {
@@ -35,14 +35,14 @@ export const subPages = [
     pathname: '/work/stichting-herstelling',
     label: '2017: Stichting Herstelling',
     title: 'Stichting Herstelling',
-    image: images.transavia,
+    image: images.herstelling,
     content: Transavia.content,
   },
   {
     pathname: '/work/go-fort',
     label: '2017: Go Fort',
     title: 'Go Fort',
-    image: images.transavia,
+    image: images.fort,
     content: Transavia.content,
   },
   {

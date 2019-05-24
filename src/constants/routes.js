@@ -4,12 +4,12 @@ import Contact from '../components/Pages/Contact'
 import images from './images'
 import { subPages } from './subPages'
 
-export const pages = [
+export const routes = [
   {
     pathname: '/',
     label: 'About me',
-    title: 'Who am I?',
-    image: images.ireland,
+    title: 'Maarten Buwalda',
+    image: images.me,
     icon: 'face',
     content: AboutMe,
     subNavigation: [],
