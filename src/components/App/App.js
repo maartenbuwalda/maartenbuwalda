@@ -6,6 +6,7 @@ import Grid from '../Grid'
 import Navigation from '../Navigation'
 import Pages from '../../components/Pages'
 import Background from '../../components/Background'
+import Sticky from '../../components/Sticky'
 import { ColorContext, colors } from '../../context/color'
 import getColor from '../../utils/getColor'
 
@@ -31,8 +32,10 @@ class App extends Component {
         <ColorContext.Provider value={this.state}>
           <Background>
             <Grid>
-              <BusinessCard position="s1"/>
-              <Navigation position="m1" />
+              <Sticky>
+                <BusinessCard position="s1"/>
+                <Navigation position="m1" />
+              </Sticky>
               <Pages position="l1" />
             </Grid>
           </Background>

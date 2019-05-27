@@ -29,12 +29,14 @@ exports[`App component renders correctly 1`] = `
   >
     <Background>
       <Grid>
-        <BusinessCard
-          position="s1"
-        />
-        <Navigation
-          position="m1"
-        />
+        <Sticky>
+          <BusinessCard
+            position="s1"
+          />
+          <Navigation
+            position="m1"
+          />
+        </Sticky>
         <Pages
           position="l1"
         />
