@@ -1,33 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Card from '../../components/Card'
 import SubNavigation from './SubNavigation'
-import styled from 'styled-components'
+import Logo from '../../components/Logo'
+import styled, { css } from 'styled-components'
 import { routes } from '../../constants/routes'
 import { NavLink } from 'react-router-dom'
-import colors from '../../constants/colors'
 import { sizes } from '../../constants/mediaQueries'
+import colors from '../../constants/colors'
+import shadows from '../../constants/shadows'
 import Icon from '@material-ui/core/Icon'
 
 const Navigation = ({ position }) => {
-  const checkbox = React.createRef()
+  const [isToggled, toggleMenu] = useState(false)
   const currentPath = window.location.hash.replace('#', '')
-  const closeMenu = () => {
-    checkbox.current.checked = false
-  }
   return (
-    <Card position={position}>
-      <MobileMenuToggle htmlFor="menu-toggle">
-        <Icon>menu</Icon>
-      </MobileMenuToggle>
+    <StyledCard background="colored" position={position}>
+      <MobileMenuWrapper>
+        <MobileMenuToggle data-test-id="open-menu-button" onClick={() => toggleMenu(true)}>
+          <Icon>menu</Icon>
+        </MobileMenuToggle>
+        <Logo white size="2rem" />
+      </MobileMenuWrapper>
       <Menu>
-        <HiddenCheckbox
-          type="checkbox"
-          id="menu-toggle"
-          ref={checkbox}
-        />
-        <LinkWrapper>
-          <MobileMenuToggle htmlFor="menu-toggle">
+        <LinkWrapper isToggled={isToggled}>
+          <MobileMenuToggle data-test-id="close-menu-button" onClick={() => toggleMenu(false)}>
             <Icon>close</Icon>
           </MobileMenuToggle>
           {routes.map((route, i) => {
@@ -39,8 +36,9 @@ const Navigation = ({ position }) => {
                   to={pathname}
                   className="main-link"
                   activeClassName="active"
+                  data-test-id={`main-menu-item-${i}`}
                   onClick={() => {
-                    if (!subNavigation.length) closeMenu()
+                    if (!subNavigation.length) toggleMenu(false)
                   }}
                 >
                   <IconWrapper>
@@ -51,7 +49,7 @@ const Navigation = ({ position }) => {
                 {subNavigation.length > 0 && (
                   <SubNavigation
                     isToggled={currentPath.includes(pathname)}
-                    closeMenu={closeMenu}
+                    toggleMenu={toggleMenu}
                     links={subNavigation}
                   />
                 )}
@@ -60,13 +58,30 @@ const Navigation = ({ position }) => {
           })}
         </LinkWrapper>
       </Menu>
-    </Card>
+    </StyledCard>
   )
 }
 
 Navigation.propTypes = {
   position: PropTypes.string,
 }
+
+const StyledCard = styled(Card)`
+  box-shadow: ${shadows.mild};
+
+  @media (min-width: ${sizes.m}) {
+    box-shadow: none;
+  }
+`
+
+const MobileMenuWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: ${sizes.m}) {
+    display: none;
+  }
+`
 
 const IconWrapper = styled.div`
   transition: all .3s;
@@ -78,10 +93,15 @@ const IconWrapper = styled.div`
   padding: 1rem;
   background-color: ${colors.gray};
   transform: translateX(-4rem) scaleX(0);
+  
+  @media (min-width: ${sizes.m}) {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+  }
 `
 
 const Menu = styled.div`
-  border-right: 1px solid ${colors.gray};
   background: ${colors.white};
 
   @media (min-width: ${sizes.m}) {
@@ -101,9 +121,15 @@ const Menu = styled.div`
     transition: all .3s;
     text-decoration: none;
     margin: 0;
-    padding: .5rem 1rem .5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 100%;
+    padding: 0 .5rem;
+    color: ${colors.darkGray};
+
+    @media (min-width: ${sizes.m}) {
+      padding: .5rem 1rem;
+      font-size: 1.2rem;
+    }
 
     > span {
       transition: transform .3s;
@@ -125,8 +151,11 @@ const Menu = styled.div`
 `
 
 const MobileMenuToggle = styled.label`
-  padding: 1rem;
-  font-size: 2rem;
+  > span {
+    overflow: initial;
+    font-size: 2rem;
+    padding: 1rem;
+  }
   
   @media (min-width: ${sizes.m}) {
     display: none;
@@ -139,32 +168,37 @@ const LinkWrapper = styled.nav`
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100vh;
+  min-height: 100vh;
+  transform: translateX(-100%);
   width: 100vw;
   transition: all .3s;
   opacity: 0;
   z-index: -1;
 
+  @media (max-width: ${sizes.m}) {
+    ${({ isToggled }) =>
+    isToggled &&
+    css`
+      transform: translateX(0%);
+      opacity: 1;
+      z-index: 99;
+    `}
+  }
+
   @media (min-width: ${sizes.m}) {
     width: 100%;
+    transform: initial;
+    min-height: initial;
     height: initial;
     position: initial;
     opacity: initial;
     z-index: initial;
+    box-shadow: none;
   }
 
   ${MobileMenuToggle} {
+    color: ${colors.darkGray};
     text-align: right;
-  }
-`
-
-const HiddenCheckbox = styled.input`
-  display: none;
-
-  &:checked + ${LinkWrapper} {
-    opacity: 1;
-    z-index: 99;
   }
 `
 

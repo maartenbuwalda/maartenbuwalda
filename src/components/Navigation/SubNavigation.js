@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import { ColorContext } from '../../context/color'
+import { sizes } from '../../constants/mediaQueries'
+import colors from '../../constants/colors'
 
 const Wrapper = styled.div`
   padding: 0 1.5rem;
@@ -18,7 +20,12 @@ const Wrapper = styled.div`
     text-decoration: none;
     margin: 0;
     padding: .5rem 1rem .5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: ${colors.darkGray};
+
+    @media (min-width: ${sizes.m}) {
+      font-size: 1.2rem;
+    }
   }
 `
 
@@ -32,7 +39,7 @@ const HiddenCheckbox = styled.input`
   }
 `
 
-const SubNavigation = ({ isToggled, links, closeMenu }) => {
+const SubNavigation = ({ isToggled, links, toggleMenu }) => {
   return (
     <ColorContext.Consumer>
       {({ theme }) => (
@@ -46,7 +53,7 @@ const SubNavigation = ({ isToggled, links, closeMenu }) => {
                   key={i}
                   to={x.pathname}
                   activeClassName="active"
-                  onClick={closeMenu}
+                  onClick={() => toggleMenu(false)}
                 >
                   {x.label}
                 </NavLink>
@@ -62,7 +69,7 @@ const SubNavigation = ({ isToggled, links, closeMenu }) => {
 SubNavigation.propTypes = {
   isToggled: PropTypes.bool,
   links: PropTypes.array,
-  closeMenu: PropTypes.func,
+  toggleMenu: PropTypes.func,
 }
 
 export default SubNavigation
