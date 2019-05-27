@@ -1,6 +1,6 @@
-import AboutMe from '../components/Pages/AboutMe'
-import Work from '../components/Pages/Work'
-import Contact from '../components/Pages/Contact'
+import AboutMe from '../pages/AboutMe'
+import Work from '../pages/Work'
+import Contact from '../pages/Contact'
 import images from './images'
 import { subPages } from './subPages'
 

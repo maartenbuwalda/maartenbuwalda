@@ -4,7 +4,7 @@ import Vibrant from 'node-vibrant'
 import BusinessCard from '../BusinessCard'
 import Grid from '../Grid'
 import Navigation from '../Navigation'
-import Pages from '../../components/Pages'
+import Router from '../../components/Router'
 import Background from '../../components/Background'
 import Sticky from '../../components/Sticky'
 import { ColorContext, colors } from '../../context/color'
@@ -36,7 +36,7 @@ class App extends Component {
                 <BusinessCard position="s1"/>
                 <Navigation position="m1" />
               </Sticky>
-              <Pages position="l1" />
+              <Router position="l1" />
             </Grid>
           </Background>
         </ColorContext.Provider>

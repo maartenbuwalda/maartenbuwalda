@@ -4,7 +4,7 @@ import { componentRenders } from '../../testUtils/rendering'
 
 jest.mock('../BusinessCard', () => 'BusinessCard')
 jest.mock('../Navigation', () => 'Navigation')
-jest.mock('../Pages', () => 'Pages')
+jest.mock('../Router', () => 'Router')
 
 describe('App component', () => {
   const component = <App />

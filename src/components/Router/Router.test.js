@@ -1,5 +1,5 @@
 import React from 'react'
-import Pages from './Pages'
+import Router from './Router'
 import { componentRenders } from '../../testUtils/rendering'
 
 jest.mock('../../constants/subPages', () => ({
@@ -44,7 +44,7 @@ jest.mock('../../constants/routes', () => ({
   ]
 }))
 
-describe('Pages component', () => {
-  const component = <Pages />
+describe('Router component', () => {
+  const component = <Router />
   componentRenders(component)
 })

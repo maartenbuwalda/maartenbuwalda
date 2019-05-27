@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pages component renders correctly 1`] = `
+exports[`Router component renders correctly 1`] = `
 <Card
   content=""
 >

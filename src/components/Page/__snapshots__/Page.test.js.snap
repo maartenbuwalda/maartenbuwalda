@@ -634,7 +634,6 @@ exports[`Page component mounts correctly 1`] = `
             "lastClassName": "c5",
             "rules": Array [
               "
-  /* text-align: center; */
 
   section {
     padding: 4rem 2rem;

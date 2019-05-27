@@ -1,7 +1,7 @@
 import React from 'react'
-import Skill from '../Skill'
-import StyledIcon from '../StyledIcon'
-import CenteredBlocks from '../CenteredBlocks'
+import Skill from '../components/Skill'
+import StyledIcon from '../components/StyledIcon'
+import CenteredBlocks from '../components/CenteredBlocks'
 
 const Contact = (
   <>

@@ -1,9 +1,8 @@
 import React from 'react'
-import images from '../../../constants/images'
-import CenteredBlocks from '../../CenteredBlocks'
-import Skill from '../../Skill'
+import CenteredBlocks from '../../components/CenteredBlocks'
+import Skill from '../../components/Skill'
 
-const content = (
+export const Wakoopa = (
   <>
     <section>
       <h2>Wakoopa</h2>
@@ -26,9 +25,3 @@ const content = (
     </section>
   </>
 )
-
-export default {
-  content,
-  title: 'Transavia',
-  image: images.transavia,
-}

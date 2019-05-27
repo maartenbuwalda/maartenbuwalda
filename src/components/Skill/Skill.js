@@ -5,8 +5,6 @@ import VendorLogo from '../VendorLogo'
 import colors from '../../constants/colors'
 
 const StyledSkill = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   background: ${colors.white};
 `
 
@@ -23,6 +21,10 @@ const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  img {
+    min-width: 2rem;
+  }
 
   span {
     text-transform: capitalize;

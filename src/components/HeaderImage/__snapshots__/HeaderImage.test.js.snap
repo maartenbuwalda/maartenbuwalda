@@ -26,15 +26,6 @@ exports[`HeaderImage component mounts correctly 1`] = `
   transition: fill .3s;
 }
 
-.c3 svg path {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  opacity: 1;
-  -webkit-transform: scaleY(0.9);
-  -ms-transform: scaleY(0.9);
-  transform: scaleY(0.9);
-}
-
 .c3 svg path[data-appear=true] {
   -webkit-transform: scaleY(1);
   -ms-transform: scaleY(1);
@@ -60,11 +51,11 @@ exports[`HeaderImage component mounts correctly 1`] = `
 }
 
 .c4 {
+  display: none;
   -webkit-transition: all .3s;
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
-  margin-bottom: 1rem;
 }
 
 .c4 h1 {
@@ -98,7 +89,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
   position: absolute;
   background-image: url();
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -197,7 +188,9 @@ exports[`HeaderImage component mounts correctly 1`] = `
       <div
         className="c0"
       >
-        <styled.div>
+        <styled.div
+          onLoad={[Function]}
+        >
           <StyledComponent
             forwardedComponent={
               Object {
@@ -214,7 +207,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
                     [Function],
                     ");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -232,9 +225,11 @@ exports[`HeaderImage component mounts correctly 1`] = `
               }
             }
             forwardedRef={null}
+            onLoad={[Function]}
           >
             <div
               className="c1"
+              onLoad={[Function]}
             />
           </StyledComponent>
         </styled.div>
@@ -383,11 +378,11 @@ exports[`HeaderImage component mounts correctly 1`] = `
     transition: fill .3s;
 
     path {
-      transition: all .3s;
+      /* transition: all .3s;
       opacity: ",
                             [Function],
                             ";
-      transform: scaleY(0.9);
+      transform: scaleY(0.9); */
 
       &[data-appear=true] {
         transform: scaleY(1);
@@ -533,13 +528,14 @@ exports[`HeaderImage component mounts correctly 1`] = `
                   "lastClassName": "c4",
                   "rules": Array [
                     "
+  display: none;
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
   background-color: ",
                     [Function],
                     ";
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 
   h1 {
     transition: color .3s;

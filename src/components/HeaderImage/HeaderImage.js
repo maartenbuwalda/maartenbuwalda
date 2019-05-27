@@ -16,7 +16,7 @@ class HeaderImage extends React.Component {
     const { image, title } = this.props
     return (
       <ImageWrapper>
-        <Image image={image} />
+        <Image onLoad={() => console.log('hallo ja')} image={image} />
         <ColorContext.Consumer>
           {({ theme }) => (
             <>
@@ -49,11 +49,12 @@ const LogoWrapper = styled.div`
 `
 
 const Title = styled.div`
+  display: none;
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
   background-color: ${({ theme }) => theme.hex.colorMutedRegular};
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 
   h1 {
     transition: color .3s;
@@ -86,7 +87,7 @@ const Image = styled.div`
   position: absolute;
   background-image: url(${props => props.image});
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
   width: 100%;
   background-size: cover;

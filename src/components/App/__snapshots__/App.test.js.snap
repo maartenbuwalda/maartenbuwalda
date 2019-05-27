@@ -37,7 +37,7 @@ exports[`App component renders correctly 1`] = `
             position="m1"
           />
         </Sticky>
-        <Pages
+        <Router
           position="l1"
         />
       </Grid>

@@ -6,7 +6,7 @@ import Card from '../Card'
 import { routes } from '../../constants/routes'
 import { subPages } from '../../constants/subPages'
 
-const Pages = ({ position }) => {
+const Router = ({ position }) => {
   const navigation = [...routes, ...subPages]
   return (
     <Card position={position}>
@@ -19,8 +19,8 @@ const Pages = ({ position }) => {
   )
 }
 
-Pages.propTypes = {
+Router.propTypes = {
   position: PropTypes.string,
 }
 
-export default Pages
+export default Router

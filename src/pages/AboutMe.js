@@ -1,6 +1,6 @@
 import React from 'react'
-import CenteredBlocks from '../CenteredBlocks'
-import Skill from '../Skill'
+import CenteredBlocks from '../components/CenteredBlocks'
+import Skill from '../components/Skill'
 
 const AboutMe = (
   <>
