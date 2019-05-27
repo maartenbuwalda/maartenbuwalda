@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BusinessCard component renders correctly 1`] = `
-<Card
+<Styled(Card)
   background="colored"
-  content=""
 >
   <styled.div>
     <Link
@@ -11,7 +10,7 @@ exports[`BusinessCard component renders correctly 1`] = `
       to="/"
     >
       <Styled(Logo)
-        animated={true}
+        size="5rem"
         white={true}
       />
       <styled.div>
@@ -49,5 +48,5 @@ exports[`BusinessCard component renders correctly 1`] = `
       </a>
     </styled.div>
   </styled.div>
-</Card>
+</Styled(Card)>
 `;

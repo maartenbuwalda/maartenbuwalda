@@ -5,12 +5,13 @@ import Logo from '../../components/Logo'
 import styled from 'styled-components'
 import colors from '../../constants/colors'
 import { Link } from 'react-router-dom'
+import { sizes } from '../../constants/mediaQueries'
 
 const CardLayout = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  max-height: 16rem;
+  max-height: 12rem;
   padding: 1rem;
   margin: 1rem;
 
@@ -27,7 +28,6 @@ const TitleWrapper = styled.div`
   }
   h1 {
     font-size: 2rem;
-    margin-bottom: .25rem;
   }
   p {
     text-transform: uppercase;
@@ -39,7 +39,7 @@ const TitleWrapper = styled.div`
 const Contact = styled.div`
   border-top: 1px solid ${colors.gray};
   padding-top: 1rem;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -50,18 +50,25 @@ const Contact = styled.div`
   }
 `
 
+const StyledCard = styled(Card)`
+  display: none;
+  @media (min-width: ${sizes.m}) {
+    display: block;
+  }
+`
+
 const StyledLogo = styled(Logo)`
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   padding: 0;
 `
 
 const BusinessCard = ({ position }) => {
   return (
-    <Card background="colored" position={position}>
+    <StyledCard background="colored" position={position}>
       <CardLayout>
         <Link to="/">
-          <StyledLogo white animated/>
+          <StyledLogo size="5rem" white />
           <TitleWrapper>
             <h1>Maarten Buwalda</h1>
             <p>front-end developer</p>
@@ -73,7 +80,7 @@ const BusinessCard = ({ position }) => {
           <a target="_blank" rel="noopener noreferrer" href="mailto:maarten@maartenbuwalda.com">email</a>
         </Contact>
       </CardLayout>
-    </Card>
+    </StyledCard>
   )
 }
 
