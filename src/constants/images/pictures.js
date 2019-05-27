@@ -1,6 +1,6 @@
 import norway from '../../static/images/norway.jpg'
 import ireland from '../../static/images/ireland2.jpg'
-import me from '../../static/images/me1.jpg'
+import me from '../../static/images/me.jpg'
 import transavia from '../../static/images/transavia.png'
 import books from '../../static/images/books.jpg'
 import wkp from '../../static/images/wkp.png'

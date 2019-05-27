@@ -8,6 +8,11 @@ import javascript from '../../static/images/logos/javascript.svg'
 import webpack from '../../static/images/logos/webpack.svg'
 import html5 from '../../static/images/logos/html5.svg'
 import css3 from '../../static/images/logos/css3.svg'
+import gatsby from '../../static/images/logos/gatsby.svg'
+import joomla from '../../static/images/logos/joomla.svg'
+import sass from '../../static/images/logos/sass.svg'
+import github from '../../static/images/logos/github.svg'
+import linkedin from '../../static/images/logos/linkedin.svg'
 
 export default {
   'react native': react,
@@ -21,4 +26,9 @@ export default {
   webpack,
   html5,
   css3,
+  gatsby,
+  joomla,
+  github,
+  linkedin,
+  sass,
 }
