@@ -24,7 +24,7 @@ const AboutMe = (
         <Skill name="middleman" />
         <Skill name="ember" />
         <Skill name="webpack" />
-        <Skill name="scrum" />
+        <Skill name="gatsby" />
       </CenteredBlocks>
     </section>
     <section>
