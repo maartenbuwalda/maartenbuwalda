@@ -5,7 +5,6 @@ import { sizes } from '../../constants/mediaQueries'
 
 const StyledGrid = styled.section`
   display: grid;
-  /* grid-gap: 1rem; */
   max-width: ${sizes.xl};
   margin: auto;
   grid-template-columns: 1fr;
@@ -15,6 +14,7 @@ const StyledGrid = styled.section`
     'l1';
 
   @media (min-width: ${sizes.m}) {
+    grid-gap: 1rem;
     grid-template-columns: 25rem 1fr;
     grid-template-areas:
       's1 l1 l1'
