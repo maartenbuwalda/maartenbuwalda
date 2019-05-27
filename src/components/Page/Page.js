@@ -7,7 +7,6 @@ import colors from '../../constants/colors'
 import { sizes } from '../../constants/mediaQueries'
 
 const PageContent = styled.article`
-  text-align: center;
 
   section {
     padding: 4rem 2rem;
@@ -21,7 +20,7 @@ const PageContent = styled.article`
   }
 
   > section:nth-child(even) {
-    background-color: rgba(${({ theme }) => theme.rgb.colorDark}, 0.1);
+    background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
   }
 
   h2 {

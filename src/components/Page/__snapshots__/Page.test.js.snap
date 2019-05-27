@@ -26,15 +26,6 @@ exports[`Page component mounts correctly 1`] = `
   transition: fill .3s;
 }
 
-.c3 svg path {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  opacity: 1;
-  -webkit-transform: scaleY(0.9);
-  -ms-transform: scaleY(0.9);
-  transform: scaleY(0.9);
-}
-
 .c3 svg path[data-appear=true] {
   -webkit-transform: scaleY(1);
   -ms-transform: scaleY(1);
@@ -60,11 +51,11 @@ exports[`Page component mounts correctly 1`] = `
 }
 
 .c4 {
+  display: none;
   -webkit-transition: all .3s;
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
-  margin-bottom: 1rem;
 }
 
 .c4 h1 {
@@ -98,14 +89,10 @@ exports[`Page component mounts correctly 1`] = `
   position: absolute;
   background-image: url(test);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
   width: 100%;
   background-size: cover;
-}
-
-.c5 {
-  text-align: center;
 }
 
 .c5 section {
@@ -115,7 +102,7 @@ exports[`Page component mounts correctly 1`] = `
 }
 
 .c5 > section:nth-child(even) {
-  background-color: rgba(,0.1);
+  background-color: rgba(,0.2);
 }
 
 .c5 h2 {
@@ -204,6 +191,7 @@ exports[`Page component mounts correctly 1`] = `
         >
           <styled.div
             image="test"
+            onLoad={[Function]}
           >
             <StyledComponent
               forwardedComponent={
@@ -221,7 +209,7 @@ exports[`Page component mounts correctly 1`] = `
                       [Function],
                       ");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -240,9 +228,11 @@ exports[`Page component mounts correctly 1`] = `
               }
               forwardedRef={null}
               image="test"
+              onLoad={[Function]}
             >
               <div
                 className="c1"
+                onLoad={[Function]}
               />
             </StyledComponent>
           </styled.div>
@@ -391,11 +381,11 @@ exports[`Page component mounts correctly 1`] = `
     transition: fill .3s;
 
     path {
-      transition: all .3s;
+      /* transition: all .3s;
       opacity: ",
                               [Function],
                               ";
-      transform: scaleY(0.9);
+      transform: scaleY(0.9); */
 
       &[data-appear=true] {
         transform: scaleY(1);
@@ -541,13 +531,14 @@ exports[`Page component mounts correctly 1`] = `
                     "lastClassName": "c4",
                     "rules": Array [
                       "
+  display: none;
   transition: all .3s;
   z-index: 2;
   padding: .5rem 1rem;
   background-color: ",
                       [Function],
                       ";
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 
   h1 {
     transition: color .3s;
@@ -643,7 +634,7 @@ exports[`Page component mounts correctly 1`] = `
             "lastClassName": "c5",
             "rules": Array [
               "
-  text-align: center;
+  /* text-align: center; */
 
   section {
     padding: 4rem 2rem;
@@ -661,7 +652,7 @@ exports[`Page component mounts correctly 1`] = `
   > section:nth-child(even) {
     background-color: rgba(",
               [Function],
-              ", 0.1);
+              ", 0.2);
   }
 
   h2 {
