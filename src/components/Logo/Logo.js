@@ -19,9 +19,9 @@ const LogoWrapper = styled.div`
     transition: fill .3s;
 
     path {
-      transition: all .3s;
+      /* transition: all .3s;
       opacity: ${({ animated }) => animated ? 0 : 1};
-      transform: scaleY(0.9);
+      transform: scaleY(0.9); */
 
       &[data-appear=true] {
         transform: scaleY(1);
@@ -33,16 +33,16 @@ const LogoWrapper = styled.div`
 
 const Logo = ({ animated, ...rest }) => {
   useEffect(() => {
-    if (!animated) return
-    const paths = document.querySelectorAll('path')
-    let count = 0
-    window.logoAnimation = setInterval(() => {
-      if (count >= paths.length) {
-        return clearInterval(window.logoAnimation)
-      }
-      paths[count].setAttribute('data-appear', true)
-      count++
-    }, 50)
+    // if (!animated) return
+    // const paths = document.querySelectorAll('path')
+    // let count = 0
+    // window.logoAnimation = setInterval(() => {
+    //   if (count >= paths.length) {
+    //     return clearInterval(window.logoAnimation)
+    //   }
+    //   paths[count].setAttribute('data-appear', true)
+    //   count++
+    // }, 50)
   })
 
   return (
