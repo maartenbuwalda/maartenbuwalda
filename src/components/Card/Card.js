@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
-import shadows from '../../constants/shadows'
 import { ColorContext } from '../../context/color'
 
 const Article = styled.article`
@@ -24,7 +23,6 @@ const Article = styled.article`
       default: return colors.white
     }
   }};
-  box-shadow: ${({ transparent }) => transparent ? 'none' : shadows.mild};
 `
 
 const Main = styled.main`
@@ -38,12 +36,11 @@ const Main = styled.main`
 
   h1, h2, h3 {
     transition: color 1s;
-    /* color: ${({ theme }) => theme.hex.colorMutedRegular}; */
+    color: ${({ theme }) => theme.hex.colorMutedRegular};
   }
 
   a {
     transition: color 1s;
-    color: ${colors.darkGray};
     color: ${({ background }) => {
     switch (background) {
       case 'colored': return colors.fadedWhite
@@ -56,7 +53,7 @@ const Main = styled.main`
     transition: color .3s;
     color: ${({ background, theme }) => {
     switch (background) {
-      case 'colored': return theme.hex.colorMutedLight
+      case 'colored': return theme.hex.colorMutedRegular
       default: return theme.hex.colorMutedRegular
     }
   }};
