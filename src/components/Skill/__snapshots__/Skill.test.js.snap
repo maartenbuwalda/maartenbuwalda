@@ -1,10 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Skill component renders correctly 1`] = `
-<styled.div>
+<LazyLoad
+  height={80}
+  offset={-100}
+  once={false}
+  overflow={false}
+  resize={false}
+  scroll={true}
+  unmountIfInvisible={false}
+>
   <styled.div>
-    <VendorLogo />
-    <span />
+    <styled.div>
+      <VendorLogo />
+      <div>
+        <span />
+      </div>
+    </styled.div>
   </styled.div>
-</styled.div>
+</LazyLoad>
 `;

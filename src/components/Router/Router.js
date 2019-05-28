@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+// import { AnimatedSwitch } from 'react-router-transition';
 import PropTypes from 'prop-types'
 import Page from '../Page'
 import Card from '../Card'

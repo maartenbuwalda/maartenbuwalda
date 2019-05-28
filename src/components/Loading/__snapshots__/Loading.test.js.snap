@@ -2,7 +2,6 @@
 
 exports[`Loading component renders correctly 1`] = `
 <styled.div>
-  loading
   <styled.div />
 </styled.div>
 `;
