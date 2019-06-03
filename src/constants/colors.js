@@ -8,6 +8,6 @@ export default {
   green: '#19B589',
   white: '#ffffff',
   black: '#000000',
-  fadedWhite: 'rgba(255, 255, 255, 0.8)',
-  fadedBlack: 'rgba(0, 0, 0, 0.8)',
+  fadedWhite: 'rgba(255, 255, 255, 0.7)',
+  fadedBlack: 'rgba(0, 0, 0, 0.7)',
 }
