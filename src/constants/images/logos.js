@@ -18,6 +18,7 @@ import typescript from '../../static/images/logos/typescript.svg'
 import node from '../../static/images/logos/node.svg'
 import next from '../../static/images/logos/next.svg'
 import email from '../../static/images/logos/email.svg'
+import sketch from '../../static/images/logos/sketch.svg'
 
 export default {
   'react native': react,
@@ -41,4 +42,5 @@ export default {
   node,
   next,
   email,
+  sketch,
 }
