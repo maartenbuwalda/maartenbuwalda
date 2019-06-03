@@ -5,10 +5,11 @@ import PropTypes from 'prop-types'
 import Page from '../Page'
 import Card from '../Card'
 import { routes } from '../../constants/routes'
-import { subPages } from '../../constants/subPages'
+import { workProjects } from '../../constants/workProjects'
+import { sideProjects } from '../../constants/sideProjects'
 
 const Router = ({ position }) => {
-  const navigation = [...routes, ...subPages]
+  const navigation = [...routes, ...sideProjects, ...workProjects]
   return (
     <Card position={position}>
       <Switch>

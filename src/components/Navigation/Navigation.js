@@ -112,8 +112,8 @@ const Menu = styled.div`
     box-shadow: none;
   }
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   
   .main-link {
     display: flex;

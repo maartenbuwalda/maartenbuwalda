@@ -2,8 +2,29 @@ import React from 'react'
 import Router from './Router'
 import { componentRenders } from '../../testUtils/rendering'
 
-jest.mock('../../constants/subPages', () => ({
-  subPages: [
+jest.mock('../../constants/sideProjects', () => ({
+  sideProjects: [
+    {
+      pathname: '/',
+      label: 'About me',
+      title: 'Maarten Buwalda',
+      image: 'images.me',
+      icon: 'face',
+      content: 'AboutMe',
+    },
+    {
+      pathname: '/education',
+      label: 'Education',
+      title: 'Education',
+      image: 'images.books',
+      icon: 'book',
+      content: 'Education',
+    }
+  ]
+}))
+
+jest.mock('../../constants/workProjects', () => ({
+  workProjects: [
     {
       pathname: '/',
       label: 'About me',

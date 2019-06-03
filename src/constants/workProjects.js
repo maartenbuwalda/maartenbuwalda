@@ -1,24 +1,16 @@
 import { Transavia } from '../pages/work/Transavia'
-import { GoFort } from '../pages/work/GoFort'
 import { Dinst } from '../pages/work/Dinst'
 import { Wakoopa } from '../pages/work/Wakoopa'
-
+import { Fontem } from '../pages/work/Fontem'
 import images from './images'
 
-export const subPages = [
+export const workProjects = [
   {
     pathname: '/work/fontem-ventures',
     label: '2019: Fontem Ventures',
     title: 'Fontem Ventures',
     image: images.books,
-    content: Transavia,
-  },
-  {
-    pathname: '/work/battlefield-bus-tours',
-    label: '2019: Battlefield Bus Tours',
-    title: 'Battlefield Bus Tours',
-    image: images.books,
-    content: Transavia,
+    content: Fontem,
   },
   {
     pathname: '/work/transavia',
@@ -26,20 +18,6 @@ export const subPages = [
     title: 'Transavia',
     image: images.transavia,
     content: Transavia,
-  },
-  {
-    pathname: '/work/stichting-herstelling',
-    label: '2017: Stichting Herstelling',
-    title: 'Stichting Herstelling',
-    image: images.herstelling,
-    content: Transavia,
-  },
-  {
-    pathname: '/work/go-fort',
-    label: '2017: Go Fort',
-    title: 'Go Fort',
-    image: images.fort,
-    content: GoFort,
   },
   {
     pathname: '/work/wakoopa',

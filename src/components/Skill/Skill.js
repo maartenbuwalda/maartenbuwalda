@@ -10,14 +10,6 @@ const StyledSkill = styled.div`
   background: ${colors.white};
 `
 
-const SkillDescription = styled.p`
-  display: none;
-  margin: 0;
-  padding: 2rem;
-  text-align: left;
-  border-top: 1px solid ${colors.gray};
-`
-
 const LogoWrapper = styled.div`
   max-height: 3rem;
   padding: 1rem;
@@ -33,14 +25,15 @@ const LogoWrapper = styled.div`
     align-items: center;
   }
 
-  span {
+  span, a {
+    text-decoration: none;
     text-transform: capitalize;
     font-size: 1.2rem;
     margin-left: 1rem;
   }
 `
 
-const Skill = ({ name, children }) => {
+const Skill = ({ name, link }) => {
   return (
     <LazyLoad
       height={80}
@@ -49,14 +42,12 @@ const Skill = ({ name, children }) => {
         <LogoWrapper>
           <VendorLogo vendor={name} />
           <div>
-            <span>{name}</span>
+            {link
+              ? <a href={link} rel="noopener noreferrer" target="_blank">{name}</a>
+              : <span>{name}</span>
+            }
           </div>
         </LogoWrapper>
-        {children && (
-          <SkillDescription>
-            {children}
-          </SkillDescription>
-        )}
       </StyledSkill>
     </LazyLoad>
   )
@@ -64,6 +55,7 @@ const Skill = ({ name, children }) => {
 
 Skill.propTypes = {
   name: PropTypes.string,
+  link: PropTypes.string,
   children: PropTypes.node,
 }
 

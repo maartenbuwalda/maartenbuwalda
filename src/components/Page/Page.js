@@ -19,13 +19,31 @@ const PageContent = styled.article`
     }
   }
 
-  > section:nth-child(even) {
+  > section:nth-child(even), .colored {
     background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
   }
 
   h2 {
     font-size: 2rem;
     margin: 0;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
   }
 
   p {

@@ -42,6 +42,16 @@ ul {
   }
 }
 
+@keyframes indicating {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
 @font-face {
   font-family: 'Prime Regular';
   src: url('./static/fonts/PrimeRegular.otf') format('truetype');

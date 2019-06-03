@@ -2,7 +2,8 @@ import AboutMe from '../pages/AboutMe'
 import Work from '../pages/Work'
 import Contact from '../pages/Contact'
 import images from './images'
-import { subPages } from './subPages'
+import { workProjects } from './workProjects'
+import { sideProjects } from './sideProjects'
 
 export const routes = [
   {
@@ -10,7 +11,7 @@ export const routes = [
     label: 'About me',
     title: 'Maarten Buwalda',
     image: images.me,
-    icon: 'face',
+    icon: 'child_care',
     content: AboutMe,
     subNavigation: [],
   },
@@ -19,7 +20,7 @@ export const routes = [
     label: 'Education',
     title: 'Education',
     image: images.books,
-    icon: 'book',
+    icon: 'local_library',
     content: AboutMe,
     subNavigation: [],
   },
@@ -30,7 +31,16 @@ export const routes = [
     icon: 'code',
     image: images.books,
     content: Work,
-    subNavigation: subPages,
+    subNavigation: workProjects,
+  },
+  {
+    pathname: '/side-projects',
+    label: 'Side projects',
+    title: 'Side projects',
+    image: images.books,
+    icon: 'assignment',
+    content: Work,
+    subNavigation: sideProjects,
   },
   {
     pathname: '/contact',

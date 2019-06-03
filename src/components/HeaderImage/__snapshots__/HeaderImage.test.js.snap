@@ -6,7 +6,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
   margin: 0;
   overflow: hidden;
   height: 30rem;
-  max-height: 15rem;
+  max-height: 20rem;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -24,6 +24,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
 }
 
 .c0 img {
+  position: absolute;
   -webkit-animation: appear .5s ease-out;
   animation: appear .5s ease-out;
   display: block;
@@ -92,7 +93,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
   margin: 0;
   overflow: hidden;
   height: 30rem;
-  max-height: 15rem;
+  max-height: 20rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -100,6 +101,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
   align-items: center;
 
   img {
+    position: absolute;
     animation: appear .5s ease-out;
     display: block;
     max-height: 100%;

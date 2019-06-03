@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Background component mounts correctly 1`] = `
+.c1 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(0deg,rgba(,0.1),rgba(0,0,0,0));
+}
+
 .c0 {
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
-  background-color: rgba(,0.1);
+  position: relative;
   min-height: 100vh;
+  background-color: rgba(,0.2);
 }
 
 <Background>
@@ -37,23 +47,24 @@ exports[`Background component mounts correctly 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
+            "componentId": "sc-bwzfXH",
             "isStatic": false,
             "lastClassName": "c0",
             "rules": Array [
               "
   transition: background-color 1s;
+  position: relative;
+  min-height: 100vh;
   background-color: rgba(",
               [Function],
-              ", 0.1);
-  min-height: 100vh;
+              ", 0.2);
 ",
             ],
           },
           "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
+          "styledComponentId": "sc-bwzfXH",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -86,6 +97,87 @@ exports[`Background component mounts correctly 1`] = `
         className="c0"
       >
         Children
+        <styled.div
+          theme={
+            Object {
+              "hex": Object {
+                "colorDark": "",
+                "colorLight": "",
+                "colorMutedDark": "",
+                "colorMutedLight": "",
+                "colorMutedRegular": "",
+                "colorRegular": "",
+              },
+              "rgb": Object {
+                "colorDark": "",
+                "colorLight": "",
+                "colorMutedDark": "",
+                "colorMutedLight": "",
+                "colorMutedRegular": "",
+                "colorRegular": "",
+              },
+            }
+          }
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(0deg, rgba(",
+                    [Function],
+                    ", 0.1), rgba(0, 0, 0, 0));
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            theme={
+              Object {
+                "hex": Object {
+                  "colorDark": "",
+                  "colorLight": "",
+                  "colorMutedDark": "",
+                  "colorMutedLight": "",
+                  "colorMutedRegular": "",
+                  "colorRegular": "",
+                },
+                "rgb": Object {
+                  "colorDark": "",
+                  "colorLight": "",
+                  "colorMutedDark": "",
+                  "colorMutedLight": "",
+                  "colorMutedRegular": "",
+                  "colorRegular": "",
+                },
+              }
+            }
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </styled.div>
       </div>
     </StyledComponent>
   </styled.div>

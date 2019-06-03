@@ -13,6 +13,11 @@ import joomla from '../../static/images/logos/joomla.svg'
 import sass from '../../static/images/logos/sass.svg'
 import github from '../../static/images/logos/github.svg'
 import linkedin from '../../static/images/logos/linkedin.svg'
+import d3 from '../../static/images/logos/d3.svg'
+import typescript from '../../static/images/logos/typescript.svg'
+import node from '../../static/images/logos/node.svg'
+import next from '../../static/images/logos/next.svg'
+import email from '../../static/images/logos/email.svg'
 
 export default {
   'react native': react,
@@ -31,4 +36,9 @@ export default {
   github,
   linkedin,
   sass,
+  d3,
+  typescript,
+  node,
+  next,
+  email,
 }

@@ -19,7 +19,7 @@ const Article = styled.article`
   background-color: ${({ background, theme }) => {
     switch (background) {
       case 'transparent': return 'transparent'
-      case 'colored': return theme.hex.colorMutedRegular
+      case 'colored': return theme.hex.colorRegular
       default: return colors.white
     }
   }};
@@ -36,7 +36,7 @@ const Main = styled.main`
 
   h1, h2, h3 {
     transition: color 1s;
-    color: ${({ theme }) => theme.hex.colorMutedRegular};
+    color: ${({ theme }) => theme.hex.colorRegular};
   }
 
   a {

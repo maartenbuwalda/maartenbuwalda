@@ -5,13 +5,13 @@ import Skill from '../components/Skill'
 const AboutMe = (
   <>
     <section>
-      <h2>"If you say one thing for me, say that..."</h2>
+      <h2>My story</h2>
       <p>
-        I'm a front-end developer. Born in 1989 in the Netherlands. I've been doing "things" on the web since 2006, ever since I started my first study in Multimedia Design. Since 2012 I've been focused on front-end development when I started my bachelor in Communication and Multimedia Design. This all took off with the basics of HTML5, JavaScript and CSS3. Nearing the end of my studies, I picked up my first JS framework called Ember. A few months later, I switched to React. Three years later, I'm still using React and I'm still loving it.
+        Born in 1989 in the Netherlands. Since 2006 I've been doing "things" on the web when I started my first study in Multimedia Design. I've been more seriously focused on front-end developement since 2012, when I started my bachelor in Communication and Multimedia Design. In 2014 I took my first job as front-end developer, and the rest is history.
       </p>
     </section>
     <section>
-      <h3>You can say I know a thing or two about:</h3>
+      <h3>I know a thing or two about:</h3>
       <CenteredBlocks>
         <Skill name="react" />
         <Skill name="react native" />
@@ -23,14 +23,20 @@ const AboutMe = (
         <Skill name="javascript" />
         <Skill name="middleman" />
         <Skill name="ember" />
-        <Skill name="webpack" />
+        <Skill name="d3" />
+      </CenteredBlocks>
+      <h3>I'm currently learning:</h3>
+      <CenteredBlocks>
+        <Skill name="next" />
+        <Skill name="typescript" />
         <Skill name="gatsby" />
+        <Skill name="webpack" />
       </CenteredBlocks>
     </section>
     <section>
-      <h3>You could also say that</h3>
+      <h3>Some more details</h3>
       <p>
-        I love reading fantasy books (you may or may not notice some hints). I used to write when I was a student, but I kinda forgot about that. I'm an amateur gardener, an average sportsman and an avid gamer (PC and PS4). I love animals and I stopped eating them.
+        I love reading fantasy books. I used to write when I was a student, but I kinda forgot about that. I'm an amateur gardener, an average sportsman and an avid gamer (PC and PS4). I love animals and I stopped eating them.
       </p>
     </section>
   </>

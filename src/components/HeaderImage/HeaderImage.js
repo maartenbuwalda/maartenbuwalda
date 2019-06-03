@@ -30,7 +30,7 @@ const ImageWrapper = styled.figure`
   margin: 0;
   overflow: hidden;
   height: 30rem;
-  max-height: 15rem;
+  max-height: 20rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -38,6 +38,7 @@ const ImageWrapper = styled.figure`
   align-items: center;
 
   img {
+    position: absolute;
     animation: appear .5s ease-out;
     display: block;
     max-height: 100%;

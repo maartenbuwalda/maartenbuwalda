@@ -1211,7 +1211,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                           aria-hidden="true"
                                                           className="material-icons MuiIcon-root-1"
                                                         >
-                                                          face
+                                                          child_care
                                                         </span>
                                                       </Icon>
                                                     </WithStyles(Icon)>
@@ -1329,7 +1329,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                           aria-hidden="true"
                                                           className="material-icons MuiIcon-root-1"
                                                         >
-                                                          book
+                                                          local_library
                                                         </span>
                                                       </Icon>
                                                     </WithStyles(Icon)>
@@ -1469,46 +1469,37 @@ exports[`Navigation component mounts correctly 1`] = `
                                               "content": <React.Fragment>
                                                 <section>
                                                   <h2>
-                                                    Transavia
+                                                    Fontem Ventures
                                                   </h2>
                                                   <p>
-                                                    Transavia was my first project as an external developer. I started working on a new application called the "Group Offer Solution", which is meant to automate the group booking feature of the website. Next to that, I had a big role in setting up two new applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
+                                                    ...
                                                   </p>
                                                 </section>
                                                 <section>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="react"
-                                                    >
-                                                      Built multiple React applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="redux"
-                                                    >
-                                                      Implemented Redux in existing and new applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="jest"
-                                                    >
-                                                      Increased the code coverage of an existing application from 0 to 70%.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="storybook"
                                                     />
                                                     <Skill
-                                                      name="sass"
+                                                      name="typescript"
+                                                    />
+                                                    <Skill
+                                                      name="node"
                                                     />
                                                     <Skill
                                                       name="javascript"
+                                                    />
+                                                    <Skill
+                                                      name="next"
                                                     />
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
                                                   <h3>
-                                                    What
+                                                    My role
                                                   </h3>
                                                   <p>
-                                                    The three applications I worked on at Transavia were built with React and Redux. We created the component library using React, Storybook and an Azure registry with Artifacts
+                                                    ...
                                                   </p>
                                                 </section>
                                               </React.Fragment>,
@@ -1524,26 +1515,23 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     Transavia
                                                   </h2>
                                                   <p>
-                                                    Transavia was my first project as an external developer. I started working on a new application called the "Group Offer Solution", which is meant to automate the group booking feature of the website. Next to that, I had a big role in setting up two new applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
+                                                    My first assignment as an external front-end developer. Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.
                                                   </p>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="react"
-                                                    >
-                                                      Built multiple React applications.
-                                                    </Skill>
+                                                    />
                                                     <Skill
                                                       name="redux"
-                                                    >
-                                                      Implemented Redux in existing and new applications.
-                                                    </Skill>
+                                                    />
                                                     <Skill
                                                       name="jest"
-                                                    >
-                                                      Increased the code coverage of an existing application from 0 to 70%.
-                                                    </Skill>
+                                                    />
                                                     <Skill
                                                       name="storybook"
                                                     />
@@ -1557,158 +1545,56 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 </section>
                                                 <section>
                                                   <h3>
-                                                    What
+                                                    My role
                                                   </h3>
                                                   <p>
-                                                    The three applications I worked on at Transavia were built with React and Redux. We created the component library using React, Storybook and an Azure registry with Artifacts
+                                                    I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
                                                   </p>
-                                                </section>
-                                              </React.Fragment>,
-                                              "image": undefined,
-                                              "label": "2019: Battlefield Bus Tours",
-                                              "pathname": "/work/battlefield-bus-tours",
-                                              "title": "Battlefield Bus Tours",
-                                            },
-                                            Object {
-                                              "content": <React.Fragment>
-                                                <section>
-                                                  <h2>
-                                                    Transavia
-                                                  </h2>
-                                                  <p>
-                                                    Transavia was my first project as an external developer. I started working on a new application called the "Group Offer Solution", which is meant to automate the group booking feature of the website. Next to that, I had a big role in setting up two new applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <CenteredBlocks>
-                                                    <Skill
-                                                      name="react"
-                                                    >
-                                                      Built multiple React applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="redux"
-                                                    >
-                                                      Implemented Redux in existing and new applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="jest"
-                                                    >
-                                                      Increased the code coverage of an existing application from 0 to 70%.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="storybook"
-                                                    />
-                                                    <Skill
-                                                      name="sass"
-                                                    />
-                                                    <Skill
-                                                      name="javascript"
-                                                    />
-                                                  </CenteredBlocks>
                                                 </section>
                                                 <section>
                                                   <h3>
-                                                    What
+                                                    What I worked on:
                                                   </h3>
-                                                  <p>
-                                                    The three applications I worked on at Transavia were built with React and Redux. We created the component library using React, Storybook and an Azure registry with Artifacts
-                                                  </p>
+                                                  <ul>
+                                                    <li>
+                                                      <h4>
+                                                        Group Offer Solution
+                                                      </h4>
+                                                      <p>
+                                                        Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70% before going to production in early 2019.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Cancel booking
+                                                      </h4>
+                                                      <p>
+                                                        a small React + Redux application that enables users to more easily cancel their booking.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Partner Platform
+                                                      </h4>
+                                                      <p>
+                                                        a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack: React + Redux.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        TFS Component Library
+                                                      </h4>
+                                                      <p>
+                                                        we built this component library with React, Storybook, Lerna and Azure registry with Artifacts. Its purpose is to provide reusable, tested front-end components which will make it easier to build and unite the front-end stack of the Transavia applications.
+                                                      </p>
+                                                    </li>
+                                                  </ul>
                                                 </section>
                                               </React.Fragment>,
                                               "image": undefined,
                                               "label": "2018 - 2019: Transavia",
                                               "pathname": "/work/transavia",
                                               "title": "Transavia",
-                                            },
-                                            Object {
-                                              "content": <React.Fragment>
-                                                <section>
-                                                  <h2>
-                                                    Transavia
-                                                  </h2>
-                                                  <p>
-                                                    Transavia was my first project as an external developer. I started working on a new application called the "Group Offer Solution", which is meant to automate the group booking feature of the website. Next to that, I had a big role in setting up two new applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <CenteredBlocks>
-                                                    <Skill
-                                                      name="react"
-                                                    >
-                                                      Built multiple React applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="redux"
-                                                    >
-                                                      Implemented Redux in existing and new applications.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="jest"
-                                                    >
-                                                      Increased the code coverage of an existing application from 0 to 70%.
-                                                    </Skill>
-                                                    <Skill
-                                                      name="storybook"
-                                                    />
-                                                    <Skill
-                                                      name="sass"
-                                                    />
-                                                    <Skill
-                                                      name="javascript"
-                                                    />
-                                                  </CenteredBlocks>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    What
-                                                  </h3>
-                                                  <p>
-                                                    The three applications I worked on at Transavia were built with React and Redux. We created the component library using React, Storybook and an Azure registry with Artifacts
-                                                  </p>
-                                                </section>
-                                              </React.Fragment>,
-                                              "image": undefined,
-                                              "label": "2017: Stichting Herstelling",
-                                              "pathname": "/work/stichting-herstelling",
-                                              "title": "Stichting Herstelling",
-                                            },
-                                            Object {
-                                              "content": <React.Fragment>
-                                                <section>
-                                                  <h2>
-                                                    Go Fort
-                                                  </h2>
-                                                  <p>
-                                                    This was a small side project that I've done for my father's company within a few days. I had been doing React for a few months, and I wanted to test my skills on this website. My brother created the logo, which I still think is pretty cool.
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <CenteredBlocks>
-                                                    <Skill
-                                                      name="react"
-                                                    />
-                                                    <Skill
-                                                      name="sass"
-                                                    />
-                                                    <Skill
-                                                      name="javascript"
-                                                    />
-                                                  </CenteredBlocks>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    What
-                                                  </h3>
-                                                  <p>
-                                                    I used create-react-app to setup the project (ejected for some reason). For the styling I used SASS.
-                                                  </p>
-                                                </section>
-                                              </React.Fragment>,
-                                              "image": undefined,
-                                              "label": "2017: Go Fort",
-                                              "pathname": "/work/go-fort",
-                                              "title": "Go Fort",
                                             },
                                             Object {
                                               "content": <React.Fragment>
@@ -1721,6 +1607,9 @@ exports[`Navigation component mounts correctly 1`] = `
                                                   </p>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="react"
@@ -1743,15 +1632,79 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     <Skill
                                                       name="storybook"
                                                     />
+                                                    <Skill
+                                                      name="d3"
+                                                    />
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
                                                   <h3>
-                                                    What
+                                                    My role
                                                   </h3>
                                                   <p>
-                                                    My responsibilities were focused upon developing multiple web applications, websites and an iOS app (React Native). In this role I learned a lot about working with React, React Native, Middleman and Ember. Later I also got the responsibility to improve the UX and interface design of the management applications. I was working in a small team existing of front-end, back-end, UX and QA. The team was located in two locations: Amsterdam and Barcelona. Communication was important, so we had daily video calls. Front-end-wise we had a lot of freedom, so I learned a lot about different tools and techniques.
+                                                    My responsibilities were focused upon developing multiple web applications (Ember and React) and an iOS app (React Native). Each of these applications were connected to Ruby on Rails APIs. The team I was working with included front-end, back-end, UX and QA. In a later stage, I also picked up some responsibilities to improve the designs of existing interfaces.
                                                   </p>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What I worked on:
+                                                  </h3>
+                                                  <ul>
+                                                    <li>
+                                                      <h4>
+                                                        Rosalina
+                                                      </h4>
+                                                      <p>
+                                                        a panel management tool built with Ember. I got to work on this since the start of my internship, and later made a redesign for it. I learned Ember and added multiple feature to this application.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Bowser
+                                                      </h4>
+                                                      <p>
+                                                        a browser plugin which helps to install the tracking software into the browser. I built its front-end with React + Redux, and unit tested with Jest.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Conker
+                                                      </h4>
+                                                      <p>
+                                                        a React Native + Redux application which helps the user to install the tracking software on an iOS device. I worked on this project in the early days of React Native, so it was a lot of experimenting and refactoring. Eventually it was a nice and small application, fully tested with Jest.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Wart (protip: don't google this word)
+                                                      </h4>
+                                                      <p>
+                                                        a React component library using Storybook. We created this library so we could more easily build React applications, and refactor existing apps to the React stack.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Auth0 thing
+                                                      </h4>
+                                                      <p>
+                                                        ...
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        Menno
+                                                      </h4>
+                                                      <p>
+                                                        a chatbot type application which enables the user/client to access market research data. I built this app with React + Redux, D3, Styled-Components and Dialogflow.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      A few basic websites using Middleman and SASS
+                                                    </li>
+                                                    <li>
+                                                      My thesis
+                                                    </li>
+                                                  </ul>
                                                 </section>
                                               </React.Fragment>,
                                               "image": undefined,
@@ -1786,8 +1739,14 @@ exports[`Navigation component mounts correctly 1`] = `
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    My role
+                                                  </h3>
                                                   <p>
-                                                    Unfortunately I had to move away from Dinst to continue my studies and start my internship elsewhere. Fortunately, my next challenge was at Wakoopa, where I learned so much more.
+                                                    ...
+                                                  </p>
+                                                  <p>
+                                                    Unfortunately after 1.5 years I had to move away from Dinst to continue my studies and start my internship elsewhere. Fortunately, my next challenge was at Wakoopa, where I learned so much more.
                                                   </p>
                                                 </section>
                                               </React.Fragment>,
@@ -1985,34 +1944,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 exact={true}
                                                 key="1"
                                                 onClick={[Function]}
-                                                to="/work/battlefield-bus-tours"
-                                              >
-                                                <Route
-                                                  exact={true}
-                                                  path="\\\\/work\\\\/battlefield-bus-tours"
-                                                >
-                                                  <Link
-                                                    aria-current={null}
-                                                    onClick={[Function]}
-                                                    replace={false}
-                                                    to="/work/battlefield-bus-tours"
-                                                  >
-                                                    <a
-                                                      aria-current={null}
-                                                      href="#/work/battlefield-bus-tours"
-                                                      onClick={[Function]}
-                                                    >
-                                                      2019: Battlefield Bus Tours
-                                                    </a>
-                                                  </Link>
-                                                </Route>
-                                              </NavLink>
-                                              <NavLink
-                                                activeClassName="active"
-                                                aria-current="page"
-                                                exact={true}
-                                                key="2"
-                                                onClick={[Function]}
                                                 to="/work/transavia"
                                               >
                                                 <Route
@@ -2039,63 +1970,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 activeClassName="active"
                                                 aria-current="page"
                                                 exact={true}
-                                                key="3"
-                                                onClick={[Function]}
-                                                to="/work/stichting-herstelling"
-                                              >
-                                                <Route
-                                                  exact={true}
-                                                  path="\\\\/work\\\\/stichting-herstelling"
-                                                >
-                                                  <Link
-                                                    aria-current={null}
-                                                    onClick={[Function]}
-                                                    replace={false}
-                                                    to="/work/stichting-herstelling"
-                                                  >
-                                                    <a
-                                                      aria-current={null}
-                                                      href="#/work/stichting-herstelling"
-                                                      onClick={[Function]}
-                                                    >
-                                                      2017: Stichting Herstelling
-                                                    </a>
-                                                  </Link>
-                                                </Route>
-                                              </NavLink>
-                                              <NavLink
-                                                activeClassName="active"
-                                                aria-current="page"
-                                                exact={true}
-                                                key="4"
-                                                onClick={[Function]}
-                                                to="/work/go-fort"
-                                              >
-                                                <Route
-                                                  exact={true}
-                                                  path="\\\\/work\\\\/go-fort"
-                                                >
-                                                  <Link
-                                                    aria-current={null}
-                                                    onClick={[Function]}
-                                                    replace={false}
-                                                    to="/work/go-fort"
-                                                  >
-                                                    <a
-                                                      aria-current={null}
-                                                      href="#/work/go-fort"
-                                                      onClick={[Function]}
-                                                    >
-                                                      2017: Go Fort
-                                                    </a>
-                                                  </Link>
-                                                </Route>
-                                              </NavLink>
-                                              <NavLink
-                                                activeClassName="active"
-                                                aria-current="page"
-                                                exact={true}
-                                                key="5"
+                                                key="2"
                                                 onClick={[Function]}
                                                 to="/work/wakoopa"
                                               >
@@ -2123,7 +1998,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 activeClassName="active"
                                                 aria-current="page"
                                                 exact={true}
-                                                key="6"
+                                                key="3"
                                                 onClick={[Function]}
                                                 to="/work/dinst"
                                               >
@@ -2162,6 +2037,548 @@ exports[`Navigation component mounts correctly 1`] = `
                                         data-test-id="main-menu-item-3"
                                         exact={false}
                                         onClick={[Function]}
+                                        to="/side-projects"
+                                      >
+                                        <Route
+                                          exact={false}
+                                          path="\\\\/side-projects"
+                                        >
+                                          <Link
+                                            aria-current={null}
+                                            className="main-link"
+                                            data-test-id="main-menu-item-3"
+                                            onClick={[Function]}
+                                            replace={false}
+                                            to="/side-projects"
+                                          >
+                                            <a
+                                              aria-current={null}
+                                              className="main-link"
+                                              data-test-id="main-menu-item-3"
+                                              href="#/side-projects"
+                                              onClick={[Function]}
+                                            >
+                                              <styled.div>
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "c9",
+                                                        "isStatic": true,
+                                                        "lastClassName": "c10",
+                                                        "rules": Array [
+                                                          "
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+  padding: 1rem;
+  background-color: ",
+                                                          "#E5E5E8",
+                                                          ";
+  transform: translateX(-4rem) scaleX(0);
+  
+  @media (min-width: ",
+                                                          "768px",
+                                                          ") {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+  }
+",
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.div",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "c9",
+                                                      "target": "div",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <div
+                                                    className="c9 c10"
+                                                  >
+                                                    <WithStyles(Icon)>
+                                                      <Icon
+                                                        classes={
+                                                          Object {
+                                                            "colorAction": "MuiIcon-colorAction-4",
+                                                            "colorDisabled": "MuiIcon-colorDisabled-6",
+                                                            "colorError": "MuiIcon-colorError-5",
+                                                            "colorPrimary": "MuiIcon-colorPrimary-2",
+                                                            "colorSecondary": "MuiIcon-colorSecondary-3",
+                                                            "fontSizeInherit": "MuiIcon-fontSizeInherit-7",
+                                                            "fontSizeLarge": "MuiIcon-fontSizeLarge-9",
+                                                            "fontSizeSmall": "MuiIcon-fontSizeSmall-8",
+                                                            "root": "MuiIcon-root-1",
+                                                          }
+                                                        }
+                                                        color="inherit"
+                                                        component="span"
+                                                        fontSize="default"
+                                                      >
+                                                        <span
+                                                          aria-hidden="true"
+                                                          className="material-icons MuiIcon-root-1"
+                                                        >
+                                                          assignment
+                                                        </span>
+                                                      </Icon>
+                                                    </WithStyles(Icon)>
+                                                  </div>
+                                                </StyledComponent>
+                                              </styled.div>
+                                              <span>
+                                                Side projects
+                                              </span>
+                                            </a>
+                                          </Link>
+                                        </Route>
+                                      </NavLink>
+                                      <SubNavigation
+                                        isToggled={false}
+                                        links={
+                                          Array [
+                                            Object {
+                                              "content": <React.Fragment>
+                                                <section>
+                                                  <h2>
+                                                    Yes, this website
+                                                  </h2>
+                                                  <p>
+                                                    I made this website to play around and try some thing I didn't get the chance to try before. I wanted to learn more about setting up my own webpack build, which I did. Next to that, I tried React Context, Styled-Components and more Jest to increase my testing skills.
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
+                                                  <CenteredBlocks>
+                                                    <Skill
+                                                      name="react"
+                                                    />
+                                                    <Skill
+                                                      name="jest"
+                                                    />
+                                                    <Skill
+                                                      name="javascript"
+                                                    />
+                                                    <Skill
+                                                      name="webpack"
+                                                    />
+                                                    <Skill
+                                                      name="node"
+                                                    />
+                                                  </CenteredBlocks>
+                                                </section>
+                                              </React.Fragment>,
+                                              "image": undefined,
+                                              "label": "2019: This website",
+                                              "pathname": "/side-projects/this-website",
+                                              "title": "This website",
+                                            },
+                                            Object {
+                                              "content": <React.Fragment>
+                                                <section>
+                                                  <h2>
+                                                    Battlefield Bus Tours
+                                                  </h2>
+                                                  <p>
+                                                    BBT is a touring company which travels to WW2 sites such as Normandy, the Ardennes and Auschwitz. This company is owned and ran by my girlfriend. I've made improvements to her existing, self-made WordPress website, but I next to that I'm building a new website from scratch.
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <CenteredBlocks>
+                                                    <Skill
+                                                      name="gatsby"
+                                                    />
+                                                    <Skill
+                                                      name="react"
+                                                    />
+                                                    <Skill
+                                                      name="javascript"
+                                                    />
+                                                  </CenteredBlocks>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What
+                                                  </h3>
+                                                  <p>
+                                                    I am using Gatsby as a static site generator, so I can optimize the SEO. Also because I can use React, which is my favorite. This is still in progress, but you can check out my progress here.
+                                                  </p>
+                                                </section>
+                                              </React.Fragment>,
+                                              "image": undefined,
+                                              "label": "2018 - 2019: Battlefield Bus Tours",
+                                              "pathname": "/side-projects/battlefield-bus-tours",
+                                              "title": "Battlefield Bus Tours",
+                                            },
+                                            Object {
+                                              "content": <React.Fragment>
+                                                <section>
+                                                  <h2>
+                                                    Stichting Herstelling
+                                                  </h2>
+                                                  <p>
+                                                    Herstelling is a foundation which helps (semi criminal) people back into society. My father started working here as a project manager after his career at the Dutch marines, and I got to renew their website. It used to be an old WordPress website, and I replaced it by building a new website from scratch.
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <CenteredBlocks>
+                                                    <Skill
+                                                      name="middleman"
+                                                    />
+                                                    <Skill
+                                                      name="sass"
+                                                    />
+                                                    <Skill
+                                                      name="javascript"
+                                                    />
+                                                  </CenteredBlocks>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What
+                                                  </h3>
+                                                  <p>
+                                                    I used Middleman as static site generator. I also used Middleman because I wanted to easily reuse pieces of code, and the website had to be optimized for search engines.
+                                                  </p>
+                                                </section>
+                                              </React.Fragment>,
+                                              "image": undefined,
+                                              "label": "2017: Stichting Herstelling",
+                                              "pathname": "/side-projects/stichting-herstelling",
+                                              "title": "Stichting Herstelling",
+                                            },
+                                            Object {
+                                              "content": <React.Fragment>
+                                                <section>
+                                                  <h2>
+                                                    Go Fort
+                                                  </h2>
+                                                  <p>
+                                                    This was a small side project that I've done for my father's company within a few days. I had been doing React for a few months, and I wanted to test my skills on this website. My brother created the logo, which I still think is pretty cool.
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <CenteredBlocks>
+                                                    <Skill
+                                                      name="react"
+                                                    />
+                                                    <Skill
+                                                      name="sass"
+                                                    />
+                                                    <Skill
+                                                      name="javascript"
+                                                    />
+                                                  </CenteredBlocks>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What
+                                                  </h3>
+                                                  <p>
+                                                    I used create-react-app to setup the project (ejected for some reason). For the styling I used SASS.
+                                                  </p>
+                                                </section>
+                                              </React.Fragment>,
+                                              "image": undefined,
+                                              "label": "2017: Go Fort",
+                                              "pathname": "/side-projects/go-fort",
+                                              "title": "Go Fort",
+                                            },
+                                          ]
+                                        }
+                                        toggleMenu={[Function]}
+                                      >
+                                        <styled.input
+                                          checked={false}
+                                          id="sub-menu-toggle"
+                                          readOnly={true}
+                                          type="checkbox"
+                                        >
+                                          <StyledComponent
+                                            checked={false}
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-bxivhb",
+                                                  "isStatic": true,
+                                                  "lastClassName": "c11",
+                                                  "rules": Array [
+                                                    "
+  display: none;
+
+  &:checked + ",
+                                                    ".c12",
+                                                    " {
+    opacity: 1;
+    max-height: 20rem;
+    padding: 1rem 1.5rem;
+  }
+",
+                                                  ],
+                                                },
+                                                "displayName": "styled.input",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "sc-bxivhb",
+                                                "target": "input",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            id="sub-menu-toggle"
+                                            readOnly={true}
+                                            type="checkbox"
+                                          >
+                                            <input
+                                              checked={false}
+                                              className="c11"
+                                              id="sub-menu-toggle"
+                                              readOnly={true}
+                                              type="checkbox"
+                                            />
+                                          </StyledComponent>
+                                        </styled.input>
+                                        <styled.div
+                                          theme={
+                                            Object {
+                                              "hex": Object {
+                                                "colorDark": "",
+                                                "colorLight": "",
+                                                "colorMutedDark": "",
+                                                "colorMutedLight": "",
+                                                "colorMutedRegular": "",
+                                                "colorRegular": "",
+                                              },
+                                              "rgb": Object {
+                                                "colorDark": "",
+                                                "colorLight": "",
+                                                "colorMutedDark": "",
+                                                "colorMutedLight": "",
+                                                "colorMutedRegular": "",
+                                                "colorRegular": "",
+                                              },
+                                            }
+                                          }
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "c12",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c13",
+                                                  "rules": Array [
+                                                    "
+  padding: 0 1.5rem;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s, opacity .6s, max-height .6s, padding .6s;
+  max-height: 0;
+  background-color: rgba(",
+                                                    [Function],
+                                                    ", 0.2);
+
+  a {
+    text-decoration: none;
+    margin: 0;
+    padding: .5rem 1rem .5rem;
+    font-size: 1rem;
+    color: ",
+                                                    "#A8A8A8",
+                                                    ";
+
+    @media (min-width: ",
+                                                    "768px",
+                                                    ") {
+      font-size: 1.2rem;
+    }
+  }
+",
+                                                  ],
+                                                },
+                                                "displayName": "styled.div",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "c12",
+                                                "target": "div",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            theme={
+                                              Object {
+                                                "hex": Object {
+                                                  "colorDark": "",
+                                                  "colorLight": "",
+                                                  "colorMutedDark": "",
+                                                  "colorMutedLight": "",
+                                                  "colorMutedRegular": "",
+                                                  "colorRegular": "",
+                                                },
+                                                "rgb": Object {
+                                                  "colorDark": "",
+                                                  "colorLight": "",
+                                                  "colorMutedDark": "",
+                                                  "colorMutedLight": "",
+                                                  "colorMutedRegular": "",
+                                                  "colorRegular": "",
+                                                },
+                                              }
+                                            }
+                                          >
+                                            <div
+                                              className="c12 c13"
+                                            >
+                                              <NavLink
+                                                activeClassName="active"
+                                                aria-current="page"
+                                                exact={true}
+                                                key="0"
+                                                onClick={[Function]}
+                                                to="/side-projects/this-website"
+                                              >
+                                                <Route
+                                                  exact={true}
+                                                  path="\\\\/side-projects\\\\/this-website"
+                                                >
+                                                  <Link
+                                                    aria-current={null}
+                                                    onClick={[Function]}
+                                                    replace={false}
+                                                    to="/side-projects/this-website"
+                                                  >
+                                                    <a
+                                                      aria-current={null}
+                                                      href="#/side-projects/this-website"
+                                                      onClick={[Function]}
+                                                    >
+                                                      2019: This website
+                                                    </a>
+                                                  </Link>
+                                                </Route>
+                                              </NavLink>
+                                              <NavLink
+                                                activeClassName="active"
+                                                aria-current="page"
+                                                exact={true}
+                                                key="1"
+                                                onClick={[Function]}
+                                                to="/side-projects/battlefield-bus-tours"
+                                              >
+                                                <Route
+                                                  exact={true}
+                                                  path="\\\\/side-projects\\\\/battlefield-bus-tours"
+                                                >
+                                                  <Link
+                                                    aria-current={null}
+                                                    onClick={[Function]}
+                                                    replace={false}
+                                                    to="/side-projects/battlefield-bus-tours"
+                                                  >
+                                                    <a
+                                                      aria-current={null}
+                                                      href="#/side-projects/battlefield-bus-tours"
+                                                      onClick={[Function]}
+                                                    >
+                                                      2018 - 2019: Battlefield Bus Tours
+                                                    </a>
+                                                  </Link>
+                                                </Route>
+                                              </NavLink>
+                                              <NavLink
+                                                activeClassName="active"
+                                                aria-current="page"
+                                                exact={true}
+                                                key="2"
+                                                onClick={[Function]}
+                                                to="/side-projects/stichting-herstelling"
+                                              >
+                                                <Route
+                                                  exact={true}
+                                                  path="\\\\/side-projects\\\\/stichting-herstelling"
+                                                >
+                                                  <Link
+                                                    aria-current={null}
+                                                    onClick={[Function]}
+                                                    replace={false}
+                                                    to="/side-projects/stichting-herstelling"
+                                                  >
+                                                    <a
+                                                      aria-current={null}
+                                                      href="#/side-projects/stichting-herstelling"
+                                                      onClick={[Function]}
+                                                    >
+                                                      2017: Stichting Herstelling
+                                                    </a>
+                                                  </Link>
+                                                </Route>
+                                              </NavLink>
+                                              <NavLink
+                                                activeClassName="active"
+                                                aria-current="page"
+                                                exact={true}
+                                                key="3"
+                                                onClick={[Function]}
+                                                to="/side-projects/go-fort"
+                                              >
+                                                <Route
+                                                  exact={true}
+                                                  path="\\\\/side-projects\\\\/go-fort"
+                                                >
+                                                  <Link
+                                                    aria-current={null}
+                                                    onClick={[Function]}
+                                                    replace={false}
+                                                    to="/side-projects/go-fort"
+                                                  >
+                                                    <a
+                                                      aria-current={null}
+                                                      href="#/side-projects/go-fort"
+                                                      onClick={[Function]}
+                                                    >
+                                                      2017: Go Fort
+                                                    </a>
+                                                  </Link>
+                                                </Route>
+                                              </NavLink>
+                                            </div>
+                                          </StyledComponent>
+                                        </styled.div>
+                                      </SubNavigation>
+                                    </div>
+                                    <div
+                                      key="4"
+                                    >
+                                      <NavLink
+                                        activeClassName="active"
+                                        aria-current="page"
+                                        className="main-link"
+                                        data-test-id="main-menu-item-4"
+                                        exact={false}
+                                        onClick={[Function]}
                                         to="/contact"
                                       >
                                         <Route
@@ -2171,7 +2588,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                           <Link
                                             aria-current={null}
                                             className="main-link"
-                                            data-test-id="main-menu-item-3"
+                                            data-test-id="main-menu-item-4"
                                             onClick={[Function]}
                                             replace={false}
                                             to="/contact"
@@ -2179,7 +2596,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                             <a
                                               aria-current={null}
                                               className="main-link"
-                                              data-test-id="main-menu-item-3"
+                                              data-test-id="main-menu-item-4"
                                               href="#/contact"
                                               onClick={[Function]}
                                             >
