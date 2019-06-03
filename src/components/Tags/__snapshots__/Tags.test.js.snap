@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tags component mounts correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5rem;
+}
+
+.c0 span {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-right: .5rem;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  color: rgba(255,255,255,0.7);
+}
+
+<Tags
+  list={
+    Array [
+      "test",
+    ]
+  }
+>
+  <styled.div
+    theme={
+      Object {
+        "hex": Object {
+          "colorDark": "",
+          "colorLight": "",
+          "colorMutedDark": "",
+          "colorMutedLight": "",
+          "colorMutedRegular": "",
+          "colorRegular": "",
+        },
+        "rgb": Object {
+          "colorDark": "",
+          "colorLight": "",
+          "colorMutedDark": "",
+          "colorMutedLight": "",
+          "colorMutedRegular": "",
+          "colorRegular": "",
+        },
+      }
+    }
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  margin-top: .5rem;
+  
+  span {
+    transition: background-color .3s;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin-right: .5rem;
+    ",
+              [Function],
+              "
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      theme={
+        Object {
+          "hex": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+          "rgb": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+        }
+      }
+    >
+      <div
+        className="c0"
+      >
+        <span
+          key="test"
+        >
+          test
+        </span>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Tags>
+`;
