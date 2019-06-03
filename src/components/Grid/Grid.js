@@ -14,9 +14,7 @@ const StyledGrid = styled.section`
     'l1';
 
   @media (min-width: ${sizes.m}) {
-    grid-gap: 1rem;
     grid-template-columns: 25rem 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       's1 l1 l1'
       'm1 l1 l1'

@@ -79,7 +79,8 @@ exports[`Page component mounts correctly 1`] = `
   transition: background-color 1s;
 }
 
-.c4 > section:nth-child(even) {
+.c4 > section:nth-child(even),
+.c4 .colored {
   background-color: rgba(,0.2);
 }
 
@@ -90,23 +91,33 @@ exports[`Page component mounts correctly 1`] = `
 
 .c4 h3 {
   font-size: 1.5rem;
+}
+
+.c4 h3:first-of-type {
   margin-top: 0;
 }
 
 .c4 ul {
-  list-style-type: disc;
-  padding-left: 1rem;
+  list-style: none;
 }
 
 .c4 ul li {
-  margin-bottom: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.2rem;
+  border-radius: .5rem;
+  background-color: #ffffff;
+}
+
+.c4 ul li h4,
+.c4 ul li p {
+  margin: 0;
 }
 
 .c4 p {
   line-height: 1.7;
   font-size: 1.2rem;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.7);
 }
 
 @media (min-width:768px) {
@@ -369,7 +380,7 @@ exports[`Page component mounts correctly 1`] = `
     }
   }
 
-  > section:nth-child(even) {
+  > section:nth-child(even), .colored {
     background-color: rgba(",
               [Function],
               ", 0.2);
@@ -382,16 +393,27 @@ exports[`Page component mounts correctly 1`] = `
   
   h3 {
     font-size: 1.5rem;
-    margin-top: 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 
   ul {
-    list-style-type: disc;
-    padding-left: 1rem;
+    list-style: none;
 
     li {
-      margin-bottom: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
       font-size: 1.2rem;
+      border-radius: .5rem;
+      background-color: ",
+              "#ffffff",
+              ";
+
+      h4, p {
+        margin: 0;
+      }
     }
   }
 
@@ -399,7 +421,7 @@ exports[`Page component mounts correctly 1`] = `
     line-height: 1.7;
     font-size: 1.2rem;
     color: ",
-              "rgba(0, 0, 0, 0.8)",
+              "rgba(0, 0, 0, 0.7)",
               "
   }
 ",

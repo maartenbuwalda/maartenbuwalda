@@ -1,6 +1,8 @@
 import AboutMe from '../pages/AboutMe'
 import Work from '../pages/Work'
+import SideProjects from '../pages/SideProjects'
 import Contact from '../pages/Contact'
+import Education from '../pages/Education'
 import images from './images'
 import { workProjects } from './workProjects'
 import { sideProjects } from './sideProjects'
@@ -21,7 +23,7 @@ export const routes = [
     title: 'Education',
     image: images.books,
     icon: 'local_library',
-    content: AboutMe,
+    content: Education,
     subNavigation: [],
   },
   {
@@ -39,7 +41,7 @@ export const routes = [
     title: 'Side projects',
     image: images.books,
     icon: 'assignment',
-    content: Work,
+    content: SideProjects,
     subNavigation: sideProjects,
   },
   {

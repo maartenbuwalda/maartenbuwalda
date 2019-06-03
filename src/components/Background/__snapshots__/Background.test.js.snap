@@ -7,7 +7,7 @@ exports[`Background component mounts correctly 1`] = `
   top: 0;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(0deg,rgba(,0.1),rgba(0,0,0,0));
+  background: linear-gradient( 0deg,rgba(,0.1),rgba(,0) );
 }
 
 .c0 {
@@ -15,7 +15,7 @@ exports[`Background component mounts correctly 1`] = `
   transition: background-color 1s;
   position: relative;
   min-height: 100vh;
-  background-color: rgba(,0.2);
+  background-color: rgba(,0.1);
 }
 
 <Background>
@@ -57,7 +57,7 @@ exports[`Background component mounts correctly 1`] = `
   min-height: 100vh;
   background-color: rgba(",
               [Function],
-              ", 0.2);
+              ", 0.1);
 ",
             ],
           },
@@ -135,9 +135,13 @@ exports[`Background component mounts correctly 1`] = `
   top: 0;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(0deg, rgba(",
+  background: linear-gradient(
+    0deg, rgba(",
                     [Function],
-                    ", 0.1), rgba(0, 0, 0, 0));
+                    ", 0.1), rgba(",
+                    [Function],
+                    ", 0)
+  );
 ",
                   ],
                 },

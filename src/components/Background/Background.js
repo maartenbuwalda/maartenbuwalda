@@ -9,14 +9,16 @@ const BackgroundDarkOverlay = styled.div`
   top: 0;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(0deg, rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.1), rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0));
+  background: linear-gradient(
+    0deg, rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.1), rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0)
+  );
 `
 
 const ColoredBackground = styled.div`
   transition: background-color 1s;
   position: relative;
   min-height: 100vh;
-  background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.1);
+  background-color: rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.1);
 `
 
 const Background = ({ children }) => (

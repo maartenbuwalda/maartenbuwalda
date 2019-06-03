@@ -45,6 +45,9 @@ exports[`StyledIcon component mounts correctly 1`] = `
   color: ",
               [Function],
               ";
+  ",
+              [Function],
+              ";
 ",
             ],
           },

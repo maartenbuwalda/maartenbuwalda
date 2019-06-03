@@ -37,12 +37,18 @@ const PageContent = styled.article`
   }
 
   ul {
-    list-style-type: disc;
-    padding-left: 1rem;
+    list-style: none;
 
     li {
-      margin-bottom: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
       font-size: 1.2rem;
+      border-radius: .5rem;
+      background-color: ${colors.white};
+
+      h4, p {
+        margin: 0;
+      }
     }
   }
 

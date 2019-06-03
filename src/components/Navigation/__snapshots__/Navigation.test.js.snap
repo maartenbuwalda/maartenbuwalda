@@ -3,11 +3,11 @@
 exports[`Navigation component mounts correctly 1`] = `
 .c1 {
   width: 100%;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.7);
   overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
 }
 
 .c2 {
@@ -30,7 +30,7 @@ exports[`Navigation component mounts correctly 1`] = `
 .c2 a {
   -webkit-transition: color 1s;
   transition: color 1s;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
 }
 
 .c2 a:hover,
@@ -95,7 +95,7 @@ exports[`Navigation component mounts correctly 1`] = `
 .c6 svg {
   width: 100%;
   height: 100%;
-  fill: rgba(255,255,255,0.8);
+  fill: rgba(255,255,255,0.7);
   -webkit-transition: fill .3s;
   transition: fill .3s;
 }
@@ -148,13 +148,6 @@ exports[`Navigation component mounts correctly 1`] = `
 
 .c7 {
   background: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .c7 .main-link {
@@ -337,7 +330,7 @@ exports[`Navigation component mounts correctly 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gqjmRU",
+                "componentId": "sc-gZMcBi",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -357,7 +350,7 @@ exports[`Navigation component mounts correctly 1`] = `
               "displayName": "Styled(Card)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gqjmRU",
+              "styledComponentId": "sc-gZMcBi",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -415,7 +408,7 @@ exports[`Navigation component mounts correctly 1`] = `
                         ";
   width: 100%;
   color: ",
-                        "rgba(0, 0, 0, 0.8)",
+                        "rgba(0, 0, 0, 0.7)",
                         ";
   overflow: hidden;
   transition: all 1s;
@@ -581,7 +574,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-VigVT",
+                                  "componentId": "sc-gqjmRU",
                                   "isStatic": true,
                                   "lastClassName": "c3",
                                   "rules": Array [
@@ -600,7 +593,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-VigVT",
+                                "styledComponentId": "sc-gqjmRU",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -873,7 +866,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-fjdhpX",
+                                  "componentId": "sc-jTzLTM",
                                   "isStatic": true,
                                   "lastClassName": "c7",
                                   "rules": Array [
@@ -892,8 +885,8 @@ exports[`Navigation component mounts correctly 1`] = `
     box-shadow: none;
   }
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   
   .main-link {
     display: flex;
@@ -940,7 +933,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-fjdhpX",
+                                "styledComponentId": "sc-jTzLTM",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -961,7 +954,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                       "$$typeof": Symbol(react.forward_ref),
                                       "attrs": Array [],
                                       "componentStyle": ComponentStyle {
-                                        "componentId": "sc-cSHVUG",
+                                        "componentId": "sc-jzJRlG",
                                         "isStatic": false,
                                         "lastClassName": "c8",
                                         "rules": Array [
@@ -1015,7 +1008,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                       "displayName": "styled.nav",
                                       "foldedComponentIds": Array [],
                                       "render": [Function],
-                                      "styledComponentId": "sc-cSHVUG",
+                                      "styledComponentId": "sc-jzJRlG",
                                       "target": "nav",
                                       "toString": [Function],
                                       "warnTooManyClasses": [Function],
@@ -1520,6 +1513,14 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 </section>
                                                 <section>
                                                   <h3>
+                                                    My role
+                                                  </h3>
+                                                  <p>
+                                                    I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <h3>
                                                     What I used here:
                                                   </h3>
                                                   <CenteredBlocks>
@@ -1545,14 +1546,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 </section>
                                                 <section>
                                                   <h3>
-                                                    My role
-                                                  </h3>
-                                                  <p>
-                                                    I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <h3>
                                                     What I worked on:
                                                   </h3>
                                                   <ul>
@@ -1560,30 +1553,65 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Group Offer Solution
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Redux",
+                                                            "Jest",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
-                                                        Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70% before going to production in early 2019.
+                                                        Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70%, and added Redux for state management before going to production in early 2019.
                                                       </p>
                                                     </li>
                                                     <li>
                                                       <h4>
                                                         Cancel booking
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Redux",
+                                                            "Jest",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
-                                                        a small React + Redux application that enables users to more easily cancel their booking.
+                                                        a small application that enables users to more easily cancel their booking.
                                                       </p>
                                                     </li>
                                                     <li>
                                                       <h4>
                                                         Partner Platform
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
-                                                        a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack: React + Redux.
+                                                        a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack.
                                                       </p>
                                                     </li>
                                                     <li>
                                                       <h4>
                                                         TFS Component Library
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Storybook",
+                                                            "Lerna",
+                                                            "Azure",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         we built this component library with React, Storybook, Lerna and Azure registry with Artifacts. Its purpose is to provide reusable, tested front-end components which will make it easier to build and unite the front-end stack of the Transavia applications.
                                                       </p>
@@ -1635,6 +1663,9 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     <Skill
                                                       name="d3"
                                                     />
+                                                    <Skill
+                                                      name="sketch"
+                                                    />
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
@@ -1654,6 +1685,13 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Rosalina
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "Ember",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         a panel management tool built with Ember. I got to work on this since the start of my internship, and later made a redesign for it. I learned Ember and added multiple feature to this application.
                                                       </p>
@@ -1662,6 +1700,15 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Bowser
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Redux",
+                                                            "Jest",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         a browser plugin which helps to install the tracking software into the browser. I built its front-end with React + Redux, and unit tested with Jest.
                                                       </p>
@@ -1670,14 +1717,31 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Conker
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React Native",
+                                                            "Redux",
+                                                            "Jest",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         a React Native + Redux application which helps the user to install the tracking software on an iOS device. I worked on this project in the early days of React Native, so it was a lot of experimenting and refactoring. Eventually it was a nice and small application, fully tested with Jest.
                                                       </p>
                                                     </li>
                                                     <li>
                                                       <h4>
-                                                        Wart (protip: don't google this word)
+                                                        Wart (protip: do not Google this word)
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Storybook",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         a React component library using Storybook. We created this library so we could more easily build React applications, and refactor existing apps to the React stack.
                                                       </p>
@@ -1686,6 +1750,15 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Auth0 thing
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Redux",
+                                                            "Jest",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         ...
                                                       </p>
@@ -1694,6 +1767,16 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       <h4>
                                                         Menno
                                                       </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Redux",
+                                                            "Styled components",
+                                                            "D3",
+                                                          ]
+                                                        }
+                                                      />
                                                       <p>
                                                         a chatbot type application which enables the user/client to access market research data. I built this app with React + Redux, D3, Styled-Components and Dialogflow.
                                                       </p>
@@ -1702,7 +1785,17 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       A few basic websites using Middleman and SASS
                                                     </li>
                                                     <li>
-                                                      My thesis
+                                                      <h4>
+                                                        My thesis
+                                                      </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "Sketch",
+                                                          ]
+                                                        }
+                                                      />
+                                                      <p />
                                                     </li>
                                                   </ul>
                                                 </section>
@@ -1720,9 +1813,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                   </h2>
                                                   <p>
                                                     Dinst was a social start-up focused on creating a platform for people who needed help at home. For instance, a carpenter could offer his/her services online, and anyone could get in contact for a task at home that needed fixing.
-                                                  </p>
-                                                  <p>
-                                                    Working here was one of my first experiences as a front-end developer. It was a part-time job during my second and third year of university. The Dinst platform was built by themselves with Joomla, in which I continued to improve upon using JavaScript, CSS3 and PhP. Next to that, Dinst was trying to get investments by competing in a "Rockstart" acceleration program. I created wireframes, mock-ups and contributed to their cool ideas. Finally they won the program and gained investments!
                                                   </p>
                                                 </section>
                                                 <section>
@@ -1743,10 +1833,10 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     My role
                                                   </h3>
                                                   <p>
-                                                    ...
+                                                    Working here was one of my first experiences as a front-end developer. It was a part-time job during my second and third year of university. Dinst was a young start-up, which meant my role was very broad. The Dinst platform was built by themselves with Joomla, on which I continued to improve using JavaScript, HTML5 and CSS3. Dinst was also trying to get investments by competing in a "Rockstart" acceleration program. I created wireframes, design mock-ups and contributed to their cool ideas. Finally they won the program and gained investments!
                                                   </p>
                                                   <p>
-                                                    Unfortunately after 1.5 years I had to move away from Dinst to continue my studies and start my internship elsewhere. Fortunately, my next challenge was at Wakoopa, where I learned so much more.
+                                                    Unfortunately after 1.5 years I had to move away from Dinst to continue my studies and start my internship elsewhere.
                                                   </p>
                                                 </section>
                                               </React.Fragment>,
@@ -2155,7 +2245,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     Yes, this website
                                                   </h2>
                                                   <p>
-                                                    I made this website to play around and try some thing I didn't get the chance to try before. I wanted to learn more about setting up my own webpack build, which I did. Next to that, I tried React Context, Styled-Components and more Jest to increase my testing skills.
+                                                    I made this website to play around and try some thing I didn't get the chance to try before. At the start, I mostly wanted to learn more about setting up my own Webpack project and optimize it. I used React Context, which handles all the dynamic colors based on the dominant colors from the image at the top. Next to that, I used Styled-Components and more Jest to increase my testing skills.
                                                   </p>
                                                 </section>
                                                 <section>
@@ -2232,8 +2322,14 @@ exports[`Navigation component mounts correctly 1`] = `
                                                   <p>
                                                     Herstelling is a foundation which helps (semi criminal) people back into society. My father started working here as a project manager after his career at the Dutch marines, and I got to renew their website. It used to be an old WordPress website, and I replaced it by building a new website from scratch.
                                                   </p>
+                                                  <p>
+                                                    I used Middleman as static site generator. I also used Middleman because I wanted to easily reuse pieces of code, and the website had to be optimized for search engines.
+                                                  </p>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="middleman"
@@ -2245,14 +2341,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       name="javascript"
                                                     />
                                                   </CenteredBlocks>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    What
-                                                  </h3>
-                                                  <p>
-                                                    I used Middleman as static site generator. I also used Middleman because I wanted to easily reuse pieces of code, and the website had to be optimized for search engines.
-                                                  </p>
                                                 </section>
                                               </React.Fragment>,
                                               "image": undefined,
@@ -2267,10 +2355,16 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     Go Fort
                                                   </h2>
                                                   <p>
-                                                    This was a small side project that I've done for my father's company within a few days. I had been doing React for a few months, and I wanted to test my skills on this website. My brother created the logo, which I still think is pretty cool.
+                                                    This was a small side project that I've done for my father's company. I had been doing React for a few months, and I wanted to test my skills on this website. My brother created the logo, which I still think is pretty cool.
+                                                  </p>
+                                                  <p>
+                                                    I used create-react-app to setup the project (I ejected it, for some reason). For the styling I used SASS.
                                                   </p>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="react"
@@ -2282,14 +2376,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       name="javascript"
                                                     />
                                                   </CenteredBlocks>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    What
-                                                  </h3>
-                                                  <p>
-                                                    I used create-react-app to setup the project (ejected for some reason). For the styling I used SASS.
-                                                  </p>
                                                 </section>
                                               </React.Fragment>,
                                               "image": undefined,
