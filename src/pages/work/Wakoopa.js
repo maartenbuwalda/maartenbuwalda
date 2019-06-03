@@ -1,6 +1,7 @@
 import React from 'react'
 import CenteredBlocks from '../../components/CenteredBlocks'
 import Skill from '../../components/Skill'
+import Tags from '../../components/Tags'
 
 export const Wakoopa = (
   <>
@@ -19,6 +20,7 @@ export const Wakoopa = (
         <Skill name="ember" />
         <Skill name="storybook" />
         <Skill name="d3" />
+        <Skill name="sketch" />
       </CenteredBlocks>
     </section>
     <section>
@@ -30,35 +32,45 @@ export const Wakoopa = (
       <ul>
         <li>
           <h4>Rosalina</h4>
+          <Tags list={['Ember']} />
           <p>a panel management tool built with Ember. I got to work on this since the start of my internship, and later made a redesign for it. I learned Ember and added multiple feature to this application.
           </p>
         </li>
         <li>
           <h4>Bowser</h4>
+          <Tags list={['React', 'Redux', 'Jest']} />
           <p>a browser plugin which helps to install the tracking software into the browser. I built its front-end with React + Redux, and unit tested with Jest.
           </p>
         </li>
         <li>
           <h4>Conker</h4>
+          <Tags list={['React Native', 'Redux', 'Jest']} />
           <p>a React Native + Redux application which helps the user to install the tracking software on an iOS device. I worked on this project in the early days of React Native, so it was a lot of experimenting and refactoring. Eventually it was a nice and small application, fully tested with Jest.
           </p>
         </li>
         <li>
-          <h4>Wart (protip: don't google this word)</h4>
+          <h4>Wart (protip: do not Google this word)</h4>
+          <Tags list={['React', 'Storybook']} />
           <p>a React component library using Storybook. We created this library so we could more easily build React applications, and refactor existing apps to the React stack.
           </p>
         </li>
         <li>
           <h4>Auth0 thing</h4>
+          <Tags list={['React', 'Redux', 'Jest']} />
           <p>...</p>
         </li>
         <li>
           <h4>Menno</h4>
+          <Tags list={['React', 'Redux', 'Styled components', 'D3']} />
           <p>a chatbot type application which enables the user/client to access market research data. I built this app with React + Redux, D3, Styled-Components and Dialogflow.
           </p>
         </li>
         <li>A few basic websites using Middleman and SASS</li>
-        <li>My thesis</li>
+        <li>
+          <h4>My thesis</h4>
+          <Tags list={['Sketch']} />
+          <p></p>
+        </li>
       </ul>
     </section>
   </>

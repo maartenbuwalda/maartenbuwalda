@@ -1,6 +1,7 @@
 import React from 'react'
 import CenteredBlocks from '../../components/CenteredBlocks'
 import Skill from '../../components/Skill'
+import Tags from '../../components/Tags'
 
 export const Transavia = (
   <>
@@ -28,18 +29,22 @@ export const Transavia = (
       <ul>
         <li>
           <h4>Group Offer Solution</h4>
-          <p>Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70% before going to production in early 2019.</p>
+          <Tags list={['React', 'Redux', 'Jest']} />
+          <p>Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70%, and added Redux for state management before going to production in early 2019.</p>
         </li>
         <li>
           <h4>Cancel booking</h4>
-          <p>a small React + Redux application that enables users to more easily cancel their booking.</p>
+          <Tags list={['React', 'Redux', 'Jest']} />
+          <p>a small application that enables users to more easily cancel their booking.</p>
         </li>
         <li>
           <h4>Partner Platform</h4>
-          <p>a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack: React + Redux.</p>
+          <Tags list={['React']} />
+          <p>a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack.</p>
         </li>
         <li>
           <h4>TFS Component Library</h4>
+          <Tags list={['React', 'Storybook', 'Lerna', 'Azure']} />
           <p>we built this component library with React, Storybook, Lerna and Azure registry with Artifacts. Its purpose is to provide reusable, tested front-end components which will make it easier to build and unite the front-end stack of the Transavia applications.</p>
         </li>
       </ul>
