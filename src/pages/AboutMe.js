@@ -5,9 +5,9 @@ import Skill from '../components/Skill'
 const AboutMe = (
   <>
     <section>
-      <h2>A summary of me</h2>
+      <h1>A summary of me</h1>
       <p>
-        I was born in 1989 in Amstelveen, the Netherlands. Since 2006 I've been creating "things" on the web. I've been more seriously focused on front-end development since 2012, when I started my bachelor in Communication and Multimedia Design. In 2014 I took my first part-time job as front-end developer, and I've been working full-time since 2015. Since then my focus has been developing web applications. My first JS framework was Ember, but I moved to React shortly after, and I still very much like to work with it.
+        I was born in 1989 in Amstelveen, the Netherlands. Since 2006 I've been creating stuff on the web. I've been more seriously focused on front-end development since 2012, when I started my bachelor in Communication and Multimedia Design. In 2014 I took my first part-time job as front-end developer, and I've been working full-time since 2015. Since then my focus has been developing web applications. My first JS framework was Ember, but I moved to React shortly after, and I still very much like to work with it.
       </p>
       <p>
         Other than that: I love reading fantasy books. I used to write when I was a student, and want to pick it up again eversince. I'm an amateur gardener, an average sportsman and an avid gamer (PC and PS4).

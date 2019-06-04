@@ -1,11 +1,13 @@
 import React from 'react'
 import CenteredBlocks from '../../components/CenteredBlocks'
 import Skill from '../../components/Skill'
+import Tags from '../../components/Tags'
 
 export const Dinst = (
   <>
     <section>
-      <h2>Dinst</h2>
+      <h1>Dinst</h1>
+      <Tags inverted list={['2014-2015']} />
       <p>Dinst was a social start-up focused on creating a platform for people who needed help at home. For instance, a carpenter could offer his/her services online, and anyone could get in contact for a task at home that needed fixing.</p>
     </section>
     <section>

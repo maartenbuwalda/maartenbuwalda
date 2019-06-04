@@ -2,12 +2,14 @@ import React from 'react'
 import CenteredBlocks from '../../components/CenteredBlocks'
 import Skill from '../../components/Skill'
 import Tags from '../../components/Tags'
+import Link from '../../components/Link'
 
 export const Wakoopa = (
   <>
     <section>
-      <h2>Wakoopa</h2>
-      <p>Wakoopa is an international software company focused on market research. The Wakoopa software is used by market research companies to measure online behavior. In 2015 I started at Wakoopa to do my internship and thesis, and afterwards I stayed two more years as a front-end developer.</p>
+      <h1>Wakoopa</h1>
+      <Tags inverted list={['2015-2017']} />
+      <p><Link href="http://www.wakoopa.com">Wakoopa</Link> is an international software company focused on market research. The Wakoopa software is used by market research companies to measure online behavior. In 2015 I started at Wakoopa to do my internship and thesis, and afterwards I stayed two more years as a front-end developer.</p>
     </section>
     <section>
       <h3>What I used here:</h3>

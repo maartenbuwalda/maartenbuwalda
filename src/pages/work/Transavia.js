@@ -6,7 +6,8 @@ import Tags from '../../components/Tags'
 export const Transavia = (
   <>
     <section>
-      <h2>Transavia - project based</h2>
+      <h1>Transavia</h1>
+      <Tags inverted list={['2018-2019', 'project-based']} />
       <p>Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.</p>
     </section>
     <section>
@@ -35,17 +36,17 @@ export const Transavia = (
         <li>
           <h4>Cancel booking</h4>
           <Tags list={['React', 'Redux', 'Jest']} />
-          <p>a small application that enables users to more easily cancel their booking.</p>
+          <p>I built this small application which enables users to more easily cancel their booking. This app is being served as a page within the existing website. It fetches and displays some flight info, and does the request to cancel the booking upon confirmation.</p>
         </li>
         <li>
           <h4>Partner Platform</h4>
           <Tags list={['React']} />
-          <p>a first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack.</p>
+          <p>A first setup of connecting and combining all existing partner (B2B) applications, which are built with different stacks. The goal is to move all these applications to the same stack.</p>
         </li>
         <li>
           <h4>TFS Component Library</h4>
           <Tags list={['React', 'Storybook', 'Lerna', 'Azure']} />
-          <p>we built this component library with React, Storybook, Lerna and Azure registry with Artifacts. Its purpose is to provide reusable, tested front-end components which will make it easier to build and unite the front-end stack of the Transavia applications.</p>
+          <p>We built this component library with React, Storybook, Lerna and Azure registry with Artifacts. Its purpose is to provide reusable, tested front-end components which will make it easier to build and unite the front-end stack of the Transavia applications.</p>
         </li>
       </ul>
     </section>
