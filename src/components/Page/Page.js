@@ -8,7 +8,7 @@ import { sizes } from '../../constants/mediaQueries'
 
 const Page = ({ page }) => {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: 'auto' })
   })
 
   return (
@@ -53,21 +53,40 @@ const PageContent = styled.article`
     }
   }
 
-  > section:nth-child(even), .colored {
+  > section:nth-child(even), .colored, section:only-child {
     background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
   }
 
-  h2 {
-    font-size: 2rem;
+  h1, h2, h3, h4 {
     margin: 0;
   }
-  
-  h3 {
+
+  h1 {
+    font-size: 2rem;
+
+    @media(min-width: ${sizes.m}) {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
     font-size: 1.5rem;
 
-    &:first-of-type {
-      margin-top: 0;
+    @media(min-width: ${sizes.m}) {
+      font-size: 2rem;
     }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+
+    @media(min-width: ${sizes.m}) {
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.2rem;
   }
 
   ul {
@@ -76,11 +95,10 @@ const PageContent = styled.article`
     li {
       padding: 2rem;
       margin-bottom: 2rem;
-      font-size: 1.2rem;
       border-radius: .5rem;
       background-color: ${colors.white};
 
-      h4, p {
+      p {
         margin: 0;
       }
     }
@@ -88,7 +106,6 @@ const PageContent = styled.article`
 
   p {
     line-height: 1.7;
-    font-size: 1.2rem;
     color: ${colors.fadedBlack}
   }
 `

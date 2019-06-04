@@ -2,6 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import colors from '../../constants/colors'
 
+const Loading = () => (
+  <Wrapper>
+    <LoadingIndicator />
+  </Wrapper>
+)
+
 const LoadingIndicator = styled.div`
   width: 10rem;
   height: 10rem;
@@ -15,11 +21,5 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 `
-
-const Loading = () => (
-  <Wrapper>
-    <LoadingIndicator />
-  </Wrapper>
-)
 
 export default Loading

@@ -49,8 +49,8 @@ exports[`Page component mounts correctly 1`] = `
 
 .c0 img {
   position: absolute;
-  -webkit-animation: appear .5s ease-out;
-  animation: appear .5s ease-out;
+  -webkit-animation: fade .5s ease-out;
+  animation: fade .5s ease-out;
   display: block;
   max-height: 100%;
 }
@@ -80,21 +80,32 @@ exports[`Page component mounts correctly 1`] = `
 }
 
 .c4 > section:nth-child(even),
-.c4 .colored {
+.c4 .colored,
+.c4 section:only-child {
   background-color: rgba(,0.2);
 }
 
-.c4 h2 {
-  font-size: 2rem;
+.c4 h1,
+.c4 h2,
+.c4 h3,
+.c4 h4 {
   margin: 0;
 }
 
-.c4 h3 {
+.c4 h1 {
+  font-size: 2rem;
+}
+
+.c4 h2 {
   font-size: 1.5rem;
 }
 
-.c4 h3:first-of-type {
-  margin-top: 0;
+.c4 h3 {
+  font-size: 1.2rem;
+}
+
+.c4 h4 {
+  font-size: 1.2rem;
 }
 
 .c4 ul {
@@ -104,19 +115,16 @@ exports[`Page component mounts correctly 1`] = `
 .c4 ul li {
   padding: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
   border-radius: .5rem;
   background-color: #ffffff;
 }
 
-.c4 ul li h4,
 .c4 ul li p {
   margin: 0;
 }
 
 .c4 p {
   line-height: 1.7;
-  font-size: 1.2rem;
   color: rgba(0,0,0,0.7);
 }
 
@@ -129,6 +137,24 @@ exports[`Page component mounts correctly 1`] = `
 @media (min-width:768px) {
   .c4 section {
     padding: 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 h3 {
+    font-size: 2rem;
   }
 }
 
@@ -171,7 +197,7 @@ exports[`Page component mounts correctly 1`] = `
 
   img {
     position: absolute;
-    animation: appear .5s ease-out;
+    animation: fade .5s ease-out;
     display: block;
     max-height: 100%;
   }
@@ -379,23 +405,48 @@ exports[`Page component mounts correctly 1`] = `
     }
   }
 
-  > section:nth-child(even), .colored {
+  > section:nth-child(even), .colored, section:only-child {
     background-color: rgba(",
               [Function],
               ", 0.2);
   }
 
-  h2 {
-    font-size: 2rem;
+  h1, h2, h3, h4 {
     margin: 0;
   }
-  
-  h3 {
+
+  h1 {
+    font-size: 2rem;
+
+    @media(min-width: ",
+              "768px",
+              ") {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
     font-size: 1.5rem;
 
-    &:first-of-type {
-      margin-top: 0;
+    @media(min-width: ",
+              "768px",
+              ") {
+      font-size: 2rem;
     }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+
+    @media(min-width: ",
+              "768px",
+              ") {
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.2rem;
   }
 
   ul {
@@ -404,13 +455,12 @@ exports[`Page component mounts correctly 1`] = `
     li {
       padding: 2rem;
       margin-bottom: 2rem;
-      font-size: 1.2rem;
       border-radius: .5rem;
       background-color: ",
               "#ffffff",
               ";
 
-      h4, p {
+      p {
         margin: 0;
       }
     }
@@ -418,7 +468,6 @@ exports[`Page component mounts correctly 1`] = `
 
   p {
     line-height: 1.7;
-    font-size: 1.2rem;
     color: ",
               "rgba(0, 0, 0, 0.7)",
               "

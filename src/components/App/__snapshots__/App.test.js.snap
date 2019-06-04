@@ -34,7 +34,7 @@ exports[`App component renders correctly 1`] = `
             position="s1"
           />
           <Navigation
-            position="m1"
+            position="s1"
           />
         </Sticky>
         <Router

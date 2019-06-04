@@ -3,6 +3,19 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import images from '../../constants/images'
 
+const VendorLogo = ({ vendor }) => {
+  const src = images[vendor] || null
+  return (
+    <Figure>
+      {src && <StyledLogo src={src} />}
+    </Figure>
+  )
+}
+
+VendorLogo.propTypes = {
+  vendor: PropTypes.string,
+}
+
 const Figure = styled.figure`
   display: flex;
   justify-content: center;
@@ -21,18 +34,5 @@ const StyledLogo = styled.img`
   max-height: 3rem;
   display: block;
 `
-
-const VendorLogo = ({ vendor }) => {
-  const src = images[vendor] || null
-  return (
-    <Figure>
-      {src && <StyledLogo src={src} />}
-    </Figure>
-  )
-}
-
-VendorLogo.propTypes = {
-  vendor: PropTypes.string,
-}
 
 export default VendorLogo

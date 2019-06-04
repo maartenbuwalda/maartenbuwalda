@@ -4,33 +4,6 @@ import styled from 'styled-components'
 import { ColorContext } from '../../context/color'
 import colors from '../../constants/colors'
 
-const LogoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  width: ${({ size }) => size || '8rem'};
-  height: ${({ size }) => size || '8rem'};
-
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: ${({ white, theme }) => white ? colors.fadedWhite : theme.hex.colorMutedRegular};
-    transition: fill .3s;
-
-    path {
-      /* transition: all .3s;
-      opacity: ${({ animated }) => animated ? 0 : 1};
-      transform: scaleY(0.9); */
-
-      &[data-appear=true] {
-        transform: scaleY(1);
-        opacity: 1;
-      }
-    }
-  }
-`
-
 const Logo = ({ animated, ...rest }) => {
   useEffect(() => {
     // if (!animated) return
@@ -100,5 +73,32 @@ Logo.propTypes = {
   animated: PropTypes.bool,
   size: PropTypes.string,
 }
+
+const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: ${({ size }) => size || '8rem'};
+  height: ${({ size }) => size || '8rem'};
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: ${({ white, theme }) => white ? colors.fadedWhite : theme.hex.colorMutedRegular};
+    transition: fill .3s;
+
+    path {
+      /* transition: all .3s;
+      opacity: ${({ animated }) => animated ? 0 : 1};
+      transform: scaleY(0.9); */
+
+      &[data-appear=true] {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+  }
+`
 
 export default Logo

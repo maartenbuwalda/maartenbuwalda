@@ -4,10 +4,37 @@ import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
 import { ColorContext } from '../../context/color'
 
-const Article = styled.article`
+class Card extends React.Component {
+  render () {
+    const { children, position, ...rest } = this.props
+    return (
+      <ColorContext.Consumer>
+        {({ theme }) => (
+          <StyledCard position={position} theme={theme} {...rest}>
+            <Section theme={theme} {...rest}>
+              {children}
+            </Section>
+          </StyledCard>
+        )}
+      </ColorContext.Consumer>
+    )
+  }
+}
+
+Card.defaultProps = {
+  content: ''
+}
+
+Card.propTypes = {
+  children: PropTypes.node,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  position: PropTypes.string,
+}
+
+const StyledCard = styled.div`
   grid-area: ${({ position }) => position};
   width: 100%;
-  color: ${colors.fadedBlack};
   overflow: hidden;
   transition: all 1s;
   color: ${({ background }) => {
@@ -25,7 +52,7 @@ const Article = styled.article`
   }};
 `
 
-const Main = styled.main`
+const Section = styled.section`
   transition: all .3s;
 
   .colored {
@@ -54,38 +81,10 @@ const Main = styled.main`
     color: ${({ background, theme }) => {
     switch (background) {
       case 'colored': return theme.hex.colorMutedRegular
-      default: return theme.hex.colorMutedRegular
+      default: return theme.hex.colorRegular
     }
   }};
   };
 `
-
-class Card extends React.Component {
-  render () {
-    const { children, position, ...rest } = this.props
-    return (
-      <ColorContext.Consumer>
-        {({ theme }) => (
-          <Article position={position} theme={theme} {...rest}>
-            <Main theme={theme} {...rest}>
-              {children}
-            </Main>
-          </Article>
-        )}
-      </ColorContext.Consumer>
-    )
-  }
-}
-
-Card.defaultProps = {
-  content: ''
-}
-
-Card.propTypes = {
-  children: PropTypes.node,
-  image: PropTypes.string,
-  title: PropTypes.string,
-  position: PropTypes.string,
-}
 
 export default Card

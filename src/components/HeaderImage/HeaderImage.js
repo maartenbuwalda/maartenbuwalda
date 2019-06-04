@@ -11,10 +11,8 @@ class HeaderImage extends React.Component {
     const { updateTheme, image } = this.props
     updateTheme(image)
   }
-
   render () {
     const { image } = this.props
-
     return (
       <ImageWrapper>
         <Img
@@ -39,7 +37,7 @@ const ImageWrapper = styled.figure`
 
   img {
     position: absolute;
-    animation: appear .5s ease-out;
+    animation: fade .5s ease-out;
     display: block;
     max-height: 100%;
   }

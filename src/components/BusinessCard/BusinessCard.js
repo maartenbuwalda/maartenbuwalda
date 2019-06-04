@@ -7,6 +7,31 @@ import colors from '../../constants/colors'
 import { Link } from 'react-router-dom'
 import { sizes } from '../../constants/mediaQueries'
 
+const BusinessCard = ({ position }) => {
+  return (
+    <StyledCard background="colored" position={position}>
+      <CardLayout>
+        <Link to="/">
+          <StyledLogo size="5rem" white />
+          <TitleWrapper>
+            <h1>Maarten Buwalda</h1>
+            <p>front-end developer</p>
+          </TitleWrapper>
+        </Link>
+        <Contact>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maartenbuwalda/">linkedin</a>-
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/maartenbuwalda">github</a>-
+          <a target="_blank" rel="noopener noreferrer" href="mailto:maarten@maartenbuwalda.com">email</a>
+        </Contact>
+      </CardLayout>
+    </StyledCard>
+  )
+}
+
+BusinessCard.propTypes = {
+  position: PropTypes.string,
+}
+
 const CardLayout = styled.div`
   position: relative;
   display: flex;
@@ -62,30 +87,5 @@ const StyledLogo = styled(Logo)`
   margin-bottom: .5rem;
   padding: 0;
 `
-
-const BusinessCard = ({ position }) => {
-  return (
-    <StyledCard background="colored" position={position}>
-      <CardLayout>
-        <Link to="/">
-          <StyledLogo size="5rem" white />
-          <TitleWrapper>
-            <h1>Maarten Buwalda</h1>
-            <p>front-end developer</p>
-          </TitleWrapper>
-        </Link>
-        <Contact>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/maartenbuwalda/">linkedin</a>-
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/maartenbuwalda">github</a>-
-          <a target="_blank" rel="noopener noreferrer" href="mailto:maarten@maartenbuwalda.com">email</a>
-        </Contact>
-      </CardLayout>
-    </StyledCard>
-  )
-}
-
-BusinessCard.propTypes = {
-  position: PropTypes.string,
-}
 
 export default BusinessCard

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import Card from '../../components/Card'
 import SubNavigation from './SubNavigation'
 import Logo from '../../components/Logo'
 import styled, { css } from 'styled-components'
@@ -10,55 +9,60 @@ import { sizes } from '../../constants/mediaQueries'
 import colors from '../../constants/colors'
 import shadows from '../../constants/shadows'
 import Icon from '@material-ui/core/Icon'
+import { ColorContext } from '../../context/color'
 
-const Navigation = ({ position }) => {
+const Navigation = () => {
   const [isToggled, toggleMenu] = useState(false)
   const currentPath = window.location.hash.replace('#', '')
   return (
-    <StyledCard background="colored" position={position}>
-      <MobileMenuWrapper>
-        <MobileMenuToggle data-test-id="open-menu-button" onClick={() => toggleMenu(true)}>
-          <Icon>menu</Icon>
-        </MobileMenuToggle>
-        <Logo white size="2rem" />
-      </MobileMenuWrapper>
-      <Menu>
-        <LinkWrapper isToggled={isToggled}>
-          <MobileMenuToggle data-test-id="close-menu-button" onClick={() => toggleMenu(false)}>
-            <Icon>close</Icon>
-          </MobileMenuToggle>
-          {routes.map((route, i) => {
-            const { pathname, subNavigation, icon, label } = route
-            return (
-              <div key={i}>
-                <NavLink
-                  exact={pathname === '/'}
-                  to={pathname}
-                  className="main-link"
-                  activeClassName="active"
-                  data-test-id={`main-menu-item-${i}`}
-                  onClick={() => {
-                    if (!subNavigation.length) toggleMenu(false)
-                  }}
-                >
-                  <IconWrapper>
-                    <Icon>{icon}</Icon>
-                  </IconWrapper>
-                  <span>{label}</span>
-                </NavLink>
-                {subNavigation.length > 0 && (
-                  <SubNavigation
-                    isToggled={currentPath.includes(pathname)}
-                    toggleMenu={toggleMenu}
-                    links={subNavigation}
-                  />
-                )}
-              </div>
-            )
-          })}
-        </LinkWrapper>
-      </Menu>
-    </StyledCard>
+    <ColorContext.Consumer>
+      {({ theme }) => (
+        <Nav>
+          <MobileMenuWrapper theme={theme}>
+            <MobileMenuToggle data-test-id="open-menu-button" onClick={() => toggleMenu(true)}>
+              <Icon>menu</Icon>
+            </MobileMenuToggle>
+            <Logo white size="2rem" />
+          </MobileMenuWrapper>
+          <Menu theme={theme}>
+            <LinkWrapper isToggled={isToggled}>
+              <MobileMenuToggle data-test-id="close-menu-button" onClick={() => toggleMenu(false)}>
+                <Icon>close</Icon>
+              </MobileMenuToggle>
+              {routes.map((route, i) => {
+                const { pathname, subNavigation, icon, label } = route
+                return (
+                  <div key={i}>
+                    <NavLink
+                      exact={pathname === '/'}
+                      to={pathname}
+                      className="main-link"
+                      activeClassName="active"
+                      data-test-id={`main-menu-item-${i}`}
+                      onClick={() => {
+                        if (!subNavigation.length) toggleMenu(false)
+                      }}
+                    >
+                      <IconWrapper theme={theme}>
+                        <Icon>{icon}</Icon>
+                      </IconWrapper>
+                      <span>{label}</span>
+                    </NavLink>
+                    {subNavigation.length > 0 && (
+                      <SubNavigation
+                        isToggled={currentPath.includes(pathname)}
+                        toggleMenu={toggleMenu}
+                        links={subNavigation}
+                      />
+                    )}
+                  </div>
+                )
+              })}
+            </LinkWrapper>
+          </Menu>
+        </Nav>
+      )}
+    </ColorContext.Consumer>
   )
 }
 
@@ -66,7 +70,7 @@ Navigation.propTypes = {
   position: PropTypes.string,
 }
 
-const StyledCard = styled(Card)`
+const Nav = styled.nav`
   box-shadow: ${shadows.mild};
 
   @media (min-width: ${sizes.m}) {
@@ -77,6 +81,11 @@ const StyledCard = styled(Card)`
 const MobileMenuWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.hex.colorRegular};
+
+  span {
+    color: ${colors.white};
+  }
 
   @media (min-width: ${sizes.m}) {
     display: none;
@@ -84,14 +93,15 @@ const MobileMenuWrapper = styled.div`
 `
 
 const IconWrapper = styled.div`
-  transition: all .3s;
+  transition: transform .3s, background-color .6s;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1rem;
   width: 1rem;
   padding: 1rem;
-  background-color: ${colors.gray};
+  color: ${colors.fadedWhite};
+  background-color: ${({ theme }) => theme.hex.colorRegular};
   transform: translateX(-4rem) scaleX(0);
   
   @media (min-width: ${sizes.m}) {
@@ -103,6 +113,7 @@ const IconWrapper = styled.div`
 
 const Menu = styled.div`
   background: ${colors.white};
+  overflow: hidden;
 
   @media (min-width: ${sizes.m}) {
     padding: 0;
@@ -111,40 +122,35 @@ const Menu = styled.div`
     align-items: flex-start;
     box-shadow: none;
   }
-
-  /* display: flex; */
-  /* flex-direction: column; */
   
   .main-link {
+    font-family: 'Crete Round', serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: ${colors.darkGray};
     display: flex;
     align-items: center;
     transition: all .3s;
-    text-decoration: none;
     margin: 0;
-    font-size: 1rem;
     width: 100%;
-    padding: 0 .5rem;
-    color: ${colors.darkGray};
-
-    @media (min-width: ${sizes.m}) {
-      padding: .5rem 1rem;
-      font-size: 1.2rem;
-    }
 
     > span {
       transition: transform .3s;
-      transform: translateX(-3rem);
+      transform: translateX(-2rem);
     }
 
     transition: all .3s;
 
     &.active {
+      color: rgba(${({ theme }) => theme.rgb.colorMutedRegular}, 0.8);
+      background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
+
       > span {
-        transform: translateX(0rem);
+        transform: translateX(1rem);
       }
 
       > ${IconWrapper} {
-        transform: translateX(-1rem);
+        transform: translateX(0rem);
       }
     }
   }
@@ -162,7 +168,7 @@ const MobileMenuToggle = styled.label`
   }
 `
 
-const LinkWrapper = styled.nav`
+const LinkWrapper = styled.div`
   background: ${colors.white};
   display: flex;
   flex-direction: column;

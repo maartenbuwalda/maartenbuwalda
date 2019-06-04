@@ -7,7 +7,7 @@ import { sizes } from '../../constants/mediaQueries'
 import colors from '../../constants/colors'
 
 const Wrapper = styled.div`
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   overflow: hidden;
   opacity: 0;
   display: flex;
@@ -17,15 +17,21 @@ const Wrapper = styled.div`
   background-color: rgba(${({ theme }) => theme.rgb.colorMutedLight}, 0.2);
 
   a {
+    transition: color .6s;
     text-decoration: none;
+    font-family: 'Crete Round', serif;
     margin: 0;
     padding: .5rem 1rem .5rem;
     font-size: 1rem;
     color: ${colors.darkGray};
 
-    @media (min-width: ${sizes.m}) {
-      font-size: 1.2rem;
+    &.active {
+      color: rgba(${({ theme }) => theme.rgb.colorMutedRegular}, 0.7);
     }
+
+    /* @media (min-width: ${sizes.m}) {
+      font-size: 1.2rem;
+    } */
   }
 `
 
@@ -35,7 +41,7 @@ const HiddenCheckbox = styled.input`
   &:checked + ${Wrapper} {
     opacity: 1;
     max-height: 20rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
   }
 `
 

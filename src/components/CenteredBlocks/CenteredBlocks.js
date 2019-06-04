@@ -14,7 +14,7 @@ CenteredBlocks.propTypes = {
 const Centered = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   margin: 2rem 0;
 
   @media (min-width: ${sizes.m}) {

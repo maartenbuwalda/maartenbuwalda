@@ -21,6 +21,8 @@ Tags.propTypes = {
 
 const StyledTags = styled.div`
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: .5rem 0;
   
   span {
@@ -28,10 +30,12 @@ const StyledTags = styled.div`
     font-size: .8rem;
     text-transform: uppercase;
     margin-right: .5rem;
+    margin-bottom: .5rem;
     ${({ theme, inverted }) => {
     if (inverted) {
       return css`
-        color: ${theme.hex.colorRegular};
+        color: ${theme.hex.colorMutedRegular};
+        font-weight: bold;
       `
     } else {
       return css`

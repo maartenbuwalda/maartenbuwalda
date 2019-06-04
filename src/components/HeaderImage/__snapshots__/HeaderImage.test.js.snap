@@ -25,8 +25,8 @@ exports[`HeaderImage component mounts correctly 1`] = `
 
 .c0 img {
   position: absolute;
-  -webkit-animation: appear .5s ease-out;
-  animation: appear .5s ease-out;
+  -webkit-animation: fade .5s ease-out;
+  animation: fade .5s ease-out;
   display: block;
   max-height: 100%;
 }
@@ -102,7 +102,7 @@ exports[`HeaderImage component mounts correctly 1`] = `
 
   img {
     position: absolute;
-    animation: appear .5s ease-out;
+    animation: fade .5s ease-out;
     display: block;
     max-height: 100%;
   }

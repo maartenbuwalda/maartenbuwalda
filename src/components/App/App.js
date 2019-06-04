@@ -34,7 +34,7 @@ class App extends Component {
             <Grid>
               <Sticky>
                 <BusinessCard position="s1"/>
-                <Navigation position="m1" />
+                <Navigation position="s1" />
               </Sticky>
               <Router position="l1" />
             </Grid>
