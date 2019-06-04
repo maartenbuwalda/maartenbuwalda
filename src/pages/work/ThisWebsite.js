@@ -5,8 +5,8 @@ import Skill from '../../components/Skill'
 export const ThisWebsite = (
   <>
     <section>
-      <h2>Yes, this website</h2>
-      <p>I made this website to play around and try some thing I didn't get the chance to try before. At the start, I mostly wanted to learn more about setting up my own Webpack project and optimize it. I used React Context, which handles all the dynamic colors based on the dominant colors from the image at the top. Next to that, I used Styled-Components and more Jest to increase my testing skills.</p>
+      <h2>My own website</h2>
+      <p>I made this very website to play around and try some things I didn't get the chance to try before. At the start, I mostly wanted to learn more about setting up my own Webpack project and optimize it. I wanted to use React hooks and React Context, which handles all the dynamic colors based on the dominant colors from the image at the top. Next to that, I used Styled-Components and some more Jest to increase my testing skills, although the components are very simple.</p>
     </section>
     <section>
       <h3>What I used here:</h3>
@@ -14,6 +14,7 @@ export const ThisWebsite = (
         <Skill name="react" />
         <Skill name="jest" />
         <Skill name="javascript" />
+        <Skill name="styled components" />
         <Skill name="webpack" />
         <Skill name="node" />
       </CenteredBlocks>

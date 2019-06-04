@@ -1,18 +1,20 @@
 import React from 'react'
 import CenteredBlocks from '../components/CenteredBlocks'
 import Skill from '../components/Skill'
-import { Link } from 'react-router-dom'
 
 const AboutMe = (
   <>
     <section>
-      <h2>My story</h2>
+      <h2>A summary of me</h2>
       <p>
-        I was born in 1989 in the Netherlands. Since 2006 I've been doing "things" on the web when I started my <Link to="/education">first study in Multimedia Design</Link>. I've been more seriously focused on front-end development since 2012, when I started my bachelor in Communication and Multimedia Design. In 2014 I took my first job as front-end developer, and the rest is history.
+        I was born in 1989 in Amstelveen, the Netherlands. Since 2006 I've been creating "things" on the web. I've been more seriously focused on front-end development since 2012, when I started my bachelor in Communication and Multimedia Design. In 2014 I took my first part-time job as front-end developer, and I've been working full-time since 2015. Since then my focus has been developing web applications. My first JS framework was Ember, but I moved to React shortly after, and I still very much like to work with it.
+      </p>
+      <p>
+        Other than that: I love reading fantasy books. I used to write when I was a student, and want to pick it up again eversince. I'm an amateur gardener, an average sportsman and an avid gamer (PC and PS4).
       </p>
     </section>
     <section>
-      <h3>I know a thing or two about:</h3>
+      <h3>I have worked with:</h3>
       <CenteredBlocks>
         <Skill name="react" />
         <Skill name="react native" />
@@ -21,27 +23,20 @@ const AboutMe = (
         <Skill name="storybook" />
         <Skill name="html5" />
         <Skill name="css3" />
+        <Skill name="sass" />
         <Skill name="javascript" />
         <Skill name="middleman" />
         <Skill name="ember" />
         <Skill name="d3" />
+        <Skill name="styled components" />
       </CenteredBlocks>
-      <h3>I'm currently learning:</h3>
+      <h3>I'm currently working with and learning:</h3>
       <CenteredBlocks>
         <Skill name="next" />
         <Skill name="typescript" />
         <Skill name="gatsby" />
         <Skill name="webpack" />
       </CenteredBlocks>
-    </section>
-    <section>
-      <h3>Some more details</h3>
-      <p>
-        I love reading fantasy books. I used to write when I was a student, but I kinda forgot about that. I'm an amateur gardener, an average sportsman and an avid gamer (PC and PS4). I love animals and I stopped eating them.
-      </p>
-      <p>
-        As a person, I'd say that I'm an introvert. A thinker, not a talker. But sometimes I can't help it to make some jokes.
-      </p>
     </section>
   </>
 )

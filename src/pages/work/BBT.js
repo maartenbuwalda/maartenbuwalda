@@ -13,6 +13,9 @@ export const BBT = (
         <Skill name="gatsby" />
         <Skill name="react" />
         <Skill name="javascript" />
+        <Skill name="css3" />
+        <Skill name="html5" />
+        <Skill name="wordpress" />
       </CenteredBlocks>
     </section>
     <section>

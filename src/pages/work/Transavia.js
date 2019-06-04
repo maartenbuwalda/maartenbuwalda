@@ -6,12 +6,8 @@ import Tags from '../../components/Tags'
 export const Transavia = (
   <>
     <section>
-      <h2>Transavia</h2>
-      <p>My first assignment as an external front-end developer. Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.</p>
-    </section>
-    <section>
-      <h3>My role</h3>
-      <p>I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).</p>
+      <h2>Transavia - project based</h2>
+      <p>Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.</p>
     </section>
     <section>
       <h3>What I used here:</h3>
@@ -23,6 +19,10 @@ export const Transavia = (
         <Skill name="sass" />
         <Skill name="javascript" />
       </CenteredBlocks>
+    </section>
+    <section>
+      <h3>My role</h3>
+      <p>I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).</p>
     </section>
     <section>
       <h3>What I worked on:</h3>
