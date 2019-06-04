@@ -1462,19 +1462,33 @@ exports[`Navigation component mounts correctly 1`] = `
                                               "content": <React.Fragment>
                                                 <section>
                                                   <h2>
-                                                    Fontem Ventures
+                                                    Fontem Ventures - project based
                                                   </h2>
                                                   <p>
-                                                    ...
+                                                    Fontem is part of Imperial Tobacco. Its main product is 
+                                                    <a
+                                                      href="https://www.blu.com"
+                                                      rel="noopener noreferrer"
+                                                      target="_blank"
+                                                    >
+                                                      blu
+                                                    </a>
+                                                    , a vaping device. Since march 2019 I've been working for them as part of the "acceleration program". This program is focused on refactoring and improving the website, which ultimately leads to an increase of the traffic and other KPIs. The "legacy" stack exists of React, Styled Components and Gatsby. The new stack will be: React, Styled Components, TypeScript and Next.js.
                                                   </p>
                                                 </section>
                                                 <section>
+                                                  <h3>
+                                                    What I'm using and learning here:
+                                                  </h3>
                                                   <CenteredBlocks>
                                                     <Skill
                                                       name="react"
                                                     />
                                                     <Skill
                                                       name="typescript"
+                                                    />
+                                                    <Skill
+                                                      name="jest"
                                                     />
                                                     <Skill
                                                       name="node"
@@ -1485,19 +1499,62 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     <Skill
                                                       name="next"
                                                     />
+                                                    <Skill
+                                                      name="styled components"
+                                                    />
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
                                                   <h3>
                                                     My role
                                                   </h3>
-                                                  <p>
-                                                    ...
-                                                  </p>
+                                                  <p />
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What I'm working on:
+                                                  </h3>
+                                                  <ul>
+                                                    <li>
+                                                      <h4>
+                                                        Website re-platform
+                                                      </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "React",
+                                                            "Typescript",
+                                                            "Jest",
+                                                            "Next.js",
+                                                            "styled-components",
+                                                          ]
+                                                        }
+                                                      />
+                                                      <p>
+                                                        Part of my job here at Fontem is to refactor existing pages from JavaScript to TypeScript. Some pages are coming from tools like DemandWare, and these pages need to be built from scratch. Doing this, I am learning more about TypeScript, which I never used before this project.
+                                                      </p>
+                                                    </li>
+                                                    <li>
+                                                      <h4>
+                                                        SEO
+                                                      </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "Node",
+                                                            "Next.js",
+                                                          ]
+                                                        }
+                                                      />
+                                                      <p>
+                                                        Another important part of the big refactor is to improve the SEO, which is now my main focus. Like TypeScript, I have never really focused that much on this subject, so I am happy and eager to learn about this.
+                                                      </p>
+                                                    </li>
+                                                  </ul>
                                                 </section>
                                               </React.Fragment>,
                                               "image": undefined,
-                                              "label": "2019: Fontem Ventures",
+                                              "label": "2019 - now: Fontem Ventures",
                                               "pathname": "/work/fontem-ventures",
                                               "title": "Fontem Ventures",
                                             },
@@ -1505,18 +1562,10 @@ exports[`Navigation component mounts correctly 1`] = `
                                               "content": <React.Fragment>
                                                 <section>
                                                   <h2>
-                                                    Transavia
+                                                    Transavia - project based
                                                   </h2>
                                                   <p>
-                                                    My first assignment as an external front-end developer. Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    My role
-                                                  </h3>
-                                                  <p>
-                                                    I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
+                                                    Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.
                                                   </p>
                                                 </section>
                                                 <section>
@@ -1543,6 +1592,14 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       name="javascript"
                                                     />
                                                   </CenteredBlocks>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    My role
+                                                  </h3>
+                                                  <p>
+                                                    I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).
+                                                  </p>
                                                 </section>
                                                 <section>
                                                   <h3>
@@ -1664,6 +1721,9 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       name="d3"
                                                     />
                                                     <Skill
+                                                      name="styled components"
+                                                    />
+                                                    <Skill
                                                       name="sketch"
                                                     />
                                                   </CenteredBlocks>
@@ -1693,7 +1753,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                         }
                                                       />
                                                       <p>
-                                                        a panel management tool built with Ember. I got to work on this since the start of my internship, and later made a redesign for it. I learned Ember and added multiple feature to this application.
+                                                        A panel management tool built with Ember. I got to work on this since the start of my internship, and later made a redesign for it. I learned Ember and added multiple feature to this application.
                                                       </p>
                                                     </li>
                                                     <li>
@@ -1710,7 +1770,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                         }
                                                       />
                                                       <p>
-                                                        a browser plugin which helps to install the tracking software into the browser. I built its front-end with React + Redux, and unit tested with Jest.
+                                                        A browser plugin which helps to install the tracking software into the browser. I built its front-end with React + Redux, and unit tested with Jest.
                                                       </p>
                                                     </li>
                                                     <li>
@@ -1727,7 +1787,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                         }
                                                       />
                                                       <p>
-                                                        a React Native + Redux application which helps the user to install the tracking software on an iOS device. I worked on this project in the early days of React Native, so it was a lot of experimenting and refactoring. Eventually it was a nice and small application, fully tested with Jest.
+                                                        A React Native + Redux application which helps the user to install the tracking software on an iOS device. I worked on this project in the early days of React Native, so it was a lot of experimenting and refactoring. Eventually it was a nice and small application, fully tested with Jest.
                                                       </p>
                                                     </li>
                                                     <li>
@@ -1743,24 +1803,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                         }
                                                       />
                                                       <p>
-                                                        a React component library using Storybook. We created this library so we could more easily build React applications, and refactor existing apps to the React stack.
-                                                      </p>
-                                                    </li>
-                                                    <li>
-                                                      <h4>
-                                                        Auth0 thing
-                                                      </h4>
-                                                      <Tags
-                                                        list={
-                                                          Array [
-                                                            "React",
-                                                            "Redux",
-                                                            "Jest",
-                                                          ]
-                                                        }
-                                                      />
-                                                      <p>
-                                                        ...
+                                                        A React component library using Storybook. We created this library so we could more easily build React applications, and refactor existing apps to the React stack.
                                                       </p>
                                                     </li>
                                                     <li>
@@ -1772,17 +1815,31 @@ exports[`Navigation component mounts correctly 1`] = `
                                                           Array [
                                                             "React",
                                                             "Redux",
-                                                            "Styled components",
+                                                            "styled-components",
                                                             "D3",
+                                                            "Dialogflow",
                                                           ]
                                                         }
                                                       />
                                                       <p>
-                                                        a chatbot type application which enables the user/client to access market research data. I built this app with React + Redux, D3, Styled-Components and Dialogflow.
+                                                        A chatbot type application which enables the user/client to access market research data. I built this app with React + Redux, D3, Styled-Components and Dialogflow.
                                                       </p>
                                                     </li>
                                                     <li>
-                                                      A few basic websites using Middleman and SASS
+                                                      <h4>
+                                                        Wakoopa's behavioral data conference websites
+                                                      </h4>
+                                                      <Tags
+                                                        list={
+                                                          Array [
+                                                            "Middleman",
+                                                            "SASS",
+                                                          ]
+                                                        }
+                                                      />
+                                                      <p>
+                                                        Wakoopa organized world's first behavioral data conference, and I got to make its website. The preceding day, they also organized a datathon and its winners were invited to present their work on the conference. I created websites for both events using Middleman and SASS.
+                                                      </p>
                                                     </li>
                                                     <li>
                                                       <h4>
@@ -1792,10 +1849,13 @@ exports[`Navigation component mounts correctly 1`] = `
                                                         list={
                                                           Array [
                                                             "Sketch",
+                                                            "D3",
                                                           ]
                                                         }
                                                       />
-                                                      <p />
+                                                      <p>
+                                                        My thesis was focused on designing a dashboard that would automate and display data involving the UX of the Wakoopa products. To do so, I did a lot of research on dashboard design, about what needed to be measured and finally I created a complete design. Unfortunately I was never able to build the dashboard. However, my learnings about dashboard design might someday come in handy.
+                                                      </p>
                                                     </li>
                                                   </ul>
                                                 </section>
@@ -2023,7 +2083,7 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       href="#/work/fontem-ventures"
                                                       onClick={[Function]}
                                                     >
-                                                      2019: Fontem Ventures
+                                                      2019 - now: Fontem Ventures
                                                     </a>
                                                   </Link>
                                                 </Route>
@@ -2242,44 +2302,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                               "content": <React.Fragment>
                                                 <section>
                                                   <h2>
-                                                    Yes, this website
-                                                  </h2>
-                                                  <p>
-                                                    I made this website to play around and try some thing I didn't get the chance to try before. At the start, I mostly wanted to learn more about setting up my own Webpack project and optimize it. I used React Context, which handles all the dynamic colors based on the dominant colors from the image at the top. Next to that, I used Styled-Components and more Jest to increase my testing skills.
-                                                  </p>
-                                                </section>
-                                                <section>
-                                                  <h3>
-                                                    What I used here:
-                                                  </h3>
-                                                  <CenteredBlocks>
-                                                    <Skill
-                                                      name="react"
-                                                    />
-                                                    <Skill
-                                                      name="jest"
-                                                    />
-                                                    <Skill
-                                                      name="javascript"
-                                                    />
-                                                    <Skill
-                                                      name="webpack"
-                                                    />
-                                                    <Skill
-                                                      name="node"
-                                                    />
-                                                  </CenteredBlocks>
-                                                </section>
-                                              </React.Fragment>,
-                                              "image": undefined,
-                                              "label": "2019: This website",
-                                              "pathname": "/side-projects/this-website",
-                                              "title": "This website",
-                                            },
-                                            Object {
-                                              "content": <React.Fragment>
-                                                <section>
-                                                  <h2>
                                                     Battlefield Bus Tours
                                                   </h2>
                                                   <p>
@@ -2297,6 +2319,15 @@ exports[`Navigation component mounts correctly 1`] = `
                                                     <Skill
                                                       name="javascript"
                                                     />
+                                                    <Skill
+                                                      name="css3"
+                                                    />
+                                                    <Skill
+                                                      name="html5"
+                                                    />
+                                                    <Skill
+                                                      name="wordpress"
+                                                    />
                                                   </CenteredBlocks>
                                                 </section>
                                                 <section>
@@ -2312,6 +2343,47 @@ exports[`Navigation component mounts correctly 1`] = `
                                               "label": "2018 - 2019: Battlefield Bus Tours",
                                               "pathname": "/side-projects/battlefield-bus-tours",
                                               "title": "Battlefield Bus Tours",
+                                            },
+                                            Object {
+                                              "content": <React.Fragment>
+                                                <section>
+                                                  <h2>
+                                                    My own website
+                                                  </h2>
+                                                  <p>
+                                                    I made this very website to play around and try some things I didn't get the chance to try before. At the start, I mostly wanted to learn more about setting up my own Webpack project and optimize it. I wanted to use React hooks and React Context, which handles all the dynamic colors based on the dominant colors from the image at the top. Next to that, I used Styled-Components and some more Jest to increase my testing skills, although the components are very simple.
+                                                  </p>
+                                                </section>
+                                                <section>
+                                                  <h3>
+                                                    What I used here:
+                                                  </h3>
+                                                  <CenteredBlocks>
+                                                    <Skill
+                                                      name="react"
+                                                    />
+                                                    <Skill
+                                                      name="jest"
+                                                    />
+                                                    <Skill
+                                                      name="javascript"
+                                                    />
+                                                    <Skill
+                                                      name="styled components"
+                                                    />
+                                                    <Skill
+                                                      name="webpack"
+                                                    />
+                                                    <Skill
+                                                      name="node"
+                                                    />
+                                                  </CenteredBlocks>
+                                                </section>
+                                              </React.Fragment>,
+                                              "image": undefined,
+                                              "label": "2019: This website",
+                                              "pathname": "/side-projects/this-website",
+                                              "title": "This website",
                                             },
                                             Object {
                                               "content": <React.Fragment>
@@ -2544,34 +2616,6 @@ exports[`Navigation component mounts correctly 1`] = `
                                                 exact={true}
                                                 key="0"
                                                 onClick={[Function]}
-                                                to="/side-projects/this-website"
-                                              >
-                                                <Route
-                                                  exact={true}
-                                                  path="\\\\/side-projects\\\\/this-website"
-                                                >
-                                                  <Link
-                                                    aria-current={null}
-                                                    onClick={[Function]}
-                                                    replace={false}
-                                                    to="/side-projects/this-website"
-                                                  >
-                                                    <a
-                                                      aria-current={null}
-                                                      href="#/side-projects/this-website"
-                                                      onClick={[Function]}
-                                                    >
-                                                      2019: This website
-                                                    </a>
-                                                  </Link>
-                                                </Route>
-                                              </NavLink>
-                                              <NavLink
-                                                activeClassName="active"
-                                                aria-current="page"
-                                                exact={true}
-                                                key="1"
-                                                onClick={[Function]}
                                                 to="/side-projects/battlefield-bus-tours"
                                               >
                                                 <Route
@@ -2590,6 +2634,34 @@ exports[`Navigation component mounts correctly 1`] = `
                                                       onClick={[Function]}
                                                     >
                                                       2018 - 2019: Battlefield Bus Tours
+                                                    </a>
+                                                  </Link>
+                                                </Route>
+                                              </NavLink>
+                                              <NavLink
+                                                activeClassName="active"
+                                                aria-current="page"
+                                                exact={true}
+                                                key="1"
+                                                onClick={[Function]}
+                                                to="/side-projects/this-website"
+                                              >
+                                                <Route
+                                                  exact={true}
+                                                  path="\\\\/side-projects\\\\/this-website"
+                                                >
+                                                  <Link
+                                                    aria-current={null}
+                                                    onClick={[Function]}
+                                                    replace={false}
+                                                    to="/side-projects/this-website"
+                                                  >
+                                                    <a
+                                                      aria-current={null}
+                                                      href="#/side-projects/this-website"
+                                                      onClick={[Function]}
+                                                    >
+                                                      2019: This website
                                                     </a>
                                                   </Link>
                                                 </Route>

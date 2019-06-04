@@ -4,9 +4,24 @@ import { ColorContext } from '../../context/color'
 import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
 
+const Tags = ({ list, inverted }) => (
+  <ColorContext.Consumer>
+    {({ theme }) => {
+      return <StyledTags inverted={inverted} theme={theme}>
+        {list.map(tag => <span key={tag}>{tag}</span>)}
+      </StyledTags>
+    }}
+  </ColorContext.Consumer>
+)
+
+Tags.propTypes = {
+  list: PropTypes.array,
+  inverted: PropTypes.bool,
+}
+
 const StyledTags = styled.div`
   display: flex;
-  margin-top: .5rem;
+  margin: .5rem 0;
   
   span {
     transition: background-color .3s;
@@ -23,26 +38,11 @@ const StyledTags = styled.div`
         padding: .3rem .5rem;
         border-radius: .5rem;
         color: ${colors.fadedWhite};
-        background-color: ${theme.hex.colorMutedLight};
+        background-color: ${theme.hex.colorRegular};
       `
     }
   }}
   }
 `
-
-const Tags = ({ list, inverted }) => (
-  <ColorContext.Consumer>
-    {({ theme }) => {
-      return <StyledTags inverted={inverted} theme={theme}>
-        {list.map(tag => <span key={tag}>{tag}</span>)}
-      </StyledTags>
-    }}
-  </ColorContext.Consumer>
-)
-
-Tags.propTypes = {
-  list: PropTypes.array,
-  inverted: PropTypes.bool,
-}
 
 export default Tags
