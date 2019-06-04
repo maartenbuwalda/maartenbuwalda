@@ -3,6 +3,7 @@ export default {
   midBlue: '#5062B8',
   lightBlue: '#5A9FFF',
   red: '#FF2151',
+  lightGray: '#f2f2f2',
   gray: '#E5E5E8',
   darkGray: '#A8A8A8',
   green: '#19B589',
