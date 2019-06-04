@@ -19,6 +19,8 @@ import node from '../../static/images/logos/node.svg'
 import next from '../../static/images/logos/next.svg'
 import email from '../../static/images/logos/email.svg'
 import sketch from '../../static/images/logos/sketch.svg'
+import wordpress from '../../static/images/logos/wordpress.svg'
+import styledComponents from '../../static/images/logos/styled-components.png'
 
 export default {
   'react native': react,
@@ -43,4 +45,6 @@ export default {
   next,
   email,
   sketch,
+  wordpress,
+  'styled components': styledComponents,
 }

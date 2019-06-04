@@ -7,7 +7,7 @@ import images from './images'
 export const workProjects = [
   {
     pathname: '/work/fontem-ventures',
-    label: '2019: Fontem Ventures',
+    label: '2019 - now: Fontem Ventures',
     title: 'Fontem Ventures',
     image: images.books,
     content: Fontem,

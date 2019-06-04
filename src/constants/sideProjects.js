@@ -6,18 +6,18 @@ import images from './images'
 
 export const sideProjects = [
   {
-    pathname: '/side-projects/this-website',
-    label: '2019: This website',
-    title: 'This website',
-    image: images.books,
-    content: ThisWebsite,
-  },
-  {
     pathname: '/side-projects/battlefield-bus-tours',
     label: '2018 - 2019: Battlefield Bus Tours',
     title: 'Battlefield Bus Tours',
     image: images.books,
     content: BBT,
+  },
+  {
+    pathname: '/side-projects/this-website',
+    label: '2019: This website',
+    title: 'This website',
+    image: images.books,
+    content: ThisWebsite,
   },
   {
     pathname: '/side-projects/stichting-herstelling',
