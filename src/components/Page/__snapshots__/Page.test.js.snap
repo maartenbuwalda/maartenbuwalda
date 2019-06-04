@@ -366,7 +366,6 @@ exports[`Page component mounts correctly 1`] = `
             "lastClassName": "c4",
             "rules": Array [
               "
-
   section {
     padding: 4rem 2rem;
     transition: background-color 1s;
