@@ -18,6 +18,7 @@ const Page = ({ page }) => {
           {page.image && (
             <HeaderImage
               updateTheme={updateTheme}
+              type={page.type}
               image={page.image}
               title={page.title}
             />

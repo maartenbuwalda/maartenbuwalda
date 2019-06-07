@@ -26,7 +26,7 @@ exports[`Page component mounts correctly 1`] = `
 }
 
 .c0 {
-  background: #E5E5E8;
+  background-color: rgba(,0.2);
   margin: 0;
   overflow: hidden;
   height: 30rem;
@@ -49,6 +49,7 @@ exports[`Page component mounts correctly 1`] = `
 
 .c0 img {
   position: absolute;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.05),0 10px 10px rgba(0,0,0,0.05);
   -webkit-animation: fade .5s ease-out;
   animation: fade .5s ease-out;
   display: block;
@@ -170,7 +171,28 @@ exports[`Page component mounts correctly 1`] = `
     image="test"
     updateTheme={[Function]}
   >
-    <styled.figure>
+    <styled.figure
+      theme={
+        Object {
+          "hex": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+          "rgb": Object {
+            "colorDark": "",
+            "colorLight": "",
+            "colorMutedDark": "",
+            "colorMutedLight": "",
+            "colorMutedRegular": "",
+            "colorRegular": "",
+          },
+        }
+      }
+    >
       <StyledComponent
         forwardedComponent={
           Object {
@@ -178,13 +200,13 @@ exports[`Page component mounts correctly 1`] = `
             "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-htpNat",
-              "isStatic": true,
+              "isStatic": false,
               "lastClassName": "c0",
               "rules": Array [
                 "
-  background: ",
-                "#E5E5E8",
-                ";
+  background-color: rgba(",
+                [Function],
+                ", 0.2);
   margin: 0;
   overflow: hidden;
   height: 30rem;
@@ -197,9 +219,14 @@ exports[`Page component mounts correctly 1`] = `
 
   img {
     position: absolute;
+    box-shadow: ",
+                "0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.05)",
+                ";
     animation: fade .5s ease-out;
     display: block;
-    max-height: 100%;
+    max-height: ",
+                [Function],
+                ";
   }
 
   @media (min-width: ",
@@ -221,6 +248,26 @@ exports[`Page component mounts correctly 1`] = `
           }
         }
         forwardedRef={null}
+        theme={
+          Object {
+            "hex": Object {
+              "colorDark": "",
+              "colorLight": "",
+              "colorMutedDark": "",
+              "colorMutedLight": "",
+              "colorMutedRegular": "",
+              "colorRegular": "",
+            },
+            "rgb": Object {
+              "colorDark": "",
+              "colorLight": "",
+              "colorMutedDark": "",
+              "colorMutedLight": "",
+              "colorMutedRegular": "",
+              "colorRegular": "",
+            },
+          }
+        }
       >
         <figure
           className="c0"
