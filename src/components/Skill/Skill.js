@@ -10,7 +10,7 @@ const Skill = ({ name, link }) => {
   return (
     <LazyLoad
       height={80}
-      offset={-100}>
+      offset={-50}>
       <StyledSkill>
         <LogoWrapper>
           <VendorLogo vendor={name} />

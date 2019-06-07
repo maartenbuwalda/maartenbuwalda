@@ -14,7 +14,7 @@ const AboutMe = (
       </p>
     </section>
     <section>
-      <h3>I have worked with:</h3>
+      <h3>I have worked with / am working with:</h3>
       <CenteredBlocks>
         <Skill name="react" />
         <Skill name="react native" />
@@ -30,12 +30,17 @@ const AboutMe = (
         <Skill name="d3" />
         <Skill name="styled components" />
       </CenteredBlocks>
-      <h3>I'm currently working with and learning:</h3>
+      <h3>I am learning:</h3>
       <CenteredBlocks>
         <Skill name="next" />
         <Skill name="typescript" />
         <Skill name="gatsby" />
         <Skill name="webpack" />
+      </CenteredBlocks>
+      <h3>I would like to learn:</h3>
+      <CenteredBlocks>
+        <Skill name="vue" />
+        <Skill name="node" />
       </CenteredBlocks>
     </section>
   </>

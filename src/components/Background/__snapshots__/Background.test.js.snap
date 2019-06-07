@@ -15,7 +15,7 @@ exports[`Background component mounts correctly 1`] = `
   transition: background-color 1s;
   position: relative;
   min-height: 100vh;
-  background-color: rgba(,0.1);
+  background-color: rgba(,0.7);
 }
 
 <Background>
@@ -57,7 +57,7 @@ exports[`Background component mounts correctly 1`] = `
   min-height: 100vh;
   background-color: rgba(",
               [Function],
-              ", 0.1);
+              ", 0.7);
 ",
             ],
           },
@@ -130,6 +130,7 @@ exports[`Background component mounts correctly 1`] = `
                   "lastClassName": "c1",
                   "rules": Array [
                     "
+
   position: fixed;
   z-index: -1;
   top: 0;

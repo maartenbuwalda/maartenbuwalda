@@ -6,7 +6,9 @@ const Contact = (
   <>
     <section>
       <h1>Contact</h1>
-      <p>Feel free to reach out to me:</p>
+      <p>I (almost) never respond to recruitment emails, but feel free to reach out to me. I also have some online presence on github and linkedin. Check out my profiles below.</p>
+    </section>
+    <section>
       <CenteredBlocks>
         <Skill name="github" link="https://github.com/maartenbuwalda" />
         <Skill name="linkedin" link="https://www.linkedin.com/in/maartenbuwalda/" />

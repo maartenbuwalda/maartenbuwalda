@@ -3,7 +3,7 @@
 exports[`Skill component renders correctly 1`] = `
 <LazyLoad
   height={80}
-  offset={-100}
+  offset={-50}
   once={false}
   overflow={false}
   resize={false}

@@ -20,6 +20,7 @@ Background.propTypes = {
 }
 
 const BackgroundDarkOverlay = styled.div`
+
   position: fixed;
   z-index: -1;
   top: 0;
@@ -34,7 +35,7 @@ const ColoredBackground = styled.div`
   transition: background-color 1s;
   position: relative;
   min-height: 100vh;
-  background-color: rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.1);
+  background-color: rgba(${({ theme }) => theme.rgb.colorMutedDark}, 0.7);
 `
 
 export default Background
