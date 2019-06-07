@@ -2,6 +2,7 @@ import React from 'react'
 import CenteredBlocks from '../../components/CenteredBlocks'
 import Skill from '../../components/Skill'
 import Tags from '../../components/Tags'
+import Link from '../../components/Link'
 
 export const Transavia = (
   <>
@@ -11,7 +12,7 @@ export const Transavia = (
       <p>Transavia is a Dutch low-cost airline, focused on having the best online experience. Transavia's stack has been focused around Sitecore for many years, and one of their steps forward was to move their front-end stack towards React and have a more API based architecture.</p>
     </section>
     <section>
-      <h3>What I used here:</h3>
+      <h3>Used tools:</h3>
       <CenteredBlocks>
         <Skill name="react" />
         <Skill name="redux" />
@@ -23,7 +24,7 @@ export const Transavia = (
     </section>
     <section>
       <h3>My role</h3>
-      <p>I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (transavia.com).</p>
+      <p>I came to work at Transavia as the first React developer. They already made a proof of concept to move their stack to React, and I was here to continue and improve their work. Most of my time at Transavia was spent on adding new features, refactoring, removing codesmells and bugs, and increasing code coverage. Next to that, I had a substantial role in setting up two new React + Redux applications and a component library. Of course part of the job was also to fix bugs in the existing website (<Link href="http://www.transavia.com">transavia.com</Link>).</p>
     </section>
     <section>
       <h3>What I worked on:</h3>
@@ -31,7 +32,7 @@ export const Transavia = (
         <li>
           <h4>Group Offer Solution</h4>
           <Tags list={['React', 'Redux', 'Jest']} />
-          <p>Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70%, and added Redux for state management before going to production in early 2019.</p>
+          <p>Transavia's first React application, built as a proof of concept and refactored by me to increase the quality for production. I also raised the code coverage from 0% to 70%, and added Redux for state management before going to production in early 2019. This application's purpose is to automate the process of doing a group booking. The app is accessible when you try to make a booking of at least 26 people. A lot of the booking work was done manually before the release of this application.</p>
         </li>
         <li>
           <h4>Cancel booking</h4>

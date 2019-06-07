@@ -12,7 +12,7 @@ export const Wakoopa = (
       <p><Link href="http://www.wakoopa.com">Wakoopa</Link> is an international software company focused on market research. The Wakoopa software is used by market research companies to measure online behavior. In 2015 I started at Wakoopa to do my internship and thesis, and afterwards I stayed two more years as a front-end developer.</p>
     </section>
     <section>
-      <h3>What I used here:</h3>
+      <h3>Used tools:</h3>
       <CenteredBlocks>
         <Skill name="react" />
         <Skill name="react native" />
@@ -24,6 +24,7 @@ export const Wakoopa = (
         <Skill name="d3" />
         <Skill name="styled components" />
         <Skill name="sketch" />
+        <Skill name="sass" />
       </CenteredBlocks>
     </section>
     <section>
