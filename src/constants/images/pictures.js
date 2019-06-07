@@ -1,19 +1,25 @@
-import norway from '../../static/images/norway.jpg'
+import contact from '../../static/images/contact.jpg'
 import ireland from '../../static/images/ireland2.jpg'
 import me from '../../static/images/me.jpg'
 import transavia from '../../static/images/transavia.jpg'
-import books from '../../static/images/books.jpg'
-import wkp from '../../static/images/wkp.png'
+import education from '../../static/images/education.jpg'
+import wakoopa from '../../static/images/wakoopa.jpg'
 import herstelling from '../../static/images/herstelling.jpg'
 import fort from '../../static/images/go-fort.jpg'
+import dinst from '../../static/images/dinst.jpg'
+import blu from '../../static/images/blu.jpg'
+import bbt from '../../static/images/bbt.jpg'
 
 export default {
-  norway,
+  contact,
   me,
   transavia,
-  books,
+  education,
   ireland,
-  wkp,
+  wakoopa,
   herstelling,
   fort,
+  dinst,
+  blu,
+  bbt,
 }

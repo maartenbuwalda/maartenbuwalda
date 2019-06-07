@@ -20,6 +20,7 @@ import next from '../../static/images/logos/next.svg'
 import email from '../../static/images/logos/email.svg'
 import sketch from '../../static/images/logos/sketch.svg'
 import wordpress from '../../static/images/logos/wordpress.svg'
+import vue from '../../static/images/logos/vue.svg'
 import styledComponents from '../../static/images/logos/styled-components.png'
 
 export default {
@@ -47,4 +48,5 @@ export default {
   sketch,
   wordpress,
   'styled components': styledComponents,
+  vue,
 }
