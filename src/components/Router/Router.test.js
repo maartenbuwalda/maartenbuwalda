@@ -1,71 +1,21 @@
 import React from 'react'
+import { HashRouter } from 'react-router-dom'
 import Router from './Router'
 import { componentRenders } from '../../testUtils/rendering'
 
 jest.mock('../../constants/sideProjects', () => ({
-  sideProjects: [
-    {
-      pathname: '/',
-      label: 'About me',
-      title: 'Maarten Buwalda',
-      image: 'images.me',
-      icon: 'face',
-      content: 'AboutMe',
-    },
-    {
-      pathname: '/education',
-      label: 'Education',
-      title: 'Education',
-      image: 'images.books',
-      icon: 'book',
-      content: 'Education',
-    }
-  ]
+  sideProjects: []
 }))
 
 jest.mock('../../constants/workProjects', () => ({
-  workProjects: [
-    {
-      pathname: '/',
-      label: 'About me',
-      title: 'Maarten Buwalda',
-      image: 'images.me',
-      icon: 'face',
-      content: 'AboutMe',
-    },
-    {
-      pathname: '/education',
-      label: 'Education',
-      title: 'Education',
-      image: 'images.books',
-      icon: 'book',
-      content: 'Education',
-    }
-  ]
+  workProjects: []
 }))
 
 jest.mock('../../constants/routes', () => ({
-  routes: [
-    {
-      pathname: '/',
-      label: 'About me',
-      title: 'Maarten Buwalda',
-      image: 'images.me',
-      icon: 'face',
-      content: 'AboutMe',
-    },
-    {
-      pathname: '/education',
-      label: 'Education',
-      title: 'Education',
-      image: 'images.books',
-      icon: 'book',
-      content: 'Education',
-    }
-  ]
+  routes: []
 }))
 
 describe('Router component', () => {
-  const component = <Router />
+  const component = <HashRouter><Router /></HashRouter>
   componentRenders(component)
 })

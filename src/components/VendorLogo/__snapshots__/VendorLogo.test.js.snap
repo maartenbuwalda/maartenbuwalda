@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`VendorLogo component when doing a basic render renders correctly 1`] = `<styled.figure />`;
-
-exports[`VendorLogo component when passing a vendor renders correctly 1`] = `<styled.figure />`;

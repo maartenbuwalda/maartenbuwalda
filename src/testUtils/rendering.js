@@ -1,17 +1,8 @@
-import toJson from 'enzyme-to-json'
-import { shallow, mount } from 'enzyme'
-import 'jest-styled-components'
+import { render } from '@testing-library/react'
 
 export const componentRenders = component => {
   it('renders correctly', () => {
-    const shallowed = shallow(component)
-    expect(toJson(shallowed)).toMatchSnapshot()
-  })
-}
-
-export const componentMounts = component => {
-  it('mounts correctly', () => {
-    const mounted = mount(component)
-    expect(toJson(mounted)).toMatchSnapshot()
+    const rendered = render(component)
+    expect(rendered).not.toBeNull()
   })
 }

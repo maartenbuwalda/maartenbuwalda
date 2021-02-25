@@ -1,5 +1,5 @@
 const path = require('path')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
     maartenbuwalda: './src/index.js',
   },
   plugins: [
-    new CleanWebpackPlugin(['dist', 'build']),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist', 'build']}),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {

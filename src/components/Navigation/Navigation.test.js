@@ -1,8 +1,7 @@
 import React from 'react'
 import Navigation from './index'
-// import { mount } from 'enzyme'
 import { HashRouter } from 'react-router-dom'
-import { componentMounts } from '../../testUtils/rendering'
+import { componentRenders } from '../../testUtils/rendering'
 
 jest.mock('../../constants/images', () => ({}))
 
@@ -12,7 +11,7 @@ describe('Navigation component', () => {
       <Navigation />
     </HashRouter>
   )
-  componentMounts(component)
+  componentRenders(component)
 
   // describe('when clicking on a link', () => {
   //   const toggleMenu = jest.fn()

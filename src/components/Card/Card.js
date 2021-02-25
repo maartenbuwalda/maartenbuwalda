@@ -10,7 +10,7 @@ class Card extends React.Component {
     return (
       <ColorContext.Consumer>
         {({ theme }) => (
-          <StyledCard position={position} theme={theme} {...rest}>
+          <StyledCard data-testid="card" position={position} theme={theme} {...rest}>
             <Section theme={theme} {...rest}>
               {children}
             </Section>
