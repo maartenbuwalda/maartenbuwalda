@@ -19,29 +19,31 @@ const AboutMe = (
         <Skill name="react" />
         <Skill name="react native" />
         <Skill name="redux" />
+        <Skill name="next" />
         <Skill name="jest" />
         <Skill name="storybook" />
         <Skill name="html5" />
         <Skill name="css3" />
         <Skill name="sass" />
         <Skill name="javascript" />
+        <Skill name="typescript" />
         <Skill name="middleman" />
         <Skill name="ember" />
         <Skill name="d3" />
         <Skill name="styled components" />
+        <Skill name="webpack" />
       </CenteredBlocks>
       <h3>I am learning:</h3>
       <CenteredBlocks>
-        <Skill name="next" />
-        <Skill name="typescript" />
         <Skill name="gatsby" />
-        <Skill name="webpack" />
+        <Skill name="node" />
+        <Skill name="mongodb" />
       </CenteredBlocks>
-      <h3>I would like to learn:</h3>
+      {/* <h3>I would like to learn:</h3>
       <CenteredBlocks>
         <Skill name="vue" />
         <Skill name="node" />
-      </CenteredBlocks>
+      </CenteredBlocks> */}
     </section>
   </>
 )

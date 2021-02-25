@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'react-image'
 import PropTypes from 'prop-types'
+import { Img } from 'react-image'
 import Loading from '../Loading'
 import { sizes } from '../../constants/mediaQueries'
 import colors from '../../constants/colors'

@@ -15,7 +15,7 @@ const Education = (
         <li>
           <h3>Multimedia Design</h3>
           <Tags inverted list={['2006-2010', 'MediaCollege Amsterdam']} />
-          <p>After finishing high school, I seemed to have learned only two things: I liked drawing and I liked computers. I chose a study in Multimedia Design because it involved both. Here I mostly learned how to use the Adobe software, how to do web design, play games, make cool animations, and the very basics of HTML and CSS. During this time I really liked to use Flash, so I also learned some ActionScript, which later helped me to understand JavaScript a bit more easily.</p>
+          <p>After finishing high school, I seemed to have learned two important things about my future: I liked drawing and I liked computers. I chose a study in Multimedia Design because it involved both. Here I mostly learned how to use the Adobe software, how to do web design, play games, make cool animations, and the very basics of HTML and CSS. During this time I really liked to use Flash, so I also learned some ActionScript, which later helped me to understand JavaScript a bit more easily.</p>
         </li>
         <li>
           <h3>Two wine tasting courses (yes)</h3>

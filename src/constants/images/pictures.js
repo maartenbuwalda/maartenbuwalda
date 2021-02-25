@@ -9,6 +9,7 @@ import fort from '../../static/images/go-fort.jpg'
 import dinst from '../../static/images/dinst.jpg'
 import blu from '../../static/images/blu.jpg'
 import bbt from '../../static/images/bbt.jpg'
+import filewave from '../../static/images/filewave.jpg'
 
 export default {
   contact,
@@ -22,4 +23,5 @@ export default {
   dinst,
   blu,
   bbt,
+  filewave,
 }

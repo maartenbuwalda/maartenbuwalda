@@ -8,7 +8,7 @@ export const sideProjects = [
   {
     pathname: '/side-projects/battlefield-bus-tours',
     type: 'work',
-    label: '2018 - 2019: Battlefield Bus Tours',
+    label: '2018 - now: Battlefield Bus Tours',
     title: 'Battlefield Bus Tours',
     image: images.bbt,
     content: BBT,

@@ -2,13 +2,22 @@ import { Transavia } from '../pages/work/Transavia'
 import { Dinst } from '../pages/work/Dinst'
 import { Wakoopa } from '../pages/work/Wakoopa'
 import { Fontem } from '../pages/work/Fontem'
+import { FileWave } from '../pages/work/FileWave'
 import images from './images'
 
 export const workProjects = [
   {
+    pathname: '/work/filewave',
+    type: 'work',
+    label: '2019 - now: FileWave',
+    title: 'FileWave',
+    image: images.filewave,
+    content: FileWave,
+  },
+  {
     pathname: '/work/fontem-ventures',
     type: 'work',
-    label: '2019 - now: Fontem Ventures',
+    label: '2019: Fontem Ventures (project)',
     title: 'Fontem Ventures',
     image: images.blu,
     content: Fontem,
@@ -16,7 +25,7 @@ export const workProjects = [
   {
     pathname: '/work/transavia',
     type: 'work',
-    label: '2018 - 2019: Transavia',
+    label: '2018 - 2019: Transavia (project)',
     title: 'Transavia',
     image: images.transavia,
     content: Transavia,

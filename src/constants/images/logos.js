@@ -22,10 +22,11 @@ import sketch from '../../static/images/logos/sketch.svg'
 import wordpress from '../../static/images/logos/wordpress.svg'
 import vue from '../../static/images/logos/vue.svg'
 import styledComponents from '../../static/images/logos/styled-components.png'
+import testingLibrary from '../../static/images/logos/testing-library.png'
+import mongodb from '../../static/images/logos/mongodb.svg'
 
 export default {
-  'react native': react,
-  react: react,
+  react,
   redux,
   middleman,
   jest,
@@ -47,6 +48,9 @@ export default {
   email,
   sketch,
   wordpress,
-  'styled components': styledComponents,
   vue,
+  mongodb,
+  'react native': react,
+  'styled components': styledComponents,
+  'testing-library': testingLibrary,
 }
