@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { HashRouter } from 'react-router-dom'
-import Vibrant from 'node-vibrant'
+import * as Vibrant from 'node-vibrant'
 import BusinessCard from '../BusinessCard'
 import Grid from '../Grid'
 import Navigation from '../Navigation'
