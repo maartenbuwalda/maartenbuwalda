@@ -13,6 +13,7 @@ class HeaderImage extends React.Component {
     const { updateTheme, image } = this.props
     updateTheme(image)
   }
+
   render () {
     const { image, type } = this.props
     return (

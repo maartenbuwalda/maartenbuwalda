@@ -39,6 +39,7 @@ Page.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string,
     content: PropTypes.node,
+    type: PropTypes.string,
   })
 }
 

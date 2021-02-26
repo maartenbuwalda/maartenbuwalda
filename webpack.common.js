@@ -1,12 +1,14 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: {
     maartenbuwalda: './src/index.js',
   },
   plugins: [
+    new ESLintPlugin(),
     new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist', 'build']}),
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -49,7 +51,6 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           'babel-loader',
-          'eslint-loader'
         ]
       },
       {

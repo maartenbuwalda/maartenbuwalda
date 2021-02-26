@@ -26,6 +26,7 @@ class App extends Component {
       updateTheme: this.updateTheme,
     }
   }
+
   render () {
     return (
       <HashRouter>
