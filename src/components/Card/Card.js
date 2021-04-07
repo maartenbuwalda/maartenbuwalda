@@ -4,25 +4,18 @@ import PropTypes from 'prop-types'
 import colors from '../../constants/colors'
 import { ColorContext } from '../../context/color'
 
-class Card extends React.Component {
-  render () {
-    const { children, position, ...rest } = this.props
-    return (
-      <ColorContext.Consumer>
-        {({ theme }) => (
-          <StyledCard data-testid="card" position={position} theme={theme} {...rest}>
-            <Section theme={theme} {...rest}>
-              {children}
-            </Section>
-          </StyledCard>
-        )}
-      </ColorContext.Consumer>
-    )
-  }
-}
-
-Card.defaultProps = {
-  content: ''
+const Card = ({ children, position, ...rest }) => {
+  return (
+    <ColorContext.Consumer>
+      {({ theme }) => (
+        <StyledCard data-testid="card" position={position} theme={theme} {...rest}>
+          <Section theme={theme} {...rest}>
+            {children}
+          </Section>
+        </StyledCard>
+      )}
+    </ColorContext.Consumer>
+  )
 }
 
 Card.propTypes = {

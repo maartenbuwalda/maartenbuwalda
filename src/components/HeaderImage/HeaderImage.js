@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Img } from 'react-image'
@@ -8,30 +8,26 @@ import colors from '../../constants/colors'
 import shadows from '../../constants/shadows'
 import { ColorContext } from '../../context/color'
 
-class HeaderImage extends React.Component {
-  componentDidMount () {
-    const { updateTheme, image } = this.props
+const HeaderImage = ({ updateTheme, image, type }) => {
+  useEffect(() => {
     updateTheme(image)
-  }
+  }, [])
 
-  render () {
-    const { image, type } = this.props
-    return (
-      <ColorContext.Consumer>
-        {({ theme }) => (
-          <>
-            {image && (
-              <ImageWrapper type={type} theme={theme}>
-                <Img
-                  src={image}
-                  loader={<Placeholder><Loading/></Placeholder>}/>
-              </ImageWrapper>
-            )}
-          </>
-        )}
-      </ColorContext.Consumer>
-    )
-  }
+  return (
+    <ColorContext.Consumer>
+      {({ theme }) => (
+        <>
+          {image && (
+            <ImageWrapper type={type} theme={theme}>
+              <Img
+                src={image}
+                loader={<Placeholder><Loading/></Placeholder>}/>
+            </ImageWrapper>
+          )}
+        </>
+      )}
+    </ColorContext.Consumer>
+  )
 }
 
 const ImageWrapper = styled.figure`
